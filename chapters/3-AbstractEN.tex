@@ -1,0 +1,19 @@
+\thispagestyle{abstractpagestyle}
+
+\vspace*{36pt}
+
+\begin{center}
+    \textbf{\fontsize{20pt}{24pt} \selectfont ABSTRACT}
+\end{center}
+
+\vspace{24pt}
+
+This paper describes the design and implementation of the “PiIrrigate” system. The purpose of this system is to optimize water consumption and improve the management of agricultural crops or gardens by using modern IoT technologies and LoRa radio communications. As the effects of global warming become increasingly evident, the automation and monitoring of irrigation systems is becoming a necessity. The project aims to develop a monitoring and control system intended for farmers who need to oversee large areas of land, but it can also be used for smart greenhouses or regular gardening.
+\vspace{12pt}
+
+The project uses an architecture based on Raspberry Pi microcontrollers and T-Beam LILYGO ESP32 LoRa modules. These components are used for the real-time collection and transmission of data. The system enables the monitoring of essential parameters (humidity, temperature, soil moisture, and rainfall) through sensors connected to ESP32 nodes. After collection, the data is transmitted to a gateway, which then communicates with a web API developed in .NET. The data is stored in a PostgreSQL database and sent in real time via SignalR to a web application, where it can be viewed by users.
+\vspace{12pt}
+Users have access to a web interface that allows them to visualize both real-time and historical data, as well as to manually control the system. Additionally, the system implements a dynamic node registration mechanism, enabling easy expansion of the network.
+\vspace{12pt}
+By integrating both hardware and software components into a coherent solution, PiIrrigate demonstrates the feasibility and efficiency of an IoT-based system dedicated to smart agriculture, with the potential to reduce water consumption and increase agricultural productivity.
+\vfill

@@ -1,0 +1,23 @@
+\thispagestyle{abstractpagestyle}
+
+\vspace*{36pt}
+
+\begin{center}
+\textbf{\fontsize{20pt}{24pt} \selectfont REZUMAT}
+\end{center}
+
+\vspace{24pt}
+
+Aceastăs lucrare descrie proiectarea și realizarea sistemului “PiIrrigate”. Acest sistem are ca scop eficientizarea consumului de apă si optimizarea culturilor agricole sau a grădinilor, prin utilizarea tehnologiilor moderne IoT și a comunicațiilor radio de tip LoRa. Pe măsură ce efectele încălzirii globale se fac din ce în ce mai resimțite, automatizarea si monitorizarea irigațiilor devine o necesitate. Proiectul vizează dezvoltarea unui sistem de monitorizare si control destinat fermierilor care doresc monitorizarea unor suprafețe mari de teren, dar acest sistem poate fi folosit si pentru sere inteligente  sau grădinărit normal.
+
+\vspace{12pt}
+
+Proiectul utilizează o arhitectură bazată pe microcontrolere Raspberry Pi și T-Beam LILYGO ESP32 LoRa. Aceste componente sunt folosite pentru colectarea si transmiterea datelor in timp real. Sistemul permite monitorizarea parametrilor esențiali (umiditate, temperatură, umiditatea solului și cantitatea de ploaie) prin senzori care sunt conectați la nodurile ESP32. Dupa colectare,  datele urmează a fi transmise către un gateway care comunică apoi cu un API web dezvoltat in .NET. Apoi datele urmează a fi stocate într-o baza de date PostgreSQL și trimise folosind SignalR către o aplicație web pentru a fi vizualizate în timp real de către utilizatori.
+
+\vspace{12pt}
+Utilizatorii au la dispoziție o interfață web care le permite atât vizualizarea datelor în timp real cât și vizualizarea datelor istorice și controlul manual al sistemului. De asemenea, acest sistem implementează un mecanism de înregistrare dinamica a nodurilor în rețea, lucru care permite extinderea facilă a sistemului.
+
+\vspace{12pt}
+Prin integrarea componentelor hardware și software într-o soluție coerentă, PiIrrigate demonstrează fezabilitatea și eficiența unui sistem IoT dedicat agriculturii inteligente, cu un impact potențial in reducerea consumului de apă și creșterea randamentului agricol.
+
+\vfill
