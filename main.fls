@@ -443,18 +443,13 @@ INPUT .\chapters\4-Introduction.tex
 INPUT .\chapters\4-Introduction.tex
 INPUT chapters\4-Introduction.tex
 INPUT .\images\logo.png
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\t1nimbusmono.fd
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\t1nimbusmono.fd
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\t1nimbusmono.fd
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zco-Regular-t1.tfm
+INPUT .\images\logo.png
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\ts1nimbussans.fd
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\ts1nimbussans.fd
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\ts1nimbussans.fd
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zhv-Reg-ts1.tfm
 INPUT .\images\logo.png
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\nimbus15\nimbus15mono-ec.enc
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\fontools\fontools_ts1.enc
-INPUT .\images\logo.png
 INPUT .\chapters\5-Body.tex
 INPUT .\chapters\5-Body.tex
 OUTPUT chapters\5-Body.aux
@@ -469,6 +464,10 @@ INPUT .\images\Picture 1.png
 INPUT .\images\Picture 1.png
 INPUT .\images\Picture 1.png
 INPUT .\images\logo.png
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\t1nimbusmono.fd
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\t1nimbusmono.fd
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\t1nimbusmono.fd
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zco-Regular-t1.tfm
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
@@ -477,6 +476,7 @@ INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zco
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zco-Bold-t1.tfm
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zhv-RegIta-t1.tfm
 INPUT .\images\logo.png
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\nimbus15\nimbus15mono-ec.enc
 INPUT .\images\logo.png
 INPUT .\chapters\6-Conclusions.tex
 INPUT .\chapters\6-Conclusions.tex

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.22)  22 MAY 2025 20:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.22)  27 MAY 2025 22:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1017,46 +1017,40 @@ Package pdftex.def Info: images/logo.png  used on input line 39.
 
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+NimbusMono on input line 52.
- (C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex/latex/nimbus15\t1nimbusmono.fd
-File: T1NimbusMono.fd 2015/09/19 Font definitions for T1/NimbusMono (msharpe).
-)
-LaTeX Font Info:    Font shape `T1/NimbusMono/m/n' will be
-(Font)              scaled to size 12.0pt on input line 52.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `NimbusMono' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for TS1+NimbusSans on input line 60.
- (C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex/latex/nimbus15\ts1nimbussans.fd
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 52.
+(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
+ [6]
+Chapter 2.
+LaTeX Font Info:    Trying to load font information for TS1+NimbusSans on input line 67.
+(C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex/latex/nimbus15\ts1nimbussans.fd
 File: TS1NimbusSans.fd 2015/09/19 Font definitions for TS1/NimbusSans (msharpe).
 )
 LaTeX Font Info:    Font shape `TS1/NimbusSans/m/n' will be
-(Font)              scaled to size 12.0pt on input line 60.
+(Font)              scaled to size 12.0pt on input line 67.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `NimbusSans' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
-
+Underfull \hbox (badness 2012) in paragraph at lines 67--70
+\T1/NimbusSans/m/n/12 (+20) These systems use weather data to adjust irrigation schedules based on
  []
 
-File: images/logo.png Graphic file (type png)
-<use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 73.
-(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
-[6{C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/nimbus15/nimbus15mono-ec.enc}{C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontools/fontools_ts1.enc}])
+)
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 52.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
- [7]
+ [7
+
+{C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontools/fontools_ts1.enc}]
 \openout2 = `chapters/5-Body.aux'.
 
  (chapters/5-Body.tex
-Chapter 2.
-<images/Picture 1.png, id=163, 285.7074pt x 184.5294pt>
+Chapter 3.
+<images/Picture 1.png, id=150, 285.7074pt x 184.5294pt>
 File: images/Picture 1.png Graphic file (type png)
 <use images/Picture 1.png>
 Package pdftex.def Info: images/Picture 1.png  used on input line 13.
@@ -1105,7 +1099,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 []\T1/NimbusSans/m/n/12 (+20) 449.8 flange
  []
 
-(C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+LaTeX Font Info:    Trying to load font information for T1+NimbusMono on input line 49.
+(C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex/latex/nimbus15\t1nimbusmono.fd
+File: T1NimbusMono.fd 2015/09/19 Font definitions for T1/NimbusMono (msharpe).
+)
+LaTeX Font Info:    Font shape `T1/NimbusMono/m/n' will be
+(Font)              scaled to size 12.0pt on input line 49.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `NimbusMono' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ (C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 LaTeX Font Info:    Font shape `T1/NimbusSans/m/n' will be
@@ -1117,14 +1121,14 @@ LaTeX Font Info:    Font shape `T1/NimbusMono/b/n' will be
 Package hyperref Info: bookmark level for unknown code defaults to 0 on input line 72.
 
 Underfull \hbox (badness 5893) in paragraph at lines 72--72
-[]\T1/NimbusSans/m/n/12 (+20) Snippet 2.1: |Subtype polymorphism example
+[]\T1/NimbusSans/m/n/12 (+20) Snippet 3.1: |Subtype polymorphism example
  []
 
 LaTeX Font Info:    Font shape `T1/NimbusSans/m/it' will be
 (Font)              scaled to size 12.0pt on input line 75.
 
 Underfull \hbox (badness 5893) in paragraph at lines 87--87
-[]\T1/NimbusSans/m/n/12 (+20) Snippet 2.2: |Subtype polymorphism example
+[]\T1/NimbusSans/m/n/12 (+20) Snippet 3.2: |Subtype polymorphism example
  []
 
 )
@@ -1132,7 +1136,7 @@ File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 53.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
- [9]
+ [9{C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/nimbus15/nimbus15mono-ec.enc}]
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 53.
@@ -1141,10 +1145,10 @@ Package pdftex.def Info: images/logo.png  used on input line 53.
 \openout2 = `chapters/6-Conclusions.aux'.
 
  (chapters/6-Conclusions.tex
-Chapter 3.
+Chapter 4.
 
 Underfull \hbox (badness 5893) in paragraph at lines 14--14
-[]\T1/NimbusSans/m/n/12 (+20) Snippet 3.1: |Subtype polymorphism example
+[]\T1/NimbusSans/m/n/12 (+20) Snippet 4.1: |Subtype polymorphism example
  []
 
 File: images/logo.png Graphic file (type png)
@@ -1166,13 +1170,13 @@ File: images/logo.png Graphic file (type png)
 Package pdftex.def Info: images/logo.png  used on input line 54.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
  [12]
-Chapter 4.
-<example_declaration.pdf, id=247, 597.51233pt x 845.0471pt>
+Chapter 5.
+<example_declaration.pdf, id=238, 597.51233pt x 845.0471pt>
 File: example_declaration.pdf Graphic file (type pdf)
 <use example_declaration.pdf>
 Package pdftex.def Info: example_declaration.pdf  used on input line 59.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-<example_declaration.pdf, id=249, page=1, 597.51233pt x 845.0471pt>
+<example_declaration.pdf, id=240, page=1, 597.51233pt x 845.0471pt>
 File: example_declaration.pdf Graphic file (type pdf)
 <use example_declaration.pdf, page 1>
 Package pdftex.def Info: example_declaration.pdf , page1 used on input line 59.
@@ -1216,7 +1220,7 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9AE8C35C9F409BC16F7D3E47360F689B;1894.
+(rerunfilecheck)             Checksum: 5811383987BA2650A8FED04DE812D4CF;2007.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                main
@@ -1227,17 +1231,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29298 strings out of 474486
- 525767 string characters out of 5743755
+ 29296 strings out of 474486
+ 526224 string characters out of 5743755
  1994542 words of memory out of 5000000
- 50923 multiletter control sequences out of 15000+600000
- 617849 words of font info for 159 fonts, out of 8000000 for 9000
+ 50931 multiletter control sequences out of 15000+600000
+ 617237 words of font info for 156 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,18n,119p,1888b,2175s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zco-Bold.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zco-Regular.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zhv-Bol.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zhv-Reg.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zhv-RegIta.pfb>
-Output written on main.pdf (15 pages, 266206 bytes).
+Output written on main.pdf (15 pages, 262454 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
+ 333 PDF objects out of 1000 (max. 8388607)
+ 77 named destinations out of 1000 (max. 500000)
  42650 words of extra memory for PDF output out of 42996 (max. 10000000)
 

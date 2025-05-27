@@ -269,5 +269,49 @@
     \field{journaltitle}{Sensors}
     \field{year}{2020}
   \endentry
+
+  \entry{smartIrrigationTechnologyControllersAndSensors}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MGJQMST}{%
+         family={Malarie\bibnamedelima Gotcher},
+         familyi={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+         suffix={Saleh\bibnamedelima Taghvaeian},
+         suffixi={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+         given={Justin Quetone\bibnamedelima Moss},
+         giveni={J\bibinitperiod\bibinitdelim Q\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MGSTJQM1}
+    \strng{fullhash}{MGSTJQM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Smart Irrigation Technology: Controllers and Sensors}
+    \verb{url}
+    \verb https://extension.okstate.edu/fact-sheets/smart-irrigation-technology
+    \verb -controllers-and-sensors.html
+    \endverb
+  \endentry
+
+  \entry{soilBasedIrrigation}{article}{}
+    \name{author}{1}{}{%
+      {{hash=AUSEP}{%
+         family={Agency},
+         familyi={A\bibinitperiod},
+         given={United States Environmental\bibnamedelima Protection},
+         giveni={U\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  E\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AUSEP1}
+    \strng{fullhash}{AUSEP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Soil Moisture-Based Irrigation Controllers}
+    \verb{url}
+    \verb https://www.epa.gov/watersense/soil-moisture-based-irrigation-control
+    \verb lers
+    \endverb
+  \endentry
 \enddatalist
 \endinput
