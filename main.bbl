@@ -313,5 +313,153 @@
     \verb lers
     \endverb
   \endentry
+
+  \entry{agriculture12101745}{article}{}
+    \name{author}{5}{}{%
+      {{hash=DM}{%
+         family={Dhanaraju},
+         familyi={D\bibinitperiod},
+         given={Muthumanickam},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CP}{%
+         family={Chenniappan},
+         familyi={C\bibinitperiod},
+         given={Poongodi},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RK}{%
+         family={Ramalingam},
+         familyi={R\bibinitperiod},
+         given={Kumaraperumal},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Pazhanivelan},
+         familyi={P\bibinitperiod},
+         given={Sellaperumal},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Kaliaperumal},
+         familyi={K\bibinitperiod},
+         given={Ragunath},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DM+1}
+    \strng{fullhash}{DMCPRKPSKR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Smart farming is a development that has emphasized information and
+  communication technology used in machinery, equipment, and sensors in
+  network-based hi-tech farm supervision cycles. Innovative technologies, the
+  Internet of Things (IoT), and cloud computing are anticipated to inspire
+  growth and initiate the use of robots and artificial intelligence in farming.
+  Such ground-breaking deviations are unsettling current agriculture
+  approaches, while also presenting a range of challenges. This paper
+  investigates the tools and equipment used in applications of wireless sensors
+  in IoT agriculture, and the anticipated challenges faced when merging
+  technology with conventional farming activities. Furthermore, this technical
+  knowledge is helpful to growers during crop periods from sowing to harvest;
+  and applications in both packing and transport are also investigated.%
+    }
+    \verb{doi}
+    \verb 10.3390/agriculture12101745
+    \endverb
+    \field{issn}{2077-0472}
+    \field{number}{10}
+    \field{title}{Smart Farming: Internet of Things (IoT)-Based Sustainable
+  Agriculture}
+    \verb{url}
+    \verb https://www.mdpi.com/2077-0472/12/10/1745
+    \endverb
+    \field{volume}{12}
+    \field{journaltitle}{Agriculture}
+    \field{year}{2022}
+  \endentry
+
+  \entry{s19081833}{article}{}
+    \name{author}{7}{}{%
+      {{hash=SX}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Xiaojie},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=AX}{%
+         family={An},
+         familyi={A\bibinitperiod},
+         given={Xingshuang},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZQ}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Qingxue},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Huimin},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=XL}{%
+         family={Xia},
+         familyi={X\bibinitperiod},
+         given={Lianming},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SX}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Xia},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Yemin},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SX+1}
+    \strng{fullhash}{SXAXZQLHXLSXGY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The Internet of Things (IoT) has tremendous success in health care, smart
+  city, industrial production and so on. Protected agriculture is one of the
+  fields which has broad application prospects of IoT. Protected agriculture is
+  a mode of highly efficient development of modern agriculture that uses
+  artificial techniques to change climatic factors such as temperature, to
+  create environmental conditions suitable for the growth of animals and
+  plants. This review aims to gain insight into the state-of-the-art of IoT
+  applications in protected agriculture and to identify the system structure
+  and key technologies. Therefore, we completed a systematic literature review
+  of IoT research and deployments in protected agriculture over the past 10
+  years and evaluated the contributions made by different academicians and
+  organizations. Selected references were clustered into three application
+  domains corresponding to plant management, animal farming and
+  food/agricultural product supply traceability. Furthermore, we discussed the
+  challenges along with future research prospects, to help new researchers of
+  this domain understand the current research progress of IoT in protected
+  agriculture and to propose more novel and innovative ideas in the future.%
+    }
+    \verb{doi}
+    \verb 10.3390/s19081833
+    \endverb
+    \field{issn}{1424-8220}
+    \field{number}{8}
+    \field{title}{State-of-the-Art Internet of Things in Protected Agriculture}
+    \verb{url}
+    \verb https://www.mdpi.com/1424-8220/19/8/1833
+    \endverb
+    \field{volume}{19}
+    \field{journaltitle}{Sensors}
+    \field{year}{2019}
+  \endentry
 \enddatalist
 \endinput

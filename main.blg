@@ -38,45 +38,45 @@ Warning--I didn't find a database entry for "einstein"
 Biblatex version: 3.19
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 6 entries,
+You've used 8 entries,
             6399 wiz_defined-function locations,
-            1254 strings with 16635 characters,
-and the built_in function-call counts, 63898 in all, are:
-= -- 5856
-> -- 529
-< -- 86
-+ -- 1615
-- -- 220
-* -- 5016
-:= -- 7924
+            1271 strings with 19311 characters,
+and the built_in function-call counts, 90723 in all, are:
+= -- 8263
+> -- 787
+< -- 132
++ -- 2617
+- -- 344
+* -- 6963
+:= -- 11453
 add.period$ -- 0
-call.type$ -- 6
-change.case$ -- 33
+call.type$ -- 8
+change.case$ -- 47
 chr.to.int$ -- 42
-cite$ -- 10
-duplicate$ -- 5231
-empty$ -- 5807
-format.name$ -- 364
-if$ -- 12815
+cite$ -- 14
+duplicate$ -- 8301
+empty$ -- 7908
+format.name$ -- 574
+if$ -- 17870
 int.to.chr$ -- 0
-int.to.str$ -- 10
+int.to.str$ -- 14
 missing$ -- 0
-newline$ -- 234
-num.names$ -- 190
-pop$ -- 1964
+newline$ -- 354
+num.names$ -- 266
+pop$ -- 2815
 preamble$ -- 1
-purify$ -- 74
+purify$ -- 114
 quote$ -- 0
-skip$ -- 851
+skip$ -- 1199
 stack$ -- 0
-substring$ -- 12897
-swap$ -- 766
-text.length$ -- 123
+substring$ -- 17394
+swap$ -- 1178
+text.length$ -- 181
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 192
+type$ -- 260
 warning$ -- 0
-while$ -- 812
+while$ -- 1276
 width$ -- 0
-write$ -- 229
+write$ -- 347
 (There was 1 warning)

@@ -72,7 +72,7 @@ There are several types of smart irrigation systems used in modern agriculture:
   These systems rely on data from soil moisture sensors placed in the root zone of the plants.
   Irrigation cycles are triggered when the soil moisture drops below a predetermined threshold, 
   ensuring plants receive water only when necessary.
-  This method is very precise for specific zones \cite{smartIrrigationTechnologyControllersAndSensors}.
+  This method is very precise for specific zones\cite{smartIrrigationTechnologyControllersAndSensors}.
 
   \item \textbf{Hybrid Systems} \\
   Many modern systems utilize a hybrid approach, combining data from both
@@ -80,6 +80,161 @@ There are several types of smart irrigation systems used in modern agriculture:
   irrigation decisions. Some research also explores "hybrid" in terms of 
   integrating different energy sources (e.g., solar and wind) to power the systems or 
   combining various 
-  irrigation methods (like drip and sprinkler) under one smart control \cite{soilBasedIrrigation}.
+  irrigation methods (like drip and sprinkler) under one smart control\cite{soilBasedIrrigation}.
 
+  The PiIrrigate project place itself in the category of hybrid systems, using both
+  soil moisture sensors and weather sensors to collect data.
+  
+  Some of the most popular hybrid smart irrigation systems include:
+  \begin{itemize}
+    \item \textbf{Netafim's Precision Irrigation System} \\
+    This system cobines data from soil moisture and flow sensors with sattelite weather data and predictive
+    analytics to optimize the irrigation proccess.
+    
+    Key features include:
+    \begin{itemize}
+      \item Real-time monitoring of soil moisture levels and weather forecasts.
+      \item Automated irrigation scheduling based on weather forecasts.
+      \item AI-based algorithms to optimize the irrigation timing and duration.
+    \end{itemize}
+
+    \item \textbf{CropX Smart Farming System} \\
+    CropX is a cloud based platform that integrates soil moisture sensors, weather data and
+    machine learning algorithms to optimize the irrigation process.
+
+    Key features include:
+    \begin{itemize}
+      \item Irrigation recomandations based on soil variability, crop type and weather.
+      \item Farmers can apply recommandations or integrate with automated irrigaitons contrllers.
+      \item Easy to scale and adapt to different farm sizes from small to large-scale farms.
+    \end{itemize}
+  
+    \item \textbf{Toro EVOLUTION® Series Controller with Smart ET Sensor} \\
+    Combines basic sprinkler system hardware with smart sensors and connectivity,
+    offering both manual and intelligent irrigation options. The evaporation sensors are used to measure
+    the amount of water lost throught evaporation and adjust the irrigation accordingly.
+
+    Key features include:
+    \begin{itemize}
+      \item Can be programmed manually or connected to a local weather station.
+      \item Smart ET sensor measures evaporation rates and adjusts irrigation schedules.
+      \item Compatible with smart devices for remote monitoring
+    \end{itemize}
   \end{itemize}
+\end{itemize}
+
+\section{Comparative Analysis of Smart Irrigation Systems}
+The table below provides a comparative analysis of some of the most popular smart 
+irrigation systems available today and the PiIrrigate system.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|p{3.2cm}|p{3.2cm}|p{3.2cm}|p{3.2cm}|p{3.2cm}|}
+\hline
+\textbf{Feature} & \textbf{Netafim} & \textbf{CropX} & \textbf{Toro ET} & \textbf{PiIrrigate} \\
+\hline
+Irrigation Type & Drip & Any & Sprinkler & Custom \\
+\hline
+Automation & High (AI) & Med–High & Medium & Medium \\
+\hline
+Sensors & Soil, flow, weather & Soil, temp & ET sensor & Soil, temp, rain \\
+\hline
+Weather Data & Yes & Yes & Yes & Optional \\
+\hline
+Manual Control & App/cloud & App/web & Panel/app & Web UI \\
+\hline
+AI/Analytics & Yes & Yes & No & No \\
+\hline
+Scalability & Large farms & Small–large & Residential & Small farms/gardens \\
+\hline
+Cloud Sync & Yes & Yes & Optional & Yes \\
+\hline
+Use Case & Precision agri & Smart farming & Lawn care & Small to large scale\\
+\hline
+Cost & High & Med–High & Low–Mid & Low \\
+\hline
+\end{tabular}
+\caption{Comparison of Smart Irrigation Systems}
+\label{tab:irrigation_comparison}
+\end{table}
+
+\section{Identified Gaps and Challenges}
+Despite the advancements in smart irrigation systems, several gaps and challenges remain:
+
+\begin{itemize}
+  \item \textbf{High Costs} \\
+  Many existing systems are expensive, making them inaccessible for small farmers or home gardeners.
+  
+  \item \textbf{Complexity of Use} \\
+  Some systems require specialized knowledge to set up and maintain, which can be a barrier for adoption.
+
+  \item \textbf{Limited Customization} \\
+  Many systems are designed for specific crops or environments, limiting their applicability in diverse agricultural settings.
+
+  \item \textbf{Data Integration Issues} \\
+  Integrating data from multiple sources (e.g., weather, soil sensors) can be challenging, leading to inefficiencies in irrigation management.
+\end{itemize}
+
+Bedside the presented gaps, there are also some other challenges that need to be addressed, such as:
+data security and privacy concerns, the need for reliable internet connectivity in remote areas, 
+and the need for systems that can operate in harsh environmental conditions. 
+
+Another aspect that needs to be considered is the environmental impact of smart irrigation systems.
+While these systems are designed to optimize water usage,
+the production and disposal of electronic components can have a negative impact on the environment.
+So another challenge is to create systems that are environmentally friendly and sustainable. This means 
+that the components used in these systems shlould be madea from recyclable materials 
+and the systems should be designed to have a long lifespan and to be easily repairable.
+
+\section{Summary}
+In summary, the state of the art in smart irrigation systems shows significant 
+advancements in technology and methods, but also highlights several gaps and challenges 
+that need to be addressed. The PiIrrigate project aims to fill these gaps by providing a
+cost-effective, easy-to-use, and customizable solution that leverages the power of IoT and LoRa 
+radio communication technologies. 
+
+\chapter{Used Technologies}
+\section{Overview}
+
+The PiIrrigate smart irrigation system is build using a combination of hardware and software technologies.
+It leverages both low-power edge devices and cloud-based infrastructure to provide real-time monitoring
+and data collection, as well as remote control capabilities.
+The core components and their roles in the system are as follows:
+\begin{itemize}
+  \item \textbf{ESP32 (LilyGo T-Beam)} \\
+  The LilyGo T-Beam is a development board based on the ESP32 microcontroller, it is equipped with
+  LoRa radio communication capabilities, Wifi, Bluetooth, GPS, and a battery management system.
+  It is used to collect data from sensors and send it to the gateway using LoRa radio communication.
+
+  \item \textbf{Raspberry Pi} \\
+  Raspberry Pi is a small, affordable computer that can be used for a wide range of applications.
+  The Raspberry Pi is the core of the PiIrrigate irrigation module, 
+  it is responsible for receiving data from the ESP32 nodes and sending it to Azure IoT Hub.
+
+  \item \textbf{Azure IoT Hub} \\
+  Azure IoT Hub is a cloud-based service that enables secure and reliable communication 
+  between IoT devices and the cloud.
+  It manages the bidirectional communication between the Raspberry Pi and the web API.
+
+  \item \textbf{Web API} \\
+  The web API is developed in .NET and is responsible for receiving data from the Raspberry Pi,
+  storing it in a PostgreSQL database, and providing a way to access the data.
+  SignalR is used to provide real-time communication between the server and the client.
+  It also provides a way to control the system manually and to add new nodes to the system.
+
+  \item \textbf{PostgreSQL Database} \\
+  PostgreSQL is a powerful, open-source relational database management system.
+  It is used to store the data collected from the sensors and the schedules sent to the system. It also
+  stores the user data and the configuration of the system. The database is hosted in Neon.
+
+  \item \textbf{Web Application} \\
+  The web applicaiton is developed using Angular and is responsible for displaying live, historical data
+  and provide the user interface for controlling the system.
+\end{itemize}
+
+\section{IoT in agriculture}
+The Internet of Things (IoT) is a new technology that allows devices to connect remotely to achieve smart
+farming \cite{agriculture12101745}. The IoT has a wide range of applications in agriculture, and it has 
+began to influence many other industries as well, such as healthcare, transportation, and manufacturing. 
+This was done to improve the efficiency and productivity of these industries, 
+as well as to reduce costs and improve the quality of products and services\cite{s19081833}.

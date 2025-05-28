@@ -6,12 +6,18 @@
 \contentsline {section}{\numberline {2.1}Introduction}{7}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Existing Smart Irrigation Solutions}{7}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Types of Smart Irrigation Systems}{7}{subsection.2.2.1}%
-\contentsline {chapter}{\numberline {3}Body}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}FIgures and Photographs}{8}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Tables}{8}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Formulae}{9}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Code}{9}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Conclusions}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Bibliography}{11}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Authenticity Declaration}{12}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Bibliography}{13}{chapter.5}%
+\contentsline {section}{\numberline {2.3}Comparative Analysis of Smart Irrigation Systems}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Identified Gaps and Challenges}{9}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Summary}{9}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Used Technologies}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Overview}{10}{section.3.1}%
+\contentsline {section}{\numberline {3.2}IoT in agriculture}{11}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Body}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}FIgures and Photographs}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Tables}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Formulae}{13}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Code}{13}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Conclusions}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Bibliography}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Authenticity Declaration}{16}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Bibliography}{17}{chapter.6}%

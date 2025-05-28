@@ -194,6 +194,8 @@ INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.s
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\cleveref\cleveref.sty
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\cleveref\cleveref.sty
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\lipsum\lipsum.sty
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\lipsum\lipsum.sty
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
@@ -448,8 +450,14 @@ INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\ts1nimbuss
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\ts1nimbussans.fd
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\ts1nimbussans.fd
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zhv-Reg-ts1.tfm
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zhv-Reg-t1.tfm
 INPUT .\images\logo.png
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\fontools\fontools_ts1.enc
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zhv-Bol-ts1.tfm
+INPUT .\images\logo.png
+INPUT .\images\logo.png
+INPUT .\images\logo.png
+INPUT .\images\logo.png
 INPUT .\chapters\5-Body.tex
 INPUT .\chapters\5-Body.tex
 OUTPUT chapters\5-Body.aux
