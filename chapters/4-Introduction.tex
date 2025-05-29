@@ -195,6 +195,11 @@ radio communication technologies.
 
 \chapter{Used Technologies}
 \section{Overview}
+The Internet of Things (IoT) is a new technology that allows devices to connect remotely to achieve smart
+farming \cite{agriculture12101745}. The IoT has a wide range of applications in agriculture, and it has 
+began to influence many other industries as well, such as healthcare, transportation, and manufacturing. 
+This was done to improve the efficiency and productivity of these industries, 
+as well as to reduce costs and improve the quality of products and services\cite{s19081833}.
 
 The PiIrrigate smart irrigation system is build using a combination of hardware and software technologies.
 It leverages both low-power edge devices and cloud-based infrastructure to provide real-time monitoring
@@ -232,9 +237,68 @@ The core components and their roles in the system are as follows:
   and provide the user interface for controlling the system.
 \end{itemize}
 
-\section{IoT in agriculture}
-The Internet of Things (IoT) is a new technology that allows devices to connect remotely to achieve smart
-farming \cite{agriculture12101745}. The IoT has a wide range of applications in agriculture, and it has 
-began to influence many other industries as well, such as healthcare, transportation, and manufacturing. 
-This was done to improve the efficiency and productivity of these industries, 
-as well as to reduce costs and improve the quality of products and services\cite{s19081833}.
+In the following sections, we will explore each of these components in more detail,
+starting with the hardware components and then moving on to the software components.
+
+\section{Hardware Components}
+\subsection{Sensors}
+The PiIrrigate system uses a variety of sensors to collect data from the environment.
+The sensors used in the PiIrrigate system are:
+\begin{itemize}
+  \item \textbf{Soil Moisture Sensor} \\
+  The soil moisture sensor is used to measure the moisture level in the soil. It is used to determine when to irrigate the plants.
+  The sensor is connected to the ESP32 board and sends the data to the gateway using LoRa radio communication.
+
+  \item \textbf{Temperature and Humidity Sensor} \\
+  The temperature and humidity sensor is used to measure the temperature and humidity of the environment.
+  It is used to determine the optimal conditions for plant growth and to adjust the irrigation schedule accordingly.
+
+  \item \textbf{Rain Sensor} \\
+  The rain sensor is used to detect rain and prevent irrigation during rainy weather. 
+  It helps to conserve water and prevent over-irrigation.
+\end{itemize}
+\subsection{ESP32 (LilyGo T-Beam)}
+
+The T-Beam ESP32 LoRa Wireless Module is a compact development board thaht combines an ESP32 microcontroller,
+LoRa transceiver (SX1278), GPS module, and a battery management system into a single unit. This board is ideal
+for long-range, low-power IoT applications such as mesh networks, asset tracking, smart agriculture and environmental
+monitoring. Besides this, it has a built-in OLED display. The communication range of the LoRa transceiver can reach up to 10 km in open areas.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/esp32lora.jpg}
+    \caption{ESP32 (LilyGo T-Beam) module used in PiIrrigate}
+    \label{fig:esp32lora}
+\end{figure}
+
+\subsection{Raspberry Pi 4 Model B}
+The Raspberry Pi 4 Model B is a small, affordable computer that can be used for a wide range of applications.
+It is equipped with a quad-core ARM Cortex-A72 processor, up to 8GB of RAM, and supports dual-band Wi-Fi and Bluetooth.
+The Raspberry Pi 4 Model B together with an ESP32LoRa is used in the PiIrrigate project as the gateway that receives data from the ESP32 nodes
+and sends it to IoT Hub.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/raspberrypi.jpg}
+    \caption{Raspberry Pi 4 Model B used in PiIrrigate}
+    \label{fig:raspberrypi}
+\end{figure}
+
+
+\section{Software Components}
+\subsection{Azure IoT Hub}
+Azure IoT Hub is a cloud platform that allows for secure and reliable commmunicaiton between IoT devices and
+cloud services. It provides a way to connect, monitor, and manage IoT devices at scale.
+
+I chosed to use Azure IoT Hub for this project because it provides a reliable and secure way to
+communicate between the Raspberry Pi and the web API. Also I am more familiar with Azure services. 
+Other alternatives could be AWS IoT Core or Google Cloud IoT Core, but I found that Azure IoT Hub
+provides a more user-friendly interface and better integration with other Azure services. 
+Yet another alternative could be to use a self-hosted MQTT broker, 
+such as Mosquitto, but this would require more setup and maintenance effort.
+
+\subsection{Web API}
+The web API is developed using ASP.NET Core framwork. 
+ASP.NET Core is a cross-platform framework for building modern applications with .NET and C\#.
+One of the main advantages of using ASP.NET Core is that it comes with all the necessary tools
+to build a web API, such as routing, model binding, and dependency injection.
+
+
