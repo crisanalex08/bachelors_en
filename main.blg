@@ -35,48 +35,48 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: main-blx.bib
 Database file #2: bibliography.bib
 Warning--I didn't find a database entry for "einstein"
-Biblatex version: 3.19
+Biblatex version: 3.20
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 8 entries,
-            6399 wiz_defined-function locations,
-            1271 strings with 19311 characters,
-and the built_in function-call counts, 90723 in all, are:
-= -- 8263
-> -- 787
-< -- 132
-+ -- 2617
-- -- 344
-* -- 6963
-:= -- 11453
+You've used 11 entries,
+            6402 wiz_defined-function locations,
+            1285 strings with 19616 characters,
+and the built_in function-call counts, 101089 in all, are:
+= -- 8863
+> -- 1000
+< -- 182
++ -- 2811
+- -- 413
+* -- 7551
+:= -- 12362
 add.period$ -- 0
-call.type$ -- 8
-change.case$ -- 47
+call.type$ -- 11
+change.case$ -- 66
 chr.to.int$ -- 42
-cite$ -- 14
-duplicate$ -- 8301
-empty$ -- 7908
-format.name$ -- 574
-if$ -- 17870
+cite$ -- 20
+duplicate$ -- 9530
+empty$ -- 8998
+format.name$ -- 704
+if$ -- 20102
 int.to.chr$ -- 0
-int.to.str$ -- 14
+int.to.str$ -- 20
 missing$ -- 0
-newline$ -- 354
-num.names$ -- 266
-pop$ -- 2815
+newline$ -- 408
+num.names$ -- 380
+pop$ -- 3818
 preamble$ -- 1
-purify$ -- 114
+purify$ -- 142
 quote$ -- 0
-skip$ -- 1199
+skip$ -- 1637
 stack$ -- 0
-substring$ -- 17394
-swap$ -- 1178
-text.length$ -- 181
+substring$ -- 18202
+swap$ -- 1438
+text.length$ -- 234
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 260
+type$ -- 362
 warning$ -- 0
-while$ -- 1276
+while$ -- 1393
 width$ -- 0
-write$ -- 347
+write$ -- 398
 (There was 1 warning)
