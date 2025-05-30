@@ -5,7 +5,9 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces ESP32 (LilyGo T-Beam) module used in PiIrrigate}}{16}{figure.caption.6}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Raspberry Pi 4 Model B used in PiIrrigate}}{17}{figure.caption.7}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces PiIrrigate System overview}}{18}{figure.caption.8}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Steps in data aquisition from DHT11 sensor}}{19}{figure.caption.9}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Example of a figure (source: The Scientific Bulletin of the UPT – series Building Engineering – Architecture, issue 2/2010)}}{18}{figure.caption.8}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Example of a figure (source: The Scientific Bulletin of the UPT – series Building Engineering – Architecture, issue 2/2010)}}{20}{figure.caption.10}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

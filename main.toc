@@ -32,12 +32,14 @@
 \contentsline {subsection}{\numberline {4.2.1}Sensors}{15}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}ESP32 (LilyGo T-Beam)}{15}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Raspberry Pi 4 Model B}{16}{subsection.4.2.3}%
-\contentsline {chapter}{\numberline {5}Body}{18}{chapter.5}%
-\contentsline {section}{\numberline {5.1}FIgures and Photographs}{18}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Tables}{18}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Formulae}{19}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Code}{19}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Conclusions}{21}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Bibliography}{21}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Authenticity Declaration}{22}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Bibliography}{23}{chapter.7}%
+\contentsline {section}{\numberline {4.3}Data Flow}{17}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Data aquisition}{18}{subsection.4.3.1}%
+\contentsline {chapter}{\numberline {5}Body}{20}{chapter.5}%
+\contentsline {section}{\numberline {5.1}FIgures and Photographs}{20}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Tables}{20}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Formulae}{21}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Code}{21}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Conclusions}{23}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Bibliography}{23}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Authenticity Declaration}{24}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Bibliography}{25}{chapter.7}%

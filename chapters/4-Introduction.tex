@@ -391,3 +391,46 @@ and sends it to IoT Hub.
     \caption{Raspberry Pi 4 Model B used in PiIrrigate}
     \label{fig:raspberrypi}
 \end{figure}
+
+\section{Data Flow}
+The data flow in the PiIrrigate system is as follows:
+
+\begin{enumerate}
+  \item The ESP32 nodes collect data from the sensors and send it to the gateway using LoRa radio communication.
+  \item The Raspberry Pi receives the data from the ESP32 nodes and sends it to Azure IoT Hub using MQTT protocol.
+  \item The web API receives the data from Azure IoT Hub and stores it in the PostgreSQL database using Entity Framework Core. 
+  \item The web application retrieves the data from the web API and displays it to the user in real-time using SignalR.
+\end{enumerate}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/system.png}
+    \caption{PiIrrigate System overview}
+    \label{fig:system-overview}
+\end{figure}
+
+\subsection{Data aquisition}
+The data acquisition is done using the ESP32 nodes that collect data from the sensors.
+For each sensor type, I created a specific library thath can be used to read the data from the sensor.
+Temperature and humidity data is collected using a DHT11 sensor. The communication with the sensor is done using
+1-wire digital interface. The communication is done in 3 steps\cite{1wire}:
+\begin{enumerate}
+  \item The microcontroller initiates communication by sending the start signal.
+  The start signal is an 18\,ms LOW signal followed by a $20$--$40\,\mu$s HIGH signal.
+  \item The sensor responds a fixed LOW and HIGH handshake pattern, indicating that it is ready to send data.
+  Usually the acknowledgment is a $80\,\mu$s LOW signal followed by a $80\,\mu$s HIGH signal.
+  \item After the handshake, the sensor sends a 40-bit data stream, which includes the humidity and temperature data.
+  The bits are sent in a specific order: first the humidity data (16 bits), 
+  then the temperature data (16 bits), 
+  and finally a checksum (8 bits).
+  Each bit is sent as a $50\,\mu$s LOW signal followed by a HIGH signal that lasts for either $26$--$28\,\mu$s (for a 0 bit) or $70\,\mu$s (for a 1 bit).
+  In code, for each bit, the microcontroller waits for the LOW signal to start, 
+  then waits for $30\,\mu$s then ig the signal is HIGH, the bit is a 1, otherwise it is a 0.
+  The checksum is used to verify the integrity of the data received from the sensor.
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/dht-steps.png}
+    \caption{Steps in data aquisition from DHT11 sensor}
+    \label{fig:dht-steps}
+\end{figure}
