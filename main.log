@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.22)  30 MAY 2025 21:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.22)  1 JUN 2025 14:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1128,7 +1128,7 @@ Package pdftex.def Info: images/logo.png  used on input line 348.
 [14
 
 ]
-<images/esp32lora.jpg, id=340, 826.08624pt x 826.08624pt>
+<images/esp32lora.jpg, id=346, 826.08624pt x 826.08624pt>
 File: images/esp32lora.jpg Graphic file (type jpg)
 <use images/esp32lora.jpg>
 Package pdftex.def Info: images/esp32lora.jpg  used on input line 378.
@@ -1138,7 +1138,7 @@ File: images/logo.png Graphic file (type png)
 Package pdftex.def Info: images/logo.png  used on input line 382.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
  [15]
-<images/raspberrypi.jpg, id=345, 2710.125pt x 2710.125pt>
+<images/raspberrypi.jpg, id=351, 2710.125pt x 2710.125pt>
 File: images/raspberrypi.jpg Graphic file (type jpg)
 <use images/raspberrypi.jpg>
 Package pdftex.def Info: images/raspberrypi.jpg  used on input line 390.
@@ -1148,7 +1148,7 @@ File: images/logo.png Graphic file (type png)
 Package pdftex.def Info: images/logo.png  used on input line 394.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
  [16 <./images/esp32lora.jpg>]
-<images/system.png, id=350, 1087.6635pt x 440.847pt>
+<images/system.png, id=356, 1087.6635pt x 440.847pt>
 File: images/system.png Graphic file (type png)
 <use images/system.png>
 Package pdftex.def Info: images/system.png  used on input line 406.
@@ -1158,27 +1158,51 @@ File: images/logo.png Graphic file (type png)
 Package pdftex.def Info: images/logo.png  used on input line 410.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
  [17 <./images/raspberrypi.jpg>]
-<images/dht-steps.png, id=360, 479.99326pt x 260.172pt>
+<images/dht-steps.png, id=366, 479.99326pt x 260.172pt>
 File: images/dht-steps.png Graphic file (type png)
 <use images/dht-steps.png>
 Package pdftex.def Info: images/dht-steps.png  used on input line 433.
 (pdftex.def)             Requested size: 386.95897pt x 209.7536pt.
-)
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 53.
+Package pdftex.def Info: images/logo.png  used on input line 437.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
  [18 <./images/system.png>]
+<images/moisture-sensor.png, id=380, 1541.76pt x 1027.84pt>
+File: images/moisture-sensor.png Graphic file (type png)
+<use images/moisture-sensor.png>
+Package pdftex.def Info: images/moisture-sensor.png  used on input line 450.
+(pdftex.def)             Requested size: 338.58632pt x 225.71773pt.
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 470.
+(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
+ [19 <./images/dht-steps.png> <./images/moisture-sensor.png (PNG copy)>]
+<images/water-flow.jpg, id=387, 1445.4pt x 1445.4pt>
+File: images/water-flow.jpg Graphic file (type jpg)
+<use images/water-flow.jpg>
+Package pdftex.def Info: images/water-flow.jpg  used on input line 475.
+(pdftex.def)             Requested size: 241.84843pt x 241.83307pt.
+<images/water-temp.png, id=388, 1003.75pt x 1003.75pt>
+File: images/water-temp.png Graphic file (type png)
+<use images/water-temp.png>
+Package pdftex.def Info: images/water-temp.png  used on input line 490.
+(pdftex.def)             Requested size: 241.84843pt x 241.83919pt.
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 494.
+(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
+ [20 <./images/water-flow.jpg>])
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 53.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
- [19 <./images/dht-steps.png>]
+ [21 <./images/water-temp.png>]
 \openout2 = `chapters/5-Body.aux'.
 
  (chapters/5-Body.tex
 Chapter 5.
-<images/Picture 1.png, id=378, 285.7074pt x 184.5294pt>
+<images/Picture 1.png, id=399, 285.7074pt x 184.5294pt>
 File: images/Picture 1.png Graphic file (type png)
 <use images/Picture 1.png>
 Package pdftex.def Info: images/Picture 1.png  used on input line 13.
@@ -1187,7 +1211,7 @@ File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 26.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
-[20
+[22
 
 
 
@@ -1264,12 +1288,12 @@ File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 54.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
- [21{C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/nimbus15/nimbus15mono-ec.enc}]
+ [23{C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/nimbus15/nimbus15mono-ec.enc}]
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 54.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
- [22]
+ [24]
 \openout2 = `chapters/6-Conclusions.aux'.
 
  (chapters/6-Conclusions.tex
@@ -1283,28 +1307,37 @@ File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 41.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
-[23
+[25
 
 
 
 
 ]
 
-LaTeX Warning: Citation 'einstein' on page 24 undefined on input line 61.
+LaTeX Warning: Citation 'einstein' on page 26 undefined on input line 61.
 
 )
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 55.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
- [24]
+ [26]
 Chapter 7.
-<example_declaration.pdf, id=472, 597.51233pt x 845.0471pt>
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 58.
+(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
+[27
+
+
+
+]
+<example_declaration.pdf, id=507, 597.51233pt x 845.0471pt>
 File: example_declaration.pdf Graphic file (type pdf)
 <use example_declaration.pdf>
 Package pdftex.def Info: example_declaration.pdf  used on input line 60.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-<example_declaration.pdf, id=474, page=1, 597.51233pt x 845.0471pt>
+<example_declaration.pdf, id=509, page=1, 597.51233pt x 845.0471pt>
 File: example_declaration.pdf Graphic file (type pdf)
 <use example_declaration.pdf, page 1>
 Package pdftex.def Info: example_declaration.pdf , page1 used on input line 60.
@@ -1317,11 +1350,7 @@ File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 60.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
-[25
-
-
-
-]
+ [28]
 File: example_declaration.pdf Graphic file (type pdf)
 <use example_declaration.pdf, page 1>
 Package pdftex.def Info: example_declaration.pdf , page1 used on input line 60.
@@ -1334,7 +1363,7 @@ File: example_declaration.pdf Graphic file (type pdf)
 <use example_declaration.pdf, page 1>
 Package pdftex.def Info: example_declaration.pdf , page1 used on input line 60.
 (pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
- [26
+ [29
 
  <./example_declaration.pdf>] (main.aux (chapters/1-Title.aux)
 Package cleveref Info: loaded `english' language definitions on input line 12.
@@ -1359,17 +1388,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29558 strings out of 474486
- 531103 string characters out of 5743755
- 1994542 words of memory out of 5000000
- 51096 multiletter control sequences out of 15000+600000
- 623301 words of font info for 175 fonts, out of 8000000 for 9000
+ 29601 strings out of 474486
+ 532162 string characters out of 5743755
+ 1995542 words of memory out of 5000000
+ 51129 multiletter control sequences out of 15000+600000
+ 623505 words of font info for 176 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,19n,119p,1888b,2662s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zco-Bold.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zco-Regular.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zhv-Bol.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zhv-Reg.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zhv-RegIta.pfb>
-Output written on main.pdf (27 pages, 4252312 bytes).
+<C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zco-Bold.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zco-Regular.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zhv-Bol.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zhv-Reg.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zhv-RegIta.pfb>
+Output written on main.pdf (30 pages, 5579792 bytes).
 PDF statistics:
- 584 PDF objects out of 1000 (max. 8388607)
- 135 named destinations out of 1000 (max. 500000)
- 46990 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 617 PDF objects out of 1000 (max. 8388607)
+ 143 named destinations out of 1000 (max. 500000)
+ 47005 words of extra memory for PDF output out of 51595 (max. 10000000)
 

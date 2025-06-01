@@ -434,3 +434,64 @@ Temperature and humidity data is collected using a DHT11 sensor. The communicati
     \caption{Steps in data aquisition from DHT11 sensor}
     \label{fig:dht-steps}
 \end{figure}
+
+For the soil moisure data acquisition, I used a resistive soil moisture sensor. The principle of operation is based
+on measuring the resistance of the soil. The sensor consists of two probes that are inserted into the soil.
+When the soil is dry, the resistance between the probes is high, and when the soil is wet, the resistance is low\cite{s20020363}.
+Then an ADC is used to measure the voltage across the probes, which is transofmerd into digital value. In this case, the
+ADC is a 12-bit ADC, which means that the digital value can range from 0 to 4095.
+
+For the rain sensor, I used a resistive rians sensor. The principle of operation is similar to the soil moisture sensor,
+but it is designed to detect the presence of water on the sensor surface. 
+When the sensor is dry, the resistance between the probes is high, and when it is wet, the resistance is low.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/moisture-sensor.png}
+    \caption{Soil moisture sensor based on resistive principle}
+    \label{fig:moisture-sensor}
+\end{figure}
+
+Since the water consumoption is a very important aspect in agriculture, 
+I wanted to add a water flow sensor to the system. For the purpose of this project I used an 
+YF-S201 water flow sensor, 
+which is a low-cost sensor that can be used to measure the flow rate of water in a pipe.
+The sensor consists of a plastic body with a 
+turbine inside that rotates when water flows through it.
+The rotation of the turbine generates a pulse signal that can be used to measure the 
+flow rate of water.
+The sensor has a maximum flow rate of 30 liters per minute and a minimum 
+flow rate of 1 liter per minute.
+The sensor has three wires: red (VCC), black (GND), and yellow (signal).
+At each rotation of the tubine, the sesnsor generates a pulse signal on the signal wire.
+The ESP32 counts the number of pulses in a given time interval 
+(e.g., 1 second) to calculate the flow rate.
+The flow rate can be calculated using the following formula:
+\begin{equation}
+    \text{Flow Rate} = \frac{\text{Number of Pulses} \times 60}{\text{Time Interval (seconds)}}
+\end{equation}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/water-flow.jpg}
+    \caption{Water flow sensor used in PiIrrigate}
+    \label{fig:water-flow-sensor}
+\end{figure}
+
+In my implementation, the water will be in a container, and during the irrigation process, 
+the water will be deliverd to the plants using the gravity force. Because of this, I used
+water temperature sensor to measure the temperature of the water in the container. 
+The water temperature sensor is a DS18B20 sensor, 
+which is a digital temperature sensor that can be used to measure the temperature of liquids.
+The DS18B20 sensor uses the 1-wire digital interface to communicate with the ESP32.
+The sensor can measure temperatures from -55°C to +125°C with an accuracy of ±0.5°C.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/water-temp.png}
+    \caption{DS18B20 water temperature sensor used in PiIrrigate}
+    \label{fig:ds18b20}
+\end{figure}
+
+Beside the sensors, I also used the GPS module of the T-Beam ESP32 board to 
+ollect the GPS coordinates of the node. 
+This can be useful for tracking the location of the node and for mapping the irrigation system.
