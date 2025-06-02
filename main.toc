@@ -34,6 +34,7 @@
 \contentsline {subsection}{\numberline {4.2.3}Raspberry Pi 4 Model B}{16}{subsection.4.2.3}%
 \contentsline {section}{\numberline {4.3}Data Flow}{17}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Data aquisition}{18}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}ESP32 Pinout and Sensor Connections}{21}{subsection.4.3.2}%
 \contentsline {chapter}{\numberline {5}Body}{22}{chapter.5}%
 \contentsline {section}{\numberline {5.1}FIgures and Photographs}{22}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Tables}{22}{section.5.2}%
