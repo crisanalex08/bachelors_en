@@ -35,12 +35,7 @@
 \contentsline {section}{\numberline {4.3}Data Flow}{17}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Data aquisition}{18}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}ESP32 Pinout and Sensor Connections}{21}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Body}{22}{chapter.5}%
-\contentsline {section}{\numberline {5.1}FIgures and Photographs}{22}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Tables}{22}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Formulae}{23}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Code}{23}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Conclusions}{25}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Bibliography}{25}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Authenticity Declaration}{26}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Bibliography}{27}{chapter.7}%
+\contentsline {chapter}{\numberline {5}Conclusions}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Bibliography}{23}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Authenticity Declaration}{24}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Bibliography}{25}{chapter.6}%
