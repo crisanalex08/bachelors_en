@@ -366,6 +366,16 @@ The sensors used in the PiIrrigate system are:
   \item \textbf{Rain Sensor} \\
   The rain sensor is used to detect rain and prevent irrigation during rainy weather. 
   It helps to conserve water and prevent over-irrigation.
+
+  \item \textbf{Water Flow Sensor} \\
+  The water flow sensor is used to measure the flow rate of water in the irrigation system.
+  It is used to monitor the water consumption.
+
+  \item \textbf{Water Temperature Sensor} \\
+  The water temperature sensor is used to measure the temperature of the water in the irrigation system.
+  It is used to ensure that the water temperature is within the optimal range for plant growth.
+
+
 \end{itemize}
 \subsection{ESP32 (LilyGo T-Beam)}
 
@@ -495,3 +505,13 @@ The sensor can measure temperatures from -55°C to +125°C with an accuracy of �
 Beside the sensors, I also used the GPS module of the T-Beam ESP32 board to 
 ollect the GPS coordinates of the node. 
 This can be useful for tracking the location of the node and for mapping the irrigation system.
+
+\subsection{ESP32 Pinout and Sensor Connections}
+The ESP32 board has a variety of pins that can be used to connect the sensors and other components.
+In the following diagram the connecttions between the ESP32 board and the sensors are shown.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/esp-diagram.png}
+    \caption{ESP32 pinout and connections}
+    \label{fig:esp32-pinout}
+\end{figure}
