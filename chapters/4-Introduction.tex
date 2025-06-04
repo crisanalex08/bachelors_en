@@ -515,3 +515,30 @@ In the following diagram the connecttions between the ESP32 board and the sensor
     \caption{ESP32 pinout and connections}
     \label{fig:esp32-pinout}
 \end{figure}
+
+\subsection{ESP32 LoRa Communication}
+As I mentioned before, the communication between the ESP32 nodes and the gateway is done using
+LoRa radio communication. For this purpose, I used te Lora library for Arduino, which is a 
+popular library for LoRa communication. 
+I chose to use the LoRa library because it is easy to use and it makkes the PiIrrigate system more
+robust and reliable since the library handles the low-level details of the LoRa communication.
+
+Every 10 seconds, the data is collected from the sensors and sent to the gateway in the form of packets.
+Each packet contains the following data:
+\begin{itemize}
+  \item \textbf{C:} Packet count - a counter that is incremented for each packet sent.
+  \item \textbf{ID:} Board MAC address - a unique identifier for the ESP32 node.
+  \item \textbf{T:} Temperature - the temperature measured by the DHT11 sensor.
+  \item \textbf{H:} Humidity - the humidity measured by the DHT11 sensor.
+  \item \textbf{S:} Soil moisture - the soil moisture measured by the soil moisture sensor.
+  \item \textbf{R:} Rain - the rain sensor value, which is either 0 (no rain) or 1 (rain detected).
+  \item \textbf{WT:} Water temperature - the water temperature measured by the DS18B20 sensor.
+  \item \textbf{WF:} Water flow - the water flow measured by the water flow sensor.
+  \item \textbf{GPS:} GPS coordinates - the latitude and longitude of the node, obtained from the GPS module.
+\end{itemize}
+
+Each time a packet is sent, the ESP32 node waits for an acknowledgment from the gateway. 
+If the acknowledgment is received, the packet is considered sent successfully.
+If the acknowledgment is not received, the ESP32 node will retry sending the packet up to 3 times. 
+After 3 retries, the packet is considered lost and the ESP32 node will log an error message.
+If the packet reaches the gateway, the gateway will send the packet to the Raspberry Pi via UART.
