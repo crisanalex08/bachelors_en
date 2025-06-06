@@ -534,27 +534,49 @@ OUTPUT chapters\5-Body.aux
 INPUT .\chapters\5-Body.tex
 INPUT .\chapters\5-Body.tex
 INPUT chapters\5-Body.tex
-INPUT .\images\Picture 1.png
-INPUT .\images\Picture 1.png
-INPUT .\images\Picture 1.png
-INPUT .\images\Picture 1.png
-INPUT .\images\Picture 1.png
-INPUT .\images\Picture 1.png
-INPUT .\images\Picture 1.png
 INPUT .\images\logo.png
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\t1nimbusmono.fd
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\t1nimbusmono.fd
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\t1nimbusmono.fd
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zco-Regular-t1.tfm
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zhv-Reg-t1.tfm
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zco-Regular-t1.tfm
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zco-Bold-t1.tfm
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zhv-RegIta-t1.tfm
 INPUT .\images\logo.png
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\nimbus15\nimbus15mono-ec.enc
+INPUT .\images\logo.png
+INPUT .\images\logo.png
+INPUT .\images\esp32lora.jpg
+INPUT .\images\esp32lora.jpg
+INPUT .\images\esp32lora.jpg
+INPUT .\images\esp32lora.jpg
+INPUT .\images\logo.png
+INPUT .\images\raspberrypi.jpg
+INPUT .\images\raspberrypi.jpg
+INPUT .\images\raspberrypi.jpg
+INPUT .\images\raspberrypi.jpg
+INPUT .\images\logo.png
+INPUT .\images\system.png
+INPUT .\images\system.png
+INPUT .\images\system.png
+INPUT .\images\system.png
+INPUT .\images\logo.png
+INPUT .\images\dht-steps.png
+INPUT .\images\dht-steps.png
+INPUT .\images\dht-steps.png
+INPUT .\images\dht-steps.png
+INPUT .\images\logo.png
+INPUT .\images\moisture-sensor.png
+INPUT .\images\moisture-sensor.png
+INPUT .\images\moisture-sensor.png
+INPUT .\images\moisture-sensor.png
+INPUT .\images\logo.png
+INPUT .\images\water-flow.jpg
+INPUT .\images\water-flow.jpg
+INPUT .\images\water-flow.jpg
+INPUT .\images\water-flow.jpg
+INPUT .\images\water-temp.png
+INPUT .\images\water-temp.png
+INPUT .\images\water-temp.png
+INPUT .\images\water-temp.png
+INPUT .\images\logo.png
+INPUT .\images\esp-diagram.png
+INPUT .\images\esp-diagram.png
+INPUT .\images\esp-diagram.png
+INPUT .\images\esp-diagram.png
+INPUT .\images\logo.png
 INPUT .\images\logo.png
 INPUT .\chapters\6-Conclusions.tex
 INPUT .\chapters\6-Conclusions.tex
@@ -562,8 +584,20 @@ OUTPUT chapters\6-Conclusions.aux
 INPUT .\chapters\6-Conclusions.tex
 INPUT .\chapters\6-Conclusions.tex
 INPUT chapters\6-Conclusions.tex
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zhv-Reg-t1.tfm
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\t1nimbusmono.fd
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\t1nimbusmono.fd
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex\latex\nimbus15\t1nimbusmono.fd
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zco-Regular-t1.tfm
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zco-Bold-t1.tfm
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zco-Regular-t1.tfm
 INPUT .\images\logo.png
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\nimbus15\nimbus15mono-ec.enc
 INPUT .\images\logo.png
+INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\tfm\public\nimbus15\zhv-RegIta-t1.tfm
 INPUT .\images\logo.png
 INPUT .\example_declaration.pdf
 INPUT .\example_declaration.pdf
@@ -607,8 +641,6 @@ INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\alcat\AppData\Local\Programs\MiKTeX\fonts\type1\public\nimbus15\zco-Bold.pfb

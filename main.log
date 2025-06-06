@@ -782,7 +782,62 @@ File: T1NimbusSans.fd 2015/09/19 Font definitions for T1/NimbusSans (msharpe).
 )
 LaTeX Font Info:    Font shape `T1/NimbusSans/m/n' will be
 (Font)              scaled to size 12.0pt on input line 39.
- (main.aux (chapters/1-Title.aux) (chapters/2-AbstractRO.aux) (chapters/3-AbstractEN.aux) (chapters/4-Introduction.aux) (chapters/5-Body.aux) (chapters/6-Conclusions.aux))
+ (main.aux (chapters/1-Title.aux) (chapters/2-AbstractRO.aux) (chapters/3-AbstractEN.aux) (chapters/4-Introduction.aux) (chapters/5-Body.aux
+
+LaTeX Warning: Label `section:overview' multiply defined.
+
+
+LaTeX Warning: Label `section:overview@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:esp32lora' multiply defined.
+
+
+LaTeX Warning: Label `fig:esp32lora@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:raspberrypi' multiply defined.
+
+
+LaTeX Warning: Label `fig:raspberrypi@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:system-overview' multiply defined.
+
+
+LaTeX Warning: Label `fig:system-overview@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:dht-steps' multiply defined.
+
+
+LaTeX Warning: Label `fig:dht-steps@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:moisture-sensor' multiply defined.
+
+
+LaTeX Warning: Label `fig:moisture-sensor@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:water-flow-sensor' multiply defined.
+
+
+LaTeX Warning: Label `fig:water-flow-sensor@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:ds18b20' multiply defined.
+
+
+LaTeX Warning: Label `fig:ds18b20@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:esp32-pinout' multiply defined.
+
+
+LaTeX Warning: Label `fig:esp32-pinout@cref' multiply defined.
+
+) (chapters/6-Conclusions.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -945,7 +1000,7 @@ LaTeX Font Info:    Font shape `T1/NimbusSans/m/n' will be
 (Font)              scaled to size 8.0pt on input line 23.
 LaTeX Font Info:    Font shape `T1/NimbusSans/b/n' will be
 (Font)              scaled to size 8.0pt on input line 23.
-<images/logo.png, id=187, 149.358pt x 48.18pt>
+<images/logo.png, id=271, 149.358pt x 48.18pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 23.
@@ -1017,7 +1072,11 @@ Package cleveref Info: loaded `english' language definitions on input line 1.
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- (main.loc)
+ (main.loc
+
+LaTeX Warning: Reference `code:polym2' on page 1 undefined on input line 1.
+
+)
 \tf@loc=\write8
 \openout8 = `main.loc'.
 
@@ -1099,108 +1158,108 @@ Package pdftex.def Info: images/logo.png  used on input line 165.
 [9]
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 196.
+Package pdftex.def Info: images/logo.png  used on input line 197.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
  [10]
 Chapter 3.
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 240.
+Package pdftex.def Info: images/logo.png  used on input line 241.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
 [11
 
 ]
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 279.
+Package pdftex.def Info: images/logo.png  used on input line 280.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
  [12]
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 305.
+Package pdftex.def Info: images/logo.png  used on input line 306.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
  [13]
 Chapter 4.
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 348.
+Package pdftex.def Info: images/logo.png  used on input line 349.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
 [14
 
 ]
-<images/esp32lora.jpg, id=358, 826.08624pt x 826.08624pt>
+<images/esp32lora.jpg, id=467, 826.08624pt x 826.08624pt>
 File: images/esp32lora.jpg Graphic file (type jpg)
 <use images/esp32lora.jpg>
-Package pdftex.def Info: images/esp32lora.jpg  used on input line 388.
+Package pdftex.def Info: images/esp32lora.jpg  used on input line 389.
 (pdftex.def)             Requested size: 386.95897pt x 386.96227pt.
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 392.
+Package pdftex.def Info: images/logo.png  used on input line 393.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
  [15]
-<images/raspberrypi.jpg, id=363, 2710.125pt x 2710.125pt>
+<images/raspberrypi.jpg, id=472, 2710.125pt x 2710.125pt>
 File: images/raspberrypi.jpg Graphic file (type jpg)
 <use images/raspberrypi.jpg>
-Package pdftex.def Info: images/raspberrypi.jpg  used on input line 400.
+Package pdftex.def Info: images/raspberrypi.jpg  used on input line 401.
 (pdftex.def)             Requested size: 386.95897pt x 386.9412pt.
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 404.
+Package pdftex.def Info: images/logo.png  used on input line 405.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
  [16 <./images/esp32lora.jpg>]
-<images/system.png, id=368, 1087.6635pt x 440.847pt>
+<images/system.png, id=477, 1087.6635pt x 440.847pt>
 File: images/system.png Graphic file (type png)
 <use images/system.png>
-Package pdftex.def Info: images/system.png  used on input line 416.
+Package pdftex.def Info: images/system.png  used on input line 417.
 (pdftex.def)             Requested size: 386.95897pt x 156.83475pt.
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 420.
+Package pdftex.def Info: images/logo.png  used on input line 421.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
  [17 <./images/raspberrypi.jpg>]
-<images/dht-steps.png, id=378, 479.99326pt x 260.172pt>
+<images/dht-steps.png, id=487, 479.99326pt x 260.172pt>
 File: images/dht-steps.png Graphic file (type png)
 <use images/dht-steps.png>
-Package pdftex.def Info: images/dht-steps.png  used on input line 443.
+Package pdftex.def Info: images/dht-steps.png  used on input line 444.
 (pdftex.def)             Requested size: 386.95897pt x 209.7536pt.
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 447.
+Package pdftex.def Info: images/logo.png  used on input line 448.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
  [18 <./images/system.png>]
-<images/moisture-sensor.png, id=392, 1541.76pt x 1027.84pt>
+<images/moisture-sensor.png, id=501, 1541.76pt x 1027.84pt>
 File: images/moisture-sensor.png Graphic file (type png)
 <use images/moisture-sensor.png>
-Package pdftex.def Info: images/moisture-sensor.png  used on input line 460.
+Package pdftex.def Info: images/moisture-sensor.png  used on input line 461.
 (pdftex.def)             Requested size: 338.58632pt x 225.71773pt.
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 480.
+Package pdftex.def Info: images/logo.png  used on input line 481.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
  [19 <./images/dht-steps.png> <./images/moisture-sensor.png (PNG copy)>]
-<images/water-flow.jpg, id=399, 1445.4pt x 1445.4pt>
+<images/water-flow.jpg, id=508, 1445.4pt x 1445.4pt>
 File: images/water-flow.jpg Graphic file (type jpg)
 <use images/water-flow.jpg>
-Package pdftex.def Info: images/water-flow.jpg  used on input line 485.
+Package pdftex.def Info: images/water-flow.jpg  used on input line 486.
 (pdftex.def)             Requested size: 241.84843pt x 241.83307pt.
-<images/water-temp.png, id=400, 1003.75pt x 1003.75pt>
+<images/water-temp.png, id=509, 1003.75pt x 1003.75pt>
 File: images/water-temp.png Graphic file (type png)
 <use images/water-temp.png>
-Package pdftex.def Info: images/water-temp.png  used on input line 500.
+Package pdftex.def Info: images/water-temp.png  used on input line 501.
 (pdftex.def)             Requested size: 241.84843pt x 241.83919pt.
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 504.
+Package pdftex.def Info: images/logo.png  used on input line 505.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
  [20 <./images/water-flow.jpg>]
-<images/esp-diagram.png, id=407, 965.10562pt x 571.38469pt>
+<images/esp-diagram.png, id=516, 965.10562pt x 571.38469pt>
 File: images/esp-diagram.png Graphic file (type png)
 <use images/esp-diagram.png>
-Package pdftex.def Info: images/esp-diagram.png  used on input line 514.
+Package pdftex.def Info: images/esp-diagram.png  used on input line 515.
 (pdftex.def)             Requested size: 386.95897pt x 229.09038pt.
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 525.
+Package pdftex.def Info: images/logo.png  used on input line 526.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
  [21 <./images/water-temp.png> <./images/esp-diagram.png>])
 File: images/logo.png Graphic file (type png)
@@ -1212,142 +1271,175 @@ Package pdftex.def Info: images/logo.png  used on input line 53.
 
  (chapters/5-Body.tex
 Chapter 5.
-<images/Picture 1.png, id=417, 285.7074pt x 184.5294pt>
-File: images/Picture 1.png Graphic file (type png)
-<use images/Picture 1.png>
-Package pdftex.def Info: images/Picture 1.png  used on input line 13.
-(pdftex.def)             Requested size: 285.70668pt x 184.52895pt.
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 26.
+Package pdftex.def Info: images/logo.png  used on input line 45.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
 [23
 
 
 
 
- <./images/Picture 1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
-[]\T1/NimbusSans/m/n/12 (+20) Mill
- []
+]
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 84.
+(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
+ [24]
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 110.
+(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
+ [25]
+Chapter 6.
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 153.
+(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
+[26
 
+]
+File: images/esp32lora.jpg Graphic file (type jpg)
+<use images/esp32lora.jpg>
+Package pdftex.def Info: images/esp32lora.jpg  used on input line 193.
+(pdftex.def)             Requested size: 386.95897pt x 386.96227pt.
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 197.
+(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
+ [27]
+File: images/raspberrypi.jpg Graphic file (type jpg)
+<use images/raspberrypi.jpg>
+Package pdftex.def Info: images/raspberrypi.jpg  used on input line 205.
+(pdftex.def)             Requested size: 386.95897pt x 386.9412pt.
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 209.
+(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
+ [28]
+File: images/system.png Graphic file (type png)
+<use images/system.png>
+Package pdftex.def Info: images/system.png  used on input line 221.
+(pdftex.def)             Requested size: 386.95897pt x 156.83475pt.
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 225.
+(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
+ [29]
+File: images/dht-steps.png Graphic file (type png)
+<use images/dht-steps.png>
+Package pdftex.def Info: images/dht-steps.png  used on input line 248.
+(pdftex.def)             Requested size: 386.95897pt x 209.7536pt.
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 252.
+(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
+ [30]
+File: images/moisture-sensor.png Graphic file (type png)
+<use images/moisture-sensor.png>
+Package pdftex.def Info: images/moisture-sensor.png  used on input line 265.
+(pdftex.def)             Requested size: 338.58632pt x 225.71773pt.
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 285.
+(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
+ [31]
+File: images/water-flow.jpg Graphic file (type jpg)
+<use images/water-flow.jpg>
+Package pdftex.def Info: images/water-flow.jpg  used on input line 290.
+(pdftex.def)             Requested size: 241.84843pt x 241.83307pt.
+File: images/water-temp.png Graphic file (type png)
+<use images/water-temp.png>
+Package pdftex.def Info: images/water-temp.png  used on input line 305.
+(pdftex.def)             Requested size: 241.84843pt x 241.83919pt.
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 309.
+(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
+ [32]
+File: images/esp-diagram.png Graphic file (type png)
+<use images/esp-diagram.png>
+Package pdftex.def Info: images/esp-diagram.png  used on input line 322.
+(pdftex.def)             Requested size: 386.95897pt x 229.09038pt.
+)
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 54.
+(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
+ [33]
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 54.
+(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
+ [34]
+\openout2 = `chapters/6-Conclusions.aux'.
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
-[]\T1/NimbusSans/m/n/12 (+20) Mill
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]\T1/NimbusSans/m/n/12 (+20) 329.8 flange
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-[]\T1/NimbusSans/m/n/12 (+20) 463.2 flange
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
-[]\T1/NimbusSans/m/n/12 (+20) Column
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
-[]\T1/NimbusSans/m/n/12 (+20) 313.0 flange
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-[]\T1/NimbusSans/m/n/12 (+20) 449.8 flange
- []
-
-LaTeX Font Info:    Trying to load font information for T1+NimbusMono on input line 49.
-(C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex/latex/nimbus15\t1nimbusmono.fd
+ (chapters/6-Conclusions.tex
+Chapter 7.
+(C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+LaTeX Font Info:    Font shape `T1/NimbusSans/m/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    Trying to load font information for T1+NimbusMono on input line 5.
+ (C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex/latex/nimbus15\t1nimbusmono.fd
 File: T1NimbusMono.fd 2015/09/19 Font definitions for T1/NimbusMono (msharpe).
 )
 LaTeX Font Info:    Font shape `T1/NimbusMono/m/n' will be
-(Font)              scaled to size 12.0pt on input line 49.
+(Font)              scaled to size 10.0pt on input line 5.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `NimbusMono' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (C:\Users\alcat\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)
-LaTeX Font Info:    Font shape `T1/NimbusSans/m/n' will be
-(Font)              scaled to size 10.0pt on input line 63.
-LaTeX Font Info:    Font shape `T1/NimbusMono/m/n' will be
-(Font)              scaled to size 10.0pt on input line 63.
 LaTeX Font Info:    Font shape `T1/NimbusMono/b/n' will be
-(Font)              scaled to size 10.0pt on input line 64.
-Package hyperref Info: bookmark level for unknown code defaults to 0 on input line 72.
+(Font)              scaled to size 10.0pt on input line 6.
+Package hyperref Info: bookmark level for unknown code defaults to 0 on input line 14.
 
-Underfull \hbox (badness 5893) in paragraph at lines 72--72
-[]\T1/NimbusSans/m/n/12 (+20) Snippet 5.1: |Subtype polymorphism example
- []
 
-LaTeX Font Info:    Font shape `T1/NimbusSans/m/it' will be
-(Font)              scaled to size 12.0pt on input line 75.
+LaTeX Warning: Reference `code:polym2' on page 1 undefined on input line 14.
 
-Underfull \hbox (badness 5893) in paragraph at lines 87--87
-[]\T1/NimbusSans/m/n/12 (+20) Snippet 5.2: |Subtype polymorphism example
- []
 
-)
-File: images/logo.png Graphic file (type png)
-<use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 54.
-(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
- [24{C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/nimbus15/nimbus15mono-ec.enc}]
-File: images/logo.png Graphic file (type png)
-<use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 54.
-(pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
- [25]
-\openout2 = `chapters/6-Conclusions.aux'.
+LaTeX Warning: Reference `code:polym2' on page 1 undefined on input line 14.
 
- (chapters/6-Conclusions.tex
-Chapter 6.
-
-Underfull \hbox (badness 5893) in paragraph at lines 14--14
-[]\T1/NimbusSans/m/n/12 (+20) Snippet 6.1: |Subtype polymorphism example
- []
-
+LaTeX Font Info:    Font shape `T1/NimbusMono/m/n' will be
+(Font)              scaled to size 12.0pt on input line 25.
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 41.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
-[26
+[35
 
 
 
 
-]
+{C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/nimbus15/nimbus15mono-ec.enc}]
 
-LaTeX Warning: Citation 'einstein' on page 27 undefined on input line 61.
+LaTeX Warning: Citation 'einstein' on page 36 undefined on input line 61.
 
 )
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 55.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
- [27]
-Chapter 7.
+ [36]
+Chapter 8.
+LaTeX Font Info:    Font shape `T1/NimbusSans/m/it' will be
+(Font)              scaled to size 12.0pt on input line 58.
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 58.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
-[28
+[37
 
 
 
 ]
-<example_declaration.pdf, id=525, 597.51233pt x 845.0471pt>
+<example_declaration.pdf, id=656, 597.51233pt x 845.0471pt>
 File: example_declaration.pdf Graphic file (type pdf)
 <use example_declaration.pdf>
 Package pdftex.def Info: example_declaration.pdf  used on input line 60.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-<example_declaration.pdf, id=527, page=1, 597.51233pt x 845.0471pt>
+<example_declaration.pdf, id=658, page=1, 597.51233pt x 845.0471pt>
 File: example_declaration.pdf Graphic file (type pdf)
 <use example_declaration.pdf, page 1>
 Package pdftex.def Info: example_declaration.pdf , page1 used on input line 60.
@@ -1360,7 +1452,7 @@ File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 60.
 (pdftex.def)             Requested size: 132.30373pt x 42.67912pt.
- [29]
+ [38]
 File: example_declaration.pdf Graphic file (type pdf)
 <use example_declaration.pdf, page 1>
 Package pdftex.def Info: example_declaration.pdf , page1 used on input line 60.
@@ -1373,7 +1465,7 @@ File: example_declaration.pdf Graphic file (type pdf)
 <use example_declaration.pdf, page 1>
 Package pdftex.def Info: example_declaration.pdf , page1 used on input line 60.
 (pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
- [30
+ [39
 
  <./example_declaration.pdf>] (main.aux (chapters/1-Title.aux)
 Package cleveref Info: loaded `english' language definitions on input line 12.
@@ -1386,8 +1478,11 @@ L3 programming layer <2024-01-04>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5C2B65D7AFEEBDB505E6DD7CD5448814;7285.
+(rerunfilecheck)             Checksum: 25D8F87AA4A68969CD681B751E49563E;11266.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                main
@@ -1398,17 +1493,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29618 strings out of 474486
- 532523 string characters out of 5743755
- 1995542 words of memory out of 5000000
- 51140 multiletter control sequences out of 15000+600000
- 623691 words of font info for 177 fonts, out of 8000000 for 9000
+ 29644 strings out of 474486
+ 532788 string characters out of 5743755
+ 1976542 words of memory out of 5000000
+ 51143 multiletter control sequences out of 15000+600000
+ 623432 words of font info for 176 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,18n,119p,1888b,2646s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zco-Bold.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zco-Regular.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zhv-Bol.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zhv-Reg.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zhv-RegIta.pfb>
-Output written on main.pdf (31 pages, 5621496 bytes).
+<C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zco-Bold.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zco-Regular.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zhv-Bol.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zhv-Reg.pfb><C:/Users/alcat/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/zhv-RegIta.pfb>
+Output written on main.pdf (40 pages, 5630187 bytes).
 PDF statistics:
- 638 PDF objects out of 1000 (max. 8388607)
- 147 named destinations out of 1000 (max. 500000)
- 47026 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 770 PDF objects out of 1000 (max. 8388607)
+ 172 named destinations out of 1000 (max. 500000)
+ 47189 words of extra memory for PDF output out of 51595 (max. 10000000)
 

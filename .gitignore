@@ -1,0 +1,69 @@
+# LaTeX intermediate files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+# PDF output
+# *.pdf
+
+# Editor backup files
+*~
+*.bak
+*.swp
+*.swo
+*.tmp
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# latexmk
+latexmkrc
+
+# Subfolders
+**/auto/
+**/build/
+**/output/
+main-blx.bib
+main.aux
+main.bbl
+main.blg
+main.fdb_latexmk
+main.fls
+main.loc
+main.lof
+main.log
+main.lot
+main.out
+main.synctex.gz
+main.toc
+chapters/.gitignore
+chapters/4-Introduction.aux
+chapters/5-Body.aux
+chapters/6-Conclusions.aux
+main.aux
