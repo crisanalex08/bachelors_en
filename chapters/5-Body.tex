@@ -313,6 +313,10 @@ This can be useful for tracking the location of the node and for mapping the irr
 The LILYGO Meshtastic AXP2101 T-Beam V1.2 ESP32 LoRa development board has a
 NEO-6M GPS module, which is a high-performance GPS module that can provide accurate location data.
 
+The GPIO25 pin of the ESP32 board is used to control the relay module that controls 
+the electronic valve that opens and closes the water flow to the plants.
+The relay module is a simple electronic switch that 
+can be used to control high-voltage devices, such as water pumps or valves.
 
 \subsection{ESP32 Pinout and Sensor Connections}
 The ESP32 board has a variety of pins that can be used to connect the sensors and other components.
@@ -323,3 +327,69 @@ In the following diagram the connecttions between the ESP32 board and the sensor
     \caption{ESP32 pinout and connections}
     \label{fig:esp32-pinout}
 \end{figure}
+
+\subsection{LoRa Radio Communication}
+LoRa (Long Range) is a wireless communication technology 
+that is designed for long-range, low-power applications.
+In this implementation, LoRa is used to send data from the nodes to the gateway.
+The sensor reading has a period of 10 seconds, which is the default value, but this can be changed from the Web Application.
+The data collected from the sensors is serialized into a sensor reading structure, 
+which is then is included in a LoRa packet structure that will be 
+binary serialized and sent over LoRa radio communication.
+
+\begin{lstlisting}[language=C, caption={LoRa packet structure}]
+struct LoRaPacket {
+    int packetCount;      // Packet count for tracking
+    SensorData sensorData; // Sensor data to be sent
+    int stationMac[6]; // MAC address of the device
+};
+\end{lstlisting}
+
+\begin{lstlisting}[language=C, caption={Sensor reading structure}]
+struct SensorData {
+    float temperature;
+    float humidity;
+    float soilMoisture;
+    float rainLevel;
+    float waterTemp;
+    float totalWaterFlow;
+    float longitude;
+    float latitude;
+};
+\end{lstlisting}
+
+All the values, except the totalWaterFlow, and the GPS coordinates, represent the raw
+voltage values read from the sensors. I chose to sent the raw values, 
+because they can be used to calculate the actual values in the web application.
+Allowing a better flexibility in the future.
+
+\subsection{Raspberry Pi and ESP32 Gateway}
+The gateway ESP23 act like a proxy between the nodes and the Raspberry Pi.
+It receives the LoRa packets from the nodes, and then it sends the data to 
+the Raspberry Pi using Serial communnication by UART.
+
+UART is an integrated cicuit that plays the most important role in serial communication.
+It containts a parallel-to serial converter and a serial-to-parallel converter\cite{uderstandingUart}
+\cite{laddha2013review}. The 
+parrallel-to-serial converter ia used for data sent from Raspberry Pi to the ESP32,
+and the serial-to-parallel converter is used for data sent from the ESP32 to the Raspberry Pi.
+The UART frame format is as follows:
+\begin{itemize}
+    \item Start bit: 1 bit, always 0
+    \item Data bits: 5 to 9 bits, usually 8 bits
+    \item Parity bit: 1 bit, optional, used for error detection
+    \item Stop bit: 1 or 2 bits, always 1
+    \item Idle bit: 1 bit, always 1
+\end{itemize}
+
+After receiveing the data, the Raspberry Pi will deserialize 
+the LoRa packet structure and will send the data to Azure IoT Hub 
+using MQTT protocol. For handling the communication between the 
+Raspberry Pi and the Azure IoT Hub, I used the Azure IoT SDK for Python.
+I chose to use the Azure IoT SDK for Python, 
+because it is easy to use and it provides a simple way to connect to 
+Azure IoT Hub. Besides this, it also provides a way to manage the devices and 
+to send and receive messages.
+
+\section{Software Components}
+\subsection{Azure IoT Hub}

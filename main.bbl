@@ -640,5 +640,51 @@
     \field{journaltitle}{Sensors}
     \field{year}{2020}
   \endentry
+
+  \entry{uderstandingUart}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RS}{%
+         family={Rohde-Schwarz},
+         familyi={R\bibinithyphendelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RS1}
+    \strng{fullhash}{RS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Understanding UART}
+    \verb{url}
+    \verb https://www.rohde-schwarz.com/us/products/test-and-measurement/essent
+    \verb ials-test-equipment/digital-oscilloscopes/understanding-uart_254524.h
+    \verb tml
+    \endverb
+  \endentry
+
+  \entry{laddha2013review}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LNR}{%
+         family={Laddha},
+         familyi={L\bibinitperiod},
+         given={Neha\bibnamedelima R},
+         giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Thakare},
+         familyi={T\bibinitperiod},
+         given={AP},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LNRTA1}
+    \strng{fullhash}{LNRTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{title}{A review on serial communication by UART}
+    \field{volume}{3}
+    \field{journaltitle}{International journal of advanced research in computer
+  science and software engineering}
+    \field{year}{2013}
+  \endentry
 \enddatalist
 \endinput

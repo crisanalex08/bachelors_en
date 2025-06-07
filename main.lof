@@ -10,16 +10,6 @@
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Soil moisture sensor based on resistive principle}}{19}{figure.caption.10}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Water flow sensor used in PiIrrigate}}{20}{figure.caption.11}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces DS18B20 water temperature sensor used in PiIrrigate}}{21}{figure.caption.12}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces ESP32 pinout and connections}}{21}{figure.caption.13}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces ESP32 (LilyGo T-Beam) module used in PiIrrigate}}{28}{figure.caption.14}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Raspberry Pi 4 Model B used in PiIrrigate}}{29}{figure.caption.15}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces PiIrrigate System overview}}{30}{figure.caption.16}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Steps in data aquisition from DHT11 sensor}}{31}{figure.caption.17}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Soil moisture sensor based on resistive principle}}{31}{figure.caption.18}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Water flow sensor used in PiIrrigate}}{32}{figure.caption.19}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces DS18B20 water temperature sensor used in PiIrrigate}}{33}{figure.caption.20}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces ESP32 pinout and connections}}{34}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces ESP32 pinout and connections}}{22}{figure.caption.13}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
