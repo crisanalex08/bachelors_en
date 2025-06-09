@@ -39,7 +39,15 @@
 \contentsline {subsection}{\numberline {4.3.4}Raspberry Pi and ESP32 Gateway}{23}{subsection.4.3.4}%
 \contentsline {section}{\numberline {4.4}Software Components}{23}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Azure IoT Hub}{23}{subsection.4.4.1}%
-\contentsline {chapter}{\numberline {5}Conclusions}{24}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Bibliography}{24}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Authenticity Declaration}{25}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Bibliography}{26}{chapter.6}%
+\contentsline {subsection}{\numberline {4.4.2}Zone Activation}{24}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Web API}{25}{subsection.4.4.3}%
+\contentsline {subsubsection}{Zone Controller}{25}{subsubsection*.16}%
+\contentsline {subsubsection}{Data Controller}{26}{subsubsection*.17}%
+\contentsline {subsubsection}{Device Controller}{26}{subsubsection*.18}%
+\contentsline {subsubsection}{User Controller}{27}{subsubsection*.19}%
+\contentsline {subsubsection}{Registration Flow}{28}{subsubsection*.20}%
+\contentsline {subsection}{\numberline {4.4.4}Login Flow}{29}{subsection.4.4.4}%
+\contentsline {chapter}{\numberline {5}Conclusions}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Bibliography}{31}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Authenticity Declaration}{32}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Bibliography}{33}{chapter.6}%
