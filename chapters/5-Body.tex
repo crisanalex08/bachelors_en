@@ -501,6 +501,30 @@ It provides endpoints for:
     \item Get a device by MAC address.
     \item Register a new device.
 \end{itemize}
+
+\subsubsection{Schedule Controller}
+The schedule controller is used to manage the irrigation schedules in the system.
+It provides endpoints for:
+\begin{itemize}
+    \item Get all schedules.
+    \item Get a schedule by id.
+    \item Create a new schedule.
+    \item Update an existing schedule.
+    \item Delete a schedule.
+\end{itemize}
+
+\subsubsection{C2D Controller}
+The C2D (Cloud to Device) controller is used to manage the cloud to device messages in the system.
+It provides only one endpoint to send a message to a device. The endpoint accepts a C2DMesageRequest object, 
+which contains the zoneId, and an object of type C2DMethodCall, which contains the the deviceId, the method name, and a list of parameters.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/c2d-message-request.png}
+    \caption{C2D Message Request object}
+    \label{fig:c2d-request}
+\end{figure}
+
+
 \subsubsection{User Controller}
 As the user needs to be authenticated to access the web API,
 I created a user controller that handles user registration and login.
@@ -588,7 +612,7 @@ The AuthResult object and the RegisterRequest object are defined as follows:
     \label{fig:auth-result}
 \end{figure}
 
-\subsection{Login Flow}
+\subsubsection{Login Flow}
 The login flow is similar to the registration flow, but it does not create a new user.
 The login flow is as follows:
 \begin{enumerate}

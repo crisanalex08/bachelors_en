@@ -13,8 +13,9 @@
 \contentsline {figure}{\numberline {4.8}{\ignorespaces ESP32 pinout and connections}}{22}{figure.caption.13}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Irrigaiton zone}}{24}{figure.caption.14}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Zone activation process}}{25}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Registration flow}}{29}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces AuthResult and RegisterRequest objects}}{29}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Login flow}}{30}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces C2D Message Request object}}{27}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Registration flow}}{29}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces AuthResult and RegisterRequest objects}}{29}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Login flow}}{30}{figure.caption.27}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
