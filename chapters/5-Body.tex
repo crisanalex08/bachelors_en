@@ -207,6 +207,42 @@ and sends it to IoT Hub.
     \label{fig:raspberrypi}
 \end{figure}
 
+\section{Hardware Architecture}
+The hardware architecture of the PiIrrigate system consists 
+of multiple ESP32 nodes that collect data from the sensors and send it to a gateway ESP32 connected to a Raspberry Pi.
+The Raspberry Pi acts as a gateway that receives data from the ESP32 nodes and sends it to Azure IoT Hub using MQTT protocol.
+The ESP32 nodes are connected to various sensors that collect data from the environment.
+
+The ESP32 nodes are connected to the sensors and actuators as follows:
+\begin{itemize}
+  \item Soil moisture (YL-69) sensor is connected to GPIO32.
+  \item Temperature and humidity sensor (DHT11) is connected to GPIO27.
+  \item Rain sensor (YL-83) is connected to GPIO32.
+  \item Water flow sensor {YF-S201} is connected to GPIO35.
+  \item Water temperature sensor (DS18B20) is connected to GPIO26.
+  \item The relay module that controls the electronic valve is connected to GPIO22.
+\end{itemize}
+
+In the figure below, you can see a simplified digram of the ESP32 pinout and connections.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/esp-diagram.png}
+    \caption{ESP32 pinout and connections}
+    \label{fig:esp32-pinout}
+\end{figure}
+
+The communication between the gateway ESP32 and the Raspberry Pi is done using UART (Universal Asynchronous Receiver-Transmitter) protocol.
+The gateway ESP32 receives data from the nodes using LoRa radio communication and sends it to the Raspberry Pi using UART.
+In the figure below it is described the connection between the ESP32 and the Raspberry Pi.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/hardware-architecture.png}
+    \caption{ESP32 Gateway connection to Raspberry Pi}
+    \label{fig:esp32-gateway}
+\end{figure}
+
 \section{Data Flow}
 The data flow in the PiIrrigate system is as follows:
 
@@ -317,16 +353,6 @@ The GPIO25 pin of the ESP32 board is used to control the relay module that contr
 the electronic valve that opens and closes the water flow to the plants.
 The relay module is a simple electronic switch that 
 can be used to control high-voltage devices, such as water pumps or valves.
-
-\subsection{ESP32 Pinout and Sensor Connections}
-The ESP32 board has a variety of pins that can be used to connect the sensors and other components.
-In the following diagram the connecttions between the ESP32 board and the sensors are shown.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{images/esp-diagram.png}
-    \caption{ESP32 pinout and connections}
-    \label{fig:esp32-pinout}
-\end{figure}
 
 \subsection{LoRa Radio Communication}
 LoRa (Long Range) is a wireless communication technology 

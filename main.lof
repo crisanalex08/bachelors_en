@@ -5,17 +5,18 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces ESP32 (LilyGo T-Beam) module used in PiIrrigate}}{16}{figure.caption.6}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Raspberry Pi 4 Model B used in PiIrrigate}}{17}{figure.caption.7}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces PiIrrigate System overview}}{18}{figure.caption.8}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Steps in data aquisition from DHT11 sensor}}{19}{figure.caption.9}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Soil moisture sensor based on resistive principle}}{19}{figure.caption.10}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Water flow sensor used in PiIrrigate}}{20}{figure.caption.11}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces DS18B20 water temperature sensor used in PiIrrigate}}{21}{figure.caption.12}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces ESP32 pinout and connections}}{22}{figure.caption.13}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Irrigaiton zone}}{24}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Zone activation process}}{25}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces C2D Message Request object}}{27}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Registration flow}}{29}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces AuthResult and RegisterRequest objects}}{29}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Login flow}}{30}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces ESP32 pinout and connections}}{18}{figure.caption.8}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces ESP32 Gateway connection to Raspberry Pi}}{18}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces PiIrrigate System overview}}{19}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Steps in data aquisition from DHT11 sensor}}{20}{figure.caption.11}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Soil moisture sensor based on resistive principle}}{20}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Water flow sensor used in PiIrrigate}}{21}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces DS18B20 water temperature sensor used in PiIrrigate}}{22}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Irrigaiton zone}}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Zone activation process}}{25}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces C2D Message Request object}}{27}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Registration flow}}{29}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces AuthResult and RegisterRequest objects}}{29}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Login flow}}{30}{figure.caption.28}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

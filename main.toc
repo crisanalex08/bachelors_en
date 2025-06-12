@@ -32,23 +32,23 @@
 \contentsline {subsection}{\numberline {4.2.1}Sensors}{15}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}ESP32 (LilyGo T-Beam)}{15}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Raspberry Pi 4 Model B}{16}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Data Flow}{17}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Data aquisition}{18}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}ESP32 Pinout and Sensor Connections}{21}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}LoRa Radio Communication}{22}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Raspberry Pi and ESP32 Gateway}{23}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Software Components}{23}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Azure IoT Hub}{23}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Zone Activation}{24}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Web API}{25}{subsection.4.4.3}%
-\contentsline {subsubsection}{Zone Controller}{25}{subsubsection*.16}%
-\contentsline {subsubsection}{Data Controller}{26}{subsubsection*.17}%
-\contentsline {subsubsection}{Device Controller}{26}{subsubsection*.18}%
-\contentsline {subsubsection}{Schedule Controller}{27}{subsubsection*.19}%
-\contentsline {subsubsection}{C2D Controller}{27}{subsubsection*.20}%
-\contentsline {subsubsection}{User Controller}{27}{subsubsection*.22}%
-\contentsline {subsubsection}{Registration Flow}{28}{subsubsection*.23}%
-\contentsline {subsubsection}{Login Flow}{30}{subsubsection*.26}%
+\contentsline {section}{\numberline {4.3}Hardware Architecture}{17}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Data Flow}{18}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Data aquisition}{19}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}LoRa Radio Communication}{22}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Raspberry Pi and ESP32 Gateway}{23}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Software Components}{24}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Azure IoT Hub}{24}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Zone Activation}{24}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Web API}{25}{subsection.4.5.3}%
+\contentsline {subsubsection}{Zone Controller}{25}{subsubsection*.17}%
+\contentsline {subsubsection}{Data Controller}{26}{subsubsection*.18}%
+\contentsline {subsubsection}{Device Controller}{26}{subsubsection*.19}%
+\contentsline {subsubsection}{Schedule Controller}{27}{subsubsection*.20}%
+\contentsline {subsubsection}{C2D Controller}{27}{subsubsection*.21}%
+\contentsline {subsubsection}{User Controller}{27}{subsubsection*.23}%
+\contentsline {subsubsection}{Registration Flow}{28}{subsubsection*.24}%
+\contentsline {subsubsection}{Login Flow}{30}{subsubsection*.27}%
 \contentsline {chapter}{\numberline {5}Conclusions}{31}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Bibliography}{31}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Authenticity Declaration}{32}{section.5.2}%
