@@ -550,6 +550,45 @@ which contains the zoneId, and an object of type C2DMethodCall, which contains t
     \label{fig:c2d-request}
 \end{figure}
 
+\subsubsection{Schedule Controller}
+The schedule controller is used to manage the irrigation schedules in the system.
+It provides endpoints for:
+\begin{itemize}
+    \item Get all schedules.
+    \item Get a schedule by id.
+    \item Create a new schedule.
+    \item Update an existing schedule.
+    \item Delete a schedule.
+\end{itemize}
+
+The Schedule object is defined as follows:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/schedule.png}
+    \caption{Schedule object}
+    \label{fig:schedule-object}
+\end{figure}
+
+\begin{enumerate}
+    \item The Id is a unique identifier for the schedule.
+    \item The Request is an object of type C2DMesageRequest that contains the zoneId, deviceId, method name, and parameters.
+    \item The StartTime is the time when the schedule should start.
+    \item The EndTime is the time when the schedule should end.
+    \item The Interval is the time interval between two consecutive executions of the schedule.
+    \item The Duration is the duration of the schedule execution.
+    \item The ScheduleStatus is the status of the schedule, which can be NotStarted, Running, Paused, Completed, Failed.
+\end{enumerate}
+
+The user can create a new schedule using the UI of the web application,
+which will send a request to the web API to create a new schedule. 
+The web API will validate the request and create a new schedule in the database.
+A bragraound service will be used to check and execute the schedules. The background service will run 
+every minute and check if there are any schedules that should be executed or stoped. To be more robust, the duration 
+of the schedule, as well as the start and end time, will be sent to the Raspberry Pi, wich will also check if 
+the schedule should be executed or stopped. This way if the Web API or the network connectivity is down, 
+the Raspberry Pi will still be able to execute the schedules.
+
+
 
 \subsubsection{User Controller}
 As the user needs to be authenticated to access the web API,

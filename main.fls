@@ -581,8 +581,16 @@ INPUT .\images\c2d-message-request.png
 INPUT .\images\c2d-message-request.png
 INPUT .\images\c2d-message-request.png
 INPUT .\images\c2d-message-request.png
+INPUT .\images\schedule.png
+INPUT .\images\schedule.png
+INPUT .\images\schedule.png
+INPUT .\images\schedule.png
+INPUT .\images\schedule.png
+INPUT .\images\schedule.png
+INPUT .\images\schedule.png
 INPUT .\images\logo.png
 INPUT .\images\logo.png
+INPUT .\images\logo.png
 INPUT .\images\registration-flow.png
 INPUT .\images\registration-flow.png
 INPUT .\images\registration-flow.png
@@ -605,6 +613,7 @@ INPUT .\images\login-flow.png
 INPUT .\images\login-flow.png
 INPUT .\images\login-flow.png
 INPUT .\images\login-flow.png
+INPUT .\images\logo.png
 INPUT .\images\logo.png
 INPUT .\chapters\6-Conclusions.tex
 INPUT .\chapters\6-Conclusions.tex
