@@ -207,6 +207,42 @@ and sends it to IoT Hub.
     \label{fig:raspberrypi}
 \end{figure}
 
+\section{Hardware Architecture}
+The hardware architecture of the PiIrrigate system consists 
+of multiple ESP32 nodes that collect data from the sensors and send it to a gateway ESP32 connected to a Raspberry Pi.
+The Raspberry Pi acts as a gateway that receives data from the ESP32 nodes and sends it to Azure IoT Hub using MQTT protocol.
+The ESP32 nodes are connected to various sensors that collect data from the environment.
+
+The ESP32 nodes are connected to the sensors and actuators as follows:
+\begin{itemize}
+  \item Soil moisture (YL-69) sensor is connected to GPIO32.
+  \item Temperature and humidity sensor (DHT11) is connected to GPIO27.
+  \item Rain sensor (YL-83) is connected to GPIO32.
+  \item Water flow sensor {YF-S201} is connected to GPIO35.
+  \item Water temperature sensor (DS18B20) is connected to GPIO26.
+  \item The relay module that controls the electronic valve is connected to GPIO22.
+\end{itemize}
+
+In the figure below, you can see a simplified digram of the ESP32 pinout and connections.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/esp-diagram.png}
+    \caption{ESP32 pinout and connections}
+    \label{fig:esp32-pinout}
+\end{figure}
+
+The communication between the gateway ESP32 and the Raspberry Pi is done using UART (Universal Asynchronous Receiver-Transmitter) protocol.
+The gateway ESP32 receives data from the nodes using LoRa radio communication and sends it to the Raspberry Pi using UART.
+In the figure below it is described the connection between the ESP32 and the Raspberry Pi.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/hardware-architecture.png}
+    \caption{ESP32 Gateway connection to Raspberry Pi}
+    \label{fig:esp32-gateway}
+\end{figure}
+
 \section{Data Flow}
 The data flow in the PiIrrigate system is as follows:
 
@@ -317,16 +353,6 @@ The GPIO25 pin of the ESP32 board is used to control the relay module that contr
 the electronic valve that opens and closes the water flow to the plants.
 The relay module is a simple electronic switch that 
 can be used to control high-voltage devices, such as water pumps or valves.
-
-\subsection{ESP32 Pinout and Sensor Connections}
-The ESP32 board has a variety of pins that can be used to connect the sensors and other components.
-In the following diagram the connecttions between the ESP32 board and the sensors are shown.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{images/esp-diagram.png}
-    \caption{ESP32 pinout and connections}
-    \label{fig:esp32-pinout}
-\end{figure}
 
 \subsection{LoRa Radio Communication}
 LoRa (Long Range) is a wireless communication technology 
@@ -501,6 +527,69 @@ It provides endpoints for:
     \item Get a device by MAC address.
     \item Register a new device.
 \end{itemize}
+
+\subsubsection{Schedule Controller}
+The schedule controller is used to manage the irrigation schedules in the system.
+It provides endpoints for:
+\begin{itemize}
+    \item Get all schedules.
+    \item Get a schedule by id.
+    \item Create a new schedule.
+    \item Update an existing schedule.
+    \item Delete a schedule.
+\end{itemize}
+
+\subsubsection{C2D Controller}
+The C2D (Cloud to Device) controller is used to manage the cloud to device messages in the system.
+It provides only one endpoint to send a message to a device. The endpoint accepts a C2DMesageRequest object, 
+which contains the zoneId, and an object of type C2DMethodCall, which contains the the deviceId, the method name, and a list of parameters.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/c2d-message-request.png}
+    \caption{C2D Message Request object}
+    \label{fig:c2d-request}
+\end{figure}
+
+\subsubsection{Schedule Controller}
+The schedule controller is used to manage the irrigation schedules in the system.
+It provides endpoints for:
+\begin{itemize}
+    \item Get all schedules.
+    \item Get a schedule by id.
+    \item Create a new schedule.
+    \item Update an existing schedule.
+    \item Delete a schedule.
+\end{itemize}
+
+The Schedule object is defined as follows:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/schedule.png}
+    \caption{Schedule object}
+    \label{fig:schedule-object}
+\end{figure}
+
+\begin{enumerate}
+    \item The Id is a unique identifier for the schedule.
+    \item The Request is an object of type C2DMesageRequest that contains the zoneId, deviceId, method name, and parameters.
+    \item The StartTime is the time when the schedule should start.
+    \item The EndTime is the time when the schedule should end.
+    \item The Interval is the time interval between two consecutive executions of the schedule.
+    \item The Duration is the duration of the schedule execution.
+    \item The ScheduleStatus is the status of the schedule, which can be NotStarted, Running, Paused, Completed, Failed.
+\end{enumerate}
+
+The user can create a new schedule using the UI of the web application,
+which will send a request to the web API to create a new schedule. 
+The web API will validate the request and create a new schedule in the database.
+A bragraound service will be used to check and execute the schedules. The background service will run 
+every minute and check if there are any schedules that should be executed or stoped. To be more robust, the duration 
+of the schedule, as well as the start and end time, will be sent to the Raspberry Pi, wich will also check if 
+the schedule should be executed or stopped. This way if the Web API or the network connectivity is down, 
+the Raspberry Pi will still be able to execute the schedules.
+
+
+
 \subsubsection{User Controller}
 As the user needs to be authenticated to access the web API,
 I created a user controller that handles user registration and login.
@@ -588,7 +677,7 @@ The AuthResult object and the RegisterRequest object are defined as follows:
     \label{fig:auth-result}
 \end{figure}
 
-\subsection{Login Flow}
+\subsubsection{Login Flow}
 The login flow is similar to the registration flow, but it does not create a new user.
 The login flow is as follows:
 \begin{enumerate}

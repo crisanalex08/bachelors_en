@@ -35,35 +35,35 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: main-blx.bib
 Database file #2: bibliography.bib
 Warning--I didn't find a database entry for "einstein"
-Biblatex version: 3.19
+Biblatex version: 3.20
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 15 entries,
-            6399 wiz_defined-function locations,
-            1305 strings with 23775 characters,
-and the built_in function-call counts, 131309 in all, are:
+            6402 wiz_defined-function locations,
+            1305 strings with 23782 characters,
+and the built_in function-call counts, 131379 in all, are:
 = -- 11325
 > -- 1397
 < -- 265
 + -- 3649
 - -- 581
-* -- 9771
+* -- 9785
 := -- 15847
 add.period$ -- 0
 call.type$ -- 15
 change.case$ -- 92
 chr.to.int$ -- 42
 cite$ -- 28
-duplicate$ -- 12595
-empty$ -- 11687
+duplicate$ -- 12609
+empty$ -- 11701
 format.name$ -- 968
-if$ -- 26197
+if$ -- 26211
 int.to.chr$ -- 0
 int.to.str$ -- 28
 missing$ -- 0
 newline$ -- 532
 num.names$ -- 532
-pop$ -- 5253
+pop$ -- 5267
 preamble$ -- 1
 purify$ -- 193
 quote$ -- 0
