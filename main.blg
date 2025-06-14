@@ -13,6 +13,8 @@ Reallocating 'name_of_file' (item size: 1) to 26 items.
 A level-1 auxiliary file: chapters/3-AbstractEN.aux
 Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: chapters/4-Introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
+A level-1 auxiliary file: chapters/5-StateOfTheArt.aux
 Reallocating 'name_of_file' (item size: 1) to 20 items.
 A level-1 auxiliary file: chapters/5-Body.aux
 Reallocating 'name_of_file' (item size: 1) to 27 items.
@@ -34,49 +36,47 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: main-blx.bib
 Database file #2: bibliography.bib
-Warning--I didn't find a database entry for "einstein"
-Biblatex version: 3.20
+Biblatex version: 3.19
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 15 entries,
-            6402 wiz_defined-function locations,
-            1305 strings with 23782 characters,
-and the built_in function-call counts, 131379 in all, are:
-= -- 11325
-> -- 1397
-< -- 265
-+ -- 3649
-- -- 581
-* -- 9785
-:= -- 15847
+You've used 17 entries,
+            6399 wiz_defined-function locations,
+            1317 strings with 26204 characters,
+and the built_in function-call counts, 154286 in all, are:
+= -- 13414
+> -- 1587
+< -- 297
++ -- 4323
+- -- 661
+* -- 11499
+:= -- 18697
 add.period$ -- 0
-call.type$ -- 15
-change.case$ -- 92
+call.type$ -- 17
+change.case$ -- 106
 chr.to.int$ -- 42
-cite$ -- 28
-duplicate$ -- 12609
-empty$ -- 11701
-format.name$ -- 968
-if$ -- 26211
+cite$ -- 32
+duplicate$ -- 14804
+empty$ -- 13702
+format.name$ -- 1122
+if$ -- 30711
 int.to.chr$ -- 0
-int.to.str$ -- 28
+int.to.str$ -- 32
 missing$ -- 0
-newline$ -- 532
-num.names$ -- 532
-pop$ -- 5267
+newline$ -- 619
+num.names$ -- 608
+pop$ -- 6035
 preamble$ -- 1
-purify$ -- 193
+purify$ -- 225
 quote$ -- 0
-skip$ -- 2284
+skip$ -- 2594
 stack$ -- 0
-substring$ -- 22939
-swap$ -- 1949
-text.length$ -- 327
+substring$ -- 27250
+swap$ -- 2257
+text.length$ -- 367
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 498
+type$ -- 566
 warning$ -- 0
-while$ -- 1795
+while$ -- 2114
 width$ -- 0
-write$ -- 518
-(There was 1 warning)
+write$ -- 603

@@ -2,7 +2,7 @@
 \thispagestyle{pagestyle}
 
 
-\section{CONTEXT}
+\section{Context}
 
 Agriculture is a vital sector that plays a crucial role in sustaining human life and the economy.
 Agriculture automation and optimization has become a major concern in recent years. 
@@ -37,158 +37,78 @@ that needs to be connected to the internet. Other components can be scatered on 
 the environment and the node setup (mesh or star topology).
 
 \newpage
-\section{MOTIVATION}
+\section{Motivation}
 
-
-The reason why I choose to create such a system was fulled by my passion for technology and smart agriculture. Besides this,
+The reason why I choose to create such a system was fueled by my passion for technology and smart agriculture. Besides this,
 I like to observe the data path, from the moment it is collected by the sensors, to the moment it is displayed
 in a web application. 
 I have always been intested in pieces of technology that can be used to solve real world problems and now I had the chance
 to create such a system.
+Initaially, I wanted to create a smaller system for my own graden, but then I reazied that this system can be used in a lerger
+scale and can be adapted to different scenarios.
 
-Initially, I wanted to create a system for my own lawn, but as I started working on the project, I realized that the system
-can be used in many other scenarios, such as smart greenhouses or even large farms or vineyards. 
+This project is also motivated by the opportunity to apply core concepts of computer science, such as API design, data management, 
+distributed systems and IoT \- to build a cost-effective ans scalable smart irrigaiton system. This project intends to provide
+not only a system for irrigation, but also a platform that can be used in different scenarios, such as smart greenhouses,
+meteorological stations, or even smart cities.
 
-\chapter{State of the Art}\label{section:stateoftheart}
-
-\section{Introduction}
-The state of the art chapter provides an overview of the current state of smart irrigation 
-systems and their applications in agriculture. 
-This chapter will explore the existing technologies, methods, and solutions used in smart irrigation. 
-It will also highlight the gaps and challenges in the current systems,
-and how the PiIrrigate project aims to address these issues.
-
-\section{Existing Smart Irrigation Solutions}
-\subsection{Types of Smart Irrigation Systems}
-
-There are several types of smart irrigation systems used in modern agriculture:
-
+\section{Objectives}
+The main objective of this project is to develop a system that leverages IoT, cloud services, and modern softwware development
+principles to optimize irrigation processes and reduce the water usage in agriculture. The focus of this project is to provide
+a theoretical approach of the system, but also to present the implementation details and the results of the system. At the and 
+of this project the result should comprise the system architecture, including the hardware and software components, and 
+the implementation details of the system. The implementation details will include the hardware and software components used,
+the communication protocols used, the data management and storage, and the user-interface design.
+To be more specific, the objectives of this project are:
 \begin{itemize}
-  \item \textbf{Weather-Based Controllers} \\
-  These systems use weather data to adjust irrigation schedules based on evapotranspiration rates, 
-  ensuring that plants receive the right amount of water.
-
-  \item \textbf{Soil Moisture-Based Controllers} \\
-  These systems rely on data from soil moisture sensors placed in the root zone of the plants.
-  Irrigation cycles are triggered when the soil moisture drops below a predetermined threshold, 
-  ensuring plants receive water only when necessary.
-  This method is very precise for specific zones\cite{smartIrrigationTechnologyControllersAndSensors}.
-
-  \item \textbf{Hybrid Systems} \\
-  Many modern systems utilize a hybrid approach, combining data from both
-  weather feeds and soil moisture sensors for more accurate and resilient 
-  irrigation decisions. Some research also explores "hybrid" in terms of 
-  integrating different energy sources (e.g., solar and wind) to power the systems or 
-  combining various 
-  irrigation methods (like drip and sprinkler) under one smart control\cite{soilBasedIrrigation}.
-
-  The PiIrrigate project place itself in the category of hybrid systems, using both
-  soil moisture sensors and weather sensors to collect data.
-  
-  Some of the most popular hybrid smart irrigation systems include:
-  \begin{itemize}
-    \item \textbf{Netafim's Precision Irrigation System} \\
-    This system cobines data from soil moisture and flow sensors with sattelite weather data and predictive
-    analytics to optimize the irrigation proccess.
-    
-    Key features include:
-    \begin{itemize}
-      \item Real-time monitoring of soil moisture levels and weather forecasts.
-      \item Automated irrigation scheduling based on weather forecasts.
-      \item AI-based algorithms to optimize the irrigation timing and duration.
-    \end{itemize}
-
-    \item \textbf{CropX Smart Farming System} \\
-    CropX is a cloud based platform that integrates soil moisture sensors, weather data and
-    machine learning algorithms to optimize the irrigation process.
-
-    Key features include:
-    \begin{itemize}
-      \item Irrigation recomandations based on soil variability, crop type and weather.
-      \item Farmers can apply recommandations or integrate with automated irrigaitons contrllers.
-      \item Easy to scale and adapt to different farm sizes from small to large-scale farms.
-    \end{itemize}
-  
-    \item \textbf{Toro EVOLUTION® Series Controller with Smart ET Sensor} \\
-    Combines basic sprinkler system hardware with smart sensors and connectivity,
-    offering both manual and intelligent irrigation options. The evaporation sensors are used to measure
-    the amount of water lost throught evaporation and adjust the irrigation accordingly.
-
-    Key features include:
-    \begin{itemize}
-      \item Can be programmed manually or connected to a local weather station.
-      \item Smart ET sensor measures evaporation rates and adjusts irrigation schedules.
-      \item Compatible with smart devices for remote monitoring
-    \end{itemize}
-  \end{itemize}
+    \item Develop a cost-effective and scalable smart irrigation system that can be used in different agricultural settings.
+    \item Leverage IoT and LoRa radio communication technologies to create a system that can operate in remote areas with low power consumption.
+    \item Provide a user-friendly web application for real-time monitoring and control of the irrigation system.
+    \item Implement a modular architecture that allows for easy extension and customization of the system.
+    \item Ensure data security and privacy by implementing best practices in API design and data management.
 \end{itemize}
 
-\section{Comparative Analysis of Smart Irrigation Systems}
-The table below provides a comparative analysis of some of the most popular smart 
-irrigation systems available today and the PiIrrigate system.
+\section{Scope and Limitations}
 
-\begin{table}[ht]
-\centering
-\begin{tabular}{|p{3.2cm}|p{3.2cm}|p{3.2cm}|p{3.2cm}|p{3.2cm}|}
-\hline
-\textbf{Feature} & \textbf{Netafim} & \textbf{CropX} & \textbf{Toro ET} & \textbf{PiIrrigate} \\
-\hline
-Irrigation Type & Drip & Any & Sprinkler & Custom \\
-\hline
-Automation & High (AI) & Med–High & Medium & Medium \\
-\hline
-Sensors & Soil, flow, weather & Soil, temp & ET sensor & Soil, temp, rain \\
-\hline
-Weather Data & Yes & Yes & Yes & Optional \\
-\hline
-Manual Control & App/cloud & App/web & Panel/app & Web UI \\
-\hline
-AI/Analytics & Yes & Yes & No & No \\
-\hline
-Scalability & Large farms & Small–large & Residential & Small farms/gardens \\
-\hline
-Cloud Sync & Yes & Yes & Optional & Yes \\
-\hline
-Use Case & Precision agri & Smart farming & Lawn care & Small to large scale\\
-\hline
-Cost & High & Med–High & Low–Mid & Low \\
-\hline
-\end{tabular}
-\caption{Comparison of Smart Irrigation Systems}
-\label{tab:irrigation_comparison}
-\end{table}
+Scope of this project includes the design, implementation, and evaluation of a smart irrigaiton system. 
+The system will be designed to collect data from enviromental sensors, such as soil moisture, temperature, and humidity,
+process this data throught a web API, and provide a user friendly web application for real-time monitoring and control.
 
-\section{Identified Gaps and Challenges}
-Despite the advancements in smart irrigation systems, several gaps and challenges remain:
-
+Key fetures of the system include:
 \begin{itemize}
-  \item \textbf{High Costs} \\
-  Many existing systems are expensive, making them inaccessible for small farmers or home gardeners.
-  
-  \item \textbf{Complexity of Use} \\
-  Some systems require specialized knowledge to set up and maintain, which can be a barrier for adoption.
-
-  \item \textbf{Limited Customization} \\
-  Many systems are designed for specific crops or environments, limiting their applicability in diverse agricultural settings.
-
-  \item \textbf{Data Integration Issues} \\
-  Integrating data from multiple sources (e.g., weather, soil sensors) can be challenging, leading to inefficiencies in irrigation management.
+    \item Data collection from environmental sensors using LILYGO Meshtastic AXP2101 T-Beam V1.2 ESP32 LoRa boards.
+    \item Long-range communication using LoRa radio technology.
+    \item Data processing and storage using a web API and PostgreSQL database.
+    \item Real-time monitoring and control through a web application.
+    \item Modular architecture for easy extension and customization.
+\end{itemize}
+Despite the comprehensive scope of this project, there are some limitations that need to be considered:
+\begin{itemize}
+    \item Hardware limitations: The system is designed to work with specific components, any changes to
+     the hardware may require significant changes in the project.
+    \item This specific system will be tested in a controlled environment, so the result may not be representative of 
+    real-world scenarios. 
+    \item Reliability and calibration of the hardware components are assumed to be optimal, but they are not guaranteed.
+    \item Weather prediction and other external factors are outside the scope of this project,
+    the system will not take into account weather forecasts.
+    \item Energy consumption and power management analysis are not included in the scope of this project.
+    \item The UI design is focused on functionality and usability, but it may not be visually appealing or optimized for all devices.
+    \item Machine learning and advanced data analytics are not included in the scope of this project.
 \end{itemize}
 
-Bedside the presented gaps, there are also some other challenges that need to be addressed, such as:
-data security and privacy concerns, the need for reliable internet connectivity in remote areas, 
-and the need for systems that can operate in harsh environmental conditions. 
+\section{Methodology overview}
 
-Another aspect that needs to be considered is the environmental impact of smart irrigation systems.
-While these systems are designed to optimize water usage,
-the production and disposal of electronic components can have a negative impact on the environment.
-So another challenge is to create systems that are environmentally friendly and sustainable. This means 
-that the components used in these systems shlould be madea from recyclable materials 
-and the systems should be designed to have a long lifespan and to be easily repairable.
+The metodology adopted for this project is structured around the typical sofware development lifecycle,
+beggining with the requirements gathering and analysis, followed by the design, implementation, testing, and evaluation phases.
+This approach ensures that the system is developed in a systematic and organized manner, allowing for the creation 
+of a robus and reliable smart irrigation system.
 
-\section{Summary}
-In summary, the state of the art in smart irrigation systems shows significant 
-advancements in technology and methods, but also highlights several gaps and challenges 
-that need to be addressed. The PiIrrigate project aims to fill these gaps by providing a
-cost-effective, easy-to-use, and customizable solution that leverages the power of IoT and LoRa 
-radio communication technologies.
+System requirements were gathederd based on on a research of modern irrigaiton practicies, with a great focus on the water consumoption
+usage and the need of real-time monitoring and control. These requirements helped identifying core functionalities of the system,
+such as data collection from environmental sensors, processing, storage, and user interface design. Non-functional requirements,
+such as reliability and scalability were also taken into account during the requirements gathering phase.
+
+The system architecture was designed using a layered approach. The hardware layer includes the sensors, the ESP32 boards
+and the Raspberry Pi. It is responsible for environmental data collection. The communication layer includes all protocols and technologies
+used for data transmission, such as LoRa, MQTT and HTTP. The data processing layer includes the IoT Hub, the webApi and the PostgreSQL database.
+Finally the user interface layer includes the web application that provides real-time monitoring and control of the system. 

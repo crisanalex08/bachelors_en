@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.3 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,8 +16,8 @@
   {}
 \endgroup
 
-\datalist[entry]{none/global//global/global/global}
-  \entry{OBAIDEEN2022100124}{article}{}{}
+\datalist[entry]{none/global//global/global}
+  \entry{OBAIDEEN2022100124}{article}{}
     \name{author}{7}{}{%
       {{hash=OK}{%
          family={Obaideen},
@@ -107,7 +107,7 @@
     \field{year}{2022}
   \endentry
 
-  \entry{doi:10.1073/pnas.96.11.5995}{article}{}{}
+  \entry{doi:10.1073/pnas.96.11.5995}{article}{}
     \name{author}{1}{}{%
       {{hash=TD}{%
          family={Tilman},
@@ -164,7 +164,7 @@
     \field{year}{1999}
   \endentry
 
-  \entry{s20236865}{article}{}{}
+  \entry{s20236865}{article}{}
     \name{author}{8}{}{%
       {{hash=FMI}{%
          family={Froiz-Míguez},
@@ -270,7 +270,7 @@
     \field{year}{2020}
   \endentry
 
-  \entry{smartIrrigationTechnologyControllersAndSensors}{article}{}{}
+  \entry{smartIrrigationTechnologyControllersAndSensors}{article}{}
     \name{author}{1}{}{%
       {{hash=MGJQMST}{%
          family={Malarie\bibnamedelima Gotcher},
@@ -293,7 +293,7 @@
     \endverb
   \endentry
 
-  \entry{soilBasedIrrigation}{article}{}{}
+  \entry{soilBasedIrrigation}{article}{}
     \name{author}{1}{}{%
       {{hash=AUSEP}{%
          family={Agency},
@@ -314,7 +314,120 @@
     \endverb
   \endentry
 
-  \entry{githubDefinition}{article}{}{}
+  \entry{LoRaHistory}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SL}{%
+         family={Slats},
+         familyi={S\bibinitperiod},
+         given={Laurens},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SL1}
+    \strng{fullhash}{SL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{A Brief History of LoRa®: Three Inventors Share Their
+  Personal Story at The Things Conference}
+    \verb{url}
+    \verb https://blog.semtech.com/a-brief-history-of-lora-three-inventors-shar
+    \verb e-their-personal-story-at-the-things-conference
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{loraBasedIoTPlatform}{article}{}
+    \name{author}{7}{}{%
+      {{hash=AMA}{%
+         family={Ahmed},
+         familyi={A\bibinitperiod},
+         given={Mohamed\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=GJL}{%
+         family={Gallardo},
+         familyi={G\bibinitperiod},
+         given={Jose\bibnamedelima Luis},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=ZMD}{%
+         family={Zuniga},
+         familyi={Z\bibinitperiod},
+         given={Marcos\bibnamedelima D.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=PMA}{%
+         family={Pedraza},
+         familyi={P\bibinitperiod},
+         given={Manuel\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Carvajal},
+         familyi={C\bibinitperiod},
+         given={Gonzalo},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=JN}{%
+         family={Jara},
+         familyi={J\bibinitperiod},
+         given={Nicolás},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=CR}{%
+         family={Carvajal},
+         familyi={C\bibinitperiod},
+         given={Rodrigo},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AMA+1}
+    \strng{fullhash}{AMAGJLZMDPMACGJNCR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Nowadays, conventional agriculture farms lack high-level automated
+  management due to the limited number of installed sensor nodes and measuring
+  devices. Recent progress of the Internet of Things (IoT) technologies will
+  play an essential role in future smart farming by enabling automated
+  operations with minimum human intervention. The main objective of this work
+  is to design and implement a flexible IoT-based platform for remote
+  monitoring of agriculture farms of different scales, enabling continuous data
+  collection from various IoT devices (sensors, actuators, meteorological
+  masts, and drones). Such data will be available for end-users to improve
+  decision-making and for training and validating advanced prediction
+  algorithms. Unlike related works that concentrate on specific applications or
+  evaluate technical aspects of specific layers of the IoT stack, this work
+  considers a versatile approach and technical aspects at four layers: farm
+  perception layer, sensors and actuators layer, communication layer, and
+  application layer. The proposed solutions have been designed, implemented,
+  and assessed for remote monitoring of plants, soil, and environmental
+  conditions based on LoRaWAN technology. Results collected through both
+  simulation and experimental validation show that the platform can be used to
+  obtain valuable analytics of real-time monitoring that enable decisions and
+  actions such as, for example, controlling the irrigation system or generating
+  alarms. The contribution of this article relies on proposing a flexible
+  hardware and software platform oriented on monitoring agriculture farms of
+  different scales, based on LoRaWAN technology. Even though previous work can
+  be found using similar technologies, they focus on specific applications or
+  evaluate technical aspects of specific layers of the IoT stack.%
+    }
+    \verb{doi}
+    \verb 10.3390/s22082824
+    \endverb
+    \field{issn}{1424-8220}
+    \field{number}{8}
+    \field{title}{LoRa Based IoT Platform for Remote Monitoring of Large-Scale
+  Agriculture Farms in Chile}
+    \verb{url}
+    \verb https://www.mdpi.com/1424-8220/22/8/2824
+    \endverb
+    \field{volume}{22}
+    \field{journaltitle}{Sensors}
+    \field{year}{2022}
+  \endentry
+
+  \entry{githubDefinition}{article}{}
     \name{author}{1}{}{%
       {{hash=LB}{%
          family={Lutkevich},
@@ -334,7 +447,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{lora}{article}{}{}
+  \entry{lora}{article}{}
     \name{author}{1}{}{%
       {{hash=T}{%
          family={TheThingsNetwork},
@@ -351,7 +464,7 @@
     \endverb
   \endentry
 
-  \entry{http}{article}{}{}
+  \entry{http}{article}{}
     \name{author}{1}{}{%
       {{hash=M}{%
          family={MSDN},
@@ -368,7 +481,7 @@
     \endverb
   \endentry
 
-  \entry{agriculture12101745}{article}{}{}
+  \entry{agriculture12101745}{article}{}
     \name{author}{5}{}{%
       {{hash=DM}{%
          family={Dhanaraju},
@@ -434,7 +547,7 @@
     \field{year}{2022}
   \endentry
 
-  \entry{s19081833}{article}{}{}
+  \entry{s19081833}{article}{}
     \name{author}{7}{}{%
       {{hash=SX}{%
          family={Shi},
@@ -516,7 +629,7 @@
     \field{year}{2019}
   \endentry
 
-  \entry{1wire}{article}{}{}
+  \entry{1wire}{article}{}
     \name{author}{1}{}{%
       {{hash=GE}{%
          family={Garage},
@@ -535,7 +648,7 @@
     \endverb
   \endentry
 
-  \entry{s20020363}{article}{}{}
+  \entry{s20020363}{article}{}
     \name{author}{6}{}{%
       {{hash=AS}{%
          family={Adla},
@@ -641,7 +754,7 @@
     \field{year}{2020}
   \endentry
 
-  \entry{uderstandingUart}{article}{}{}
+  \entry{uderstandingUart}{article}{}
     \name{author}{1}{}{%
       {{hash=RS}{%
          family={Rohde-Schwarz},
@@ -660,7 +773,7 @@
     \endverb
   \endentry
 
-  \entry{laddha2013review}{article}{}{}
+  \entry{laddha2013review}{article}{}
     \name{author}{2}{}{%
       {{hash=LNR}{%
          family={Laddha},
