@@ -7,7 +7,7 @@ The implementation is divided into several sections, each focusing on a specific
 \section {ESP32 Firmware}
 For the ESP32 development I had to choose between two main frameworks: ESP-IDF and Arduino. I
 chosed the Arduino framework because it is more user-friendly. As IDE I used Platform IO, which is a VSCode extention
-that allow to develop for many different platforms, including the ESP32\cite{platformio_docs}.
+that allows to develop on many different platforms, including the ESP32\cite{platformio_docs}.
 
 \subsection{Data Acquisition}
 The data acquisition is done using the ESP32 nodes that collect data from the sensors.
@@ -132,10 +132,10 @@ struct SensorData {
 };
 \end{lstlisting}
 
-All the values, except the totalWaterFlow, and the GPS coordinates, represent the raw
-voltage values read from the sensors. I chose to sent the raw values, 
-because they can be used to calculate any related values in the web application.
-Allowing a better flexibility in the future.
+All the values regarding the environmental data represent the raw
+voltages read from the sensors. I chose to sent the raw values, 
+because they can be used to calculate any related values in the web api.
+This allows a better flexibility in the future.
 
 \section{Raspberry Pi and ESP32 Gateway}
 The gateway ESP23 acts like a proxy between the nodes and the Raspberry Pi.
@@ -198,8 +198,32 @@ public interface IiotDeviceManager
 }
 \end{lstlisting}
 
+\subsection{Zone Activation}
+The Raspbery Pi represents a "zone" in the system and it connects to a single Azure IoT Hub Device. Each zone needs to
+connect to the Azure IoT Hub Device using a connection string. To obtain that connection string, a a reuest is sent 
+to the web API to create a new zone. The web api will create the zone in the database and it will create a new IoT Device
+in the Azure IoT Hub. The connection string will be returened to the "zone". Aftr that, the RaspberryPi won't send any 
+reading to the cloud, the sending of the data will be done only when the zone is activated.
+The activation process is as follows:
+\begin{enumerate}
+    \item The user enters the code displayed on the Raspberry Pi OLED display in the web application.
+    \item The web application sends the code to the web API.
+    \item The web API verifies the code and activates the irrigation zone.
+    \item The web API sends a message to the Iot Device to activate the irrigation zone.
+    \item The Raspberry Pi receives the message from Azure IoT Hub and activates the irrigation zone.
+    \item The Raspberry Pi sends a message to the ESP32 nodes to start collecting data from the sensors.
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/activation.png}
+    \caption{Zone activation process}
+    \label{fig:zone-activation}
+\end{figure}
+
 \subsubsection{Data Controller}
-The data controller is used to retrieve data from the PostgreSQL database.
+The data controller is used to retrieve stored data from the Web API. This data is stored in the PostgreSQL database and
+it will be used to display historical data and analytics in the web application.
 It provides endpoints for:
 \begin{itemize}
     \item Get all data for a zone, including the data for all devices in that zone.
@@ -208,9 +232,17 @@ It provides endpoints for:
     \item Get data for a device for a certain period of time.
 \end{itemize}
 
-The data controller will use the IDataService for all the logic related to data retrieval.
-For the DataService, all the database interaction is done within that service.
-
+IData repository is used to interact with the database and it implments the IDataRepository interface.
+\begin{lstlisting}
+public interface IDataRepository
+{
+    public Task StoreData(SensorReading sensorReading);
+    public Task<IEnumerable<SensorReading>> GetTimedZoneData(DateTime from, DateTime to, Guid zoneId);
+    public Task<IEnumerable<SensorReading>> GetTimedDeviceData(DateTime from, DateTime to, Guid zoneId, string deviceId);
+    public Task<IEnumerable<SensorReading>> GetAllZoneData(Guid zoneId);
+    public Task<IEnumerable<SensorReading>> GetAllDeviceData(Guid zoneId, string DeviceId);
+}
+\end{lstlisting}
 \subsubsection{Device Controller}
 The device controller is used to manage the devices in the system.
 It provides endpoints for:
@@ -279,18 +311,6 @@ it implements the StartAsync and StopAsync methods \cite{IHostedService}.
 \subsubsection{User Controller}
 As the user needs to be authenticated to access the web API,
 I created a user controller that handles user registration and login.
-
-\begin{lstlisting}[caption={User Service interface}]
-public interface IUserService
-{
-    Task<UserDto> GetUserByIdAsync(Guid userId);
-    Task<IEnumerable<UserDto>> GetAllUsersAsync();
-    Task<bool> UpdateUserProfileAsync(Guid userId, UpdateProfileRequest request);
-    Task<bool> ChangeUserRoleAsync(Guid userId, string newRole);
-    Task<AuthResult> RegisterUser(RegisterRequest register);
-    Task<AuthResult> LoginUser(LoginRequest request);
-}
-\end{lstlisting}
 
 For accessing the user data, UserRepository is used, which implements the IUserRepository interface.
 The authorization is done using JWT tokens, 
@@ -383,4 +403,93 @@ The login flow is shown in the figure below.
     \includegraphics[width=0.9\textwidth]{images/login-flow.png}
     \caption{Login flow}
     \label{fig:login-flow}
+\end{figure}
+
+\section {Web Application}
+The frontend interface of the smart irrigation system was implemented using Angular. The web application serves as the main
+point of interaction between the user and the backend system. It allow the users to monitor the environmental conditions
+in real-time and manually controll irrigation events.
+
+The communication between the frontend and web API is done via 2 methods: HTTP requests - for fetching sensor data, trigger
+irrigaiton actions and display system status and SignalR - for sending live data from the API to fronend. In the HTTP requests,
+a JWT token is included, ensuring secure access to system's features.
+
+The user interface is divided into several key components: Dasboard, Devicem Management, Schedules, History and Analytics.
+The dasboard displays current soil moisutre, temperature, humidity and water flow rate. 
+These values are received using SignalR. 
+Each value is displayed in a separate gauge-style widget to improve the readability.In this section the user can also controll the irrigation system.
+In Device Management section the user
+can see it's registered devices. In Schedules page the user can see and configure schedules. In the History and Analytics, the user can
+see the historical data, can generate an CSV format file containing the sensor readings and he can also see graph based on the 
+historical data.
+
+\subsection{Landing Page}
+The landing page is the first page that the users sees when they access the web application.
+It presints the user with a brief introduction into the system and it provides the the user with the main 
+features of the system. The page is responsive, meaning that it can be accessed from any device,
+including mobile phones and tablets. The page contains a scrollable
+carousel with the main features of the system and a call to action button that redirects the user to the registration page.
+In the following figure you can see the landing page on a desktop and on a mobile phone. 
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/landing_page.png}
+        \label{fig:landing-page-desktop}
+    \end{minipage}\hfill
+    \begin{minipage}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/landing_12_pro.png}
+        \label{fig:landing-page-mobile}
+    \end{minipage}
+    \caption{Landing page of the web application}
+\end{figure}
+
+\subsection{Register and Login}
+The registration and the Login pages are designed to be as simple as possible. 
+Registration page contains a form with the following fields: Full Name, Email, Password,
+, Confirm Password and a checkbox for accepting the terms and conditions. 
+The login page contains a form with only 2 fields: Email and Password.
+
+
+\begin{figure}[H]
+   \centering
+    \begin{minipage}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/register_page.png}
+        \label{fig:register-page}
+    \end{minipage}\hfill
+    \begin{minipage}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/login.png}
+        \label{fig:login-page}
+    \end{minipage}
+    \caption{Register and Login pages}
+\end{figure}
+
+Now I will describe the registration and login flows. Afther ther user presses the
+call to action button from the landing page, he is redirected to the registraiton page. 
+If the users fills the registration form and presses the register button it will be automatically
+logged in and redirected to the Dashboard. From the register page he can navigate to the login page where
+he can login. If the login fails, the user will can reset his password and try again.
+Bellow is presented the user flow diagram.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/user_flow.png}
+    \caption{User flow}
+    \label{fig:user-flow}
+\end{figure}
+
+\subsection{Dashboard}
+The Dashboard components contains several widgets some widgets are used to display live data
+and others are used to controll the irrigation system. 
+The live data widgets are: Live Soil Moisture, Live Temperature, Live Humidity,
+Live Water Flow Rate and Live Water Temperature. In the control widget, the user can
+start or stop the irrigation process, and also he can set the data acquisition period.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/dashboard.png}
+    \caption{Dashboard page of the web application}
+    \label{fig:dashboard-page}
 \end{figure}
