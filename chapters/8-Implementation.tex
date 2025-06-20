@@ -493,3 +493,33 @@ start or stop the irrigation process, and also he can set the data acquisition p
     \caption{Dashboard page of the web application}
     \label{fig:dashboard-page}
 \end{figure}
+
+% TO DO add more details about UI
+
+\section{Rule based system}
+Automation is a key feature of the PiIrrigate system,
+to achieve this, I implemented a rule-based system that allows the system
+to make decisions based on the environmental data collected from the sensors.
+
+The rule-based system is implemented in the Web API and it coonsists
+of the following rules:
+\begin{enumerate}
+    \item If the soil moisture is below a certain threshold and the raindop sensor detects no rain, then start the irrigation.
+    \item If the soil moisture is above a certain threshold and the water flow rate is above a certain level, the irrigation will be stoped.
+    \item If the soil moisture reading is not available, then the irrigation will be stopped.
+    \item If the soil moisture is below the threshold and the water flow rate is zero, then an alert will b sent to the user.
+    \item If the irrigation process is running and the raindrop sensor detects rain, then stop the irrigation and send an alert to the user.
+    \item If the water temperature is below or above a certain threshold, stop the irrigation, then send an alert to the user.
+    \item If the water flow rate remains unchanged for a certain period of time, then send an alert to the user.
+\end{enumerate}
+This set of rules is executed every time a new sensor reading is received.
+The rules are implemented in the IrrigaitonManager service which implements the IIrrigationManager interface.                                                   
+
+\section{Used Technologies}
+\subsection {Overview}
+The PiIrrigate system is build using a variety of technologies, each serving a specific purpose. For programming
+the ESP32, I used Arduino framework, within the Platform IO IDE. The Raspberry Pi is programemd in Python
+and it uses Azure IoT SDK for Python to communicate with the Azure IoT Hub. 
+The web API it was developed in \.NET 8. The web application is developed in Anguler 19. The live communication between 
+the web API and the web application is done using SignalR. The used database is PostgreSQL.
+
