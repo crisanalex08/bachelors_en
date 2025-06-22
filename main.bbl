@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.3 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,8 +16,8 @@
   {}
 \endgroup
 
-\datalist[entry]{none/global//global/global/global}
-  \entry{OBAIDEEN2022100124}{article}{}{}
+\datalist[entry]{none/global//global/global}
+  \entry{OBAIDEEN2022100124}{article}{}
     \name{author}{7}{}{%
       {{hash=OK}{%
          family={Obaideen},
@@ -107,7 +107,7 @@
     \field{year}{2022}
   \endentry
 
-  \entry{doi:10.1073/pnas.96.11.5995}{article}{}{}
+  \entry{doi:10.1073/pnas.96.11.5995}{article}{}
     \name{author}{1}{}{%
       {{hash=TD}{%
          family={Tilman},
@@ -164,7 +164,7 @@
     \field{year}{1999}
   \endentry
 
-  \entry{s20236865}{article}{}{}
+  \entry{s20236865}{article}{}
     \name{author}{8}{}{%
       {{hash=FMI}{%
          family={Froiz-Míguez},
@@ -270,7 +270,7 @@
     \field{year}{2020}
   \endentry
 
-  \entry{smartIrrigationTechnologyControllersAndSensors}{article}{}{}
+  \entry{smartIrrigationTechnologyControllersAndSensors}{article}{}
     \name{author}{1}{}{%
       {{hash=MGJQMST}{%
          family={Malarie\bibnamedelima Gotcher},
@@ -293,7 +293,7 @@
     \endverb
   \endentry
 
-  \entry{soilBasedIrrigation}{article}{}{}
+  \entry{soilBasedIrrigation}{article}{}
     \name{author}{1}{}{%
       {{hash=AUSEP}{%
          family={Agency},
@@ -314,7 +314,7 @@
     \endverb
   \endentry
 
-  \entry{LoRaHistory}{misc}{}{}
+  \entry{LoRaHistory}{misc}{}
     \name{author}{1}{}{%
       {{hash=SL}{%
          family={Slats},
@@ -336,7 +336,7 @@
     \field{year}{2020}
   \endentry
 
-  \entry{loraBasedIoTPlatform}{article}{}{}
+  \entry{loraBasedIoTPlatform}{article}{}
     \name{author}{7}{}{%
       {{hash=AMA}{%
          family={Ahmed},
@@ -427,7 +427,7 @@
     \field{year}{2022}
   \endentry
 
-  \entry{agriculture12101745}{article}{}{}
+  \entry{agriculture12101745}{article}{}
     \name{author}{5}{}{%
       {{hash=DM}{%
          family={Dhanaraju},
@@ -493,7 +493,7 @@
     \field{year}{2022}
   \endentry
 
-  \entry{s19081833}{article}{}{}
+  \entry{s19081833}{article}{}
     \name{author}{7}{}{%
       {{hash=SX}{%
          family={Shi},
@@ -575,7 +575,7 @@
     \field{year}{2019}
   \endentry
 
-  \entry{headlessArchitecture}{article}{}{}
+  \entry{headlessArchitecture}{article}{}
     \name{author}{1}{}{%
       {{hash=SL}{%
          family={Stelitano},
@@ -595,7 +595,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{layerArchitecture}{misc}{}{}
+  \entry{layerArchitecture}{misc}{}
     \name{author}{1}{}{%
       {{hash=BK}{%
          family={Borimechkov},
@@ -618,7 +618,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{ngrxStoreGuide}{misc}{}{}
+  \entry{ngrxStoreGuide}{misc}{}
     \name{author}{1}{}{%
       {{hash=TN}{%
          family={Team},
@@ -640,7 +640,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{typescriptInterfaces}{misc}{}{}
+  \entry{typescriptInterfaces}{misc}{}
     \name{author}{1}{}{%
       {{hash=TT}{%
          family={Team},
@@ -662,7 +662,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{angularServices}{misc}{}{}
+  \entry{angularServices}{misc}{}
     \name{author}{1}{}{%
       {{hash=TA}{%
          family={Team},
@@ -684,7 +684,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{angularGuards}{misc}{}{}
+  \entry{angularGuards}{misc}{}
     \name{author}{1}{}{%
       {{hash=TA}{%
          family={Team},
@@ -706,7 +706,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{platformio_docs}{manual}{}{}
+  \entry{platformio_docs}{manual}{}
     \name{author}{1}{}{%
       {{hash=P}{%
          family={{PlatformIO Labs}},
@@ -725,7 +725,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{1wire}{article}{}{}
+  \entry{1wire}{article}{}
     \name{author}{1}{}{%
       {{hash=GE}{%
          family={Garage},
@@ -744,7 +744,7 @@
     \endverb
   \endentry
 
-  \entry{s20020363}{article}{}{}
+  \entry{s20020363}{article}{}
     \name{author}{6}{}{%
       {{hash=AS}{%
          family={Adla},
@@ -850,7 +850,7 @@
     \field{year}{2020}
   \endentry
 
-  \entry{uderstandingUart}{article}{}{}
+  \entry{uderstandingUart}{article}{}
     \name{author}{1}{}{%
       {{hash=RS}{%
          family={Rohde-Schwarz},
@@ -869,7 +869,7 @@
     \endverb
   \endentry
 
-  \entry{laddha2013review}{article}{}{}
+  \entry{laddha2013review}{article}{}
     \name{author}{2}{}{%
       {{hash=LNR}{%
          family={Laddha},
@@ -896,7 +896,7 @@
     \field{year}{2013}
   \endentry
 
-  \entry{IHostedService}{article}{}{}
+  \entry{IHostedService}{article}{}
     \name{author}{1}{}{%
       {{hash=M}{%
          family={Microsoft},
@@ -912,6 +912,402 @@
     \verb https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.hos
     \verb ting.ihostedservice?view=net-9.0-pp
     \endverb
+  \endentry
+
+  \entry{dotnet_official}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Microsoft}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2025-06-20}
+    \field{title}{The .NET Platform}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/dotnet/
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{microsoft_csharp}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Microsoft Developer Network}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M7}
+    \strng{fullhash}{M7}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2025-06-20}
+    \field{title}{C\# Guide}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/dotnet/csharp
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{arduino_core}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Arduino}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A3}
+    \strng{fullhash}{A3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{ESP32 support via Arduino framework. Accessed: 2025-06-20}
+    \field{title}{Arduino Core for ESP32}
+    \verb{url}
+    \verb https://github.com/espressif/arduino-esp32
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{azure_iot_hub_docs}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Microsoft}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Azure IoT Hub Documentation}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/azure/iot-hub
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{azure_iot_sdk_python}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Microsoft Azure Team}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M6}
+    \strng{fullhash}{M6}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Azure IoT SDK for Python}
+    \verb{url}
+    \verb https://github.com/Azure/azure-iot-sdk-python
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{dotnet8_docs}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Microsoft Developer Network}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M7}
+    \strng{fullhash}{M7}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{.NET 8 Documentation}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{microsoft_dotnet}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Microsoft}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2025-06-20}
+    \field{title}{The .NET Platform}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/dotnet/
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{efcore}{article}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M3}
+    \strng{fullhash}{M3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Entity Framework Core}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/ef/core/
+    \endverb
+  \endentry
+
+  \entry{efcore_docs}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Microsoft}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M4}
+    \strng{fullhash}{M4}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2025-06-20}
+    \field{title}{Entity Framework Core Documentation}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/ef/core
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{angular_19_release}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Angular Team}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Angular v19 Now Available}
+    \verb{url}
+    \verb https://blog.angular.io/angular-v19-now-available
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{angular_docs}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Angular Team at Google}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A2}
+    \strng{fullhash}{A2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Angular Documentation}
+    \verb{url}
+    \verb https://angular.io/docs
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{material_design_spec}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=G}{%
+         family={{Google}},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{G2}
+    \strng{fullhash}{G2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2025-06-20}
+    \field{title}{Material Design Guidelines}
+    \verb{url}
+    \verb https://m3.material.io
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{angular_material_docs}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Angular Team at Google}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A2}
+    \strng{fullhash}{A2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2025-06-20}
+    \field{title}{Angular Material}
+    \verb{url}
+    \verb https://material.angular.io
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{arduino_lora_lib}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Arduino}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Arduino Project}%
+    }
+    \strng{namehash}{A3}
+    \strng{fullhash}{A3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2025-06-20}
+    \field{title}{LoRa Library}
+    \verb{url}
+    \verb https://docs.arduino.cc/libraries/lora/
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{signalr_docs}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Microsoft}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M4}
+    \strng{fullhash}{M4}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2025-06-20}
+    \field{title}{ASP.NET Core SignalR}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/aspnet/core/signalr/introduction
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{azure_app_service}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Microsoft Azure}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M5}
+    \strng{fullhash}{M5}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Azure App Service Documentation}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/azure/app-service/
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{python_org}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=P}{%
+         family={{Python Software Foundation}},
+         familyi={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{P2}
+    \strng{fullhash}{P2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2025-06-20}
+    \field{title}{The Python Programming Language}
+    \verb{url}
+    \verb https://www.python.org
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{python}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FPS}{%
+         family={Foundation},
+         familyi={F\bibinitperiod},
+         given={Python\bibnamedelima Software},
+         giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FPS1}
+    \strng{fullhash}{FPS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Python}
+    \verb{url}
+    \verb https://www.python.org/
+    \endverb
+  \endentry
+
+  \entry{peps}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FPS}{%
+         family={Foundation},
+         familyi={F\bibinitperiod},
+         given={Python\bibnamedelima Software},
+         giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FPS1}
+    \strng{fullhash}{FPS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2025-06-20}
+    \field{title}{Python Enhancement Proposals (PEPs)}
+    \verb{url}
+    \verb https://peps.python.org
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{visualstudio_docs}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Microsoft}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M4}
+    \strng{fullhash}{M4}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2025-06-20}
+    \field{title}{Visual Studio Documentation}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/visualstudio/
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{github_docs}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=G}{%
+         family={{GitHub, Inc.}},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{G1}
+    \strng{fullhash}{G1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2025-06-20}
+    \field{title}{GitHub Docs}
+    \verb{url}
+    \verb https://docs.github.com
+    \endverb
+    \field{year}{2024}
   \endentry
 \enddatalist
 \endinput

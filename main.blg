@@ -24,7 +24,7 @@ A level-1 auxiliary file: chapters/8-Implementation.aux
 Reallocating 'name_of_file' (item size: 1) to 33 items.
 A level-1 auxiliary file: chapters/9-TestingAndResults.aux
 Reallocating 'name_of_file' (item size: 1) to 28 items.
-A level-1 auxiliary file: chapters/10-Conclusions.aux
+A level-1 auxiliary file: chapters/10.Conclusions.aux
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 4000000 items.
@@ -40,49 +40,52 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'field_info' (item size: 4) to 11160 items.
 Database file #1: main-blx.bib
 Database file #2: bibliography.bib
-Biblatex version: 3.20
+Warning--I didn't find a database entry for "lora_gateway_rssi"
+Biblatex version: 3.19
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 22 entries,
-            6402 wiz_defined-function locations,
-            1352 strings with 27528 characters,
-and the built_in function-call counts, 174806 in all, are:
-= -- 14729
-> -- 1964
-< -- 377
-+ -- 4779
-- -- 784
-* -- 12746
-:= -- 20664
+You've used 43 entries,
+            6399 wiz_defined-function locations,
+            1428 strings with 29343 characters,
+and the built_in function-call counts, 252202 in all, are:
+= -- 19377
+> -- 3669
+< -- 728
++ -- 6022
+- -- 1303
+* -- 17393
+:= -- 27373
 add.period$ -- 0
-call.type$ -- 22
-change.case$ -- 142
+call.type$ -- 43
+change.case$ -- 303
 chr.to.int$ -- 42
-cite$ -- 42
-duplicate$ -- 17226
-empty$ -- 15758
-format.name$ -- 1354
-if$ -- 35030
+cite$ -- 84
+duplicate$ -- 25489
+empty$ -- 23924
+format.name$ -- 2368
+if$ -- 52033
 int.to.chr$ -- 0
-int.to.str$ -- 46
+int.to.str$ -- 125
 missing$ -- 0
-newline$ -- 728
-num.names$ -- 810
-pop$ -- 7721
+newline$ -- 1124
+num.names$ -- 1734
+pop$ -- 14595
 preamble$ -- 1
-purify$ -- 276
+purify$ -- 500
 quote$ -- 0
-skip$ -- 3343
+skip$ -- 6643
 stack$ -- 0
-substring$ -- 29182
-swap$ -- 2771
-text.length$ -- 452
+substring$ -- 36130
+swap$ -- 4718
+text.length$ -- 809
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 736
+type$ -- 1450
 warning$ -- 0
-while$ -- 2373
+while$ -- 3139
 width$ -- 0
-write$ -- 707
+write$ -- 1082
+(There was 1 warning)

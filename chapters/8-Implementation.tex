@@ -42,13 +42,6 @@ When the soil is dry, the resistance between the probes is high, and when the so
 Then an ADC is used to measure the voltage across the probes, which is transofmerd into digital value. In this case, the
 ADC is a 12-bit ADC, which means that the digital value can range from 0 to 4095.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{images/moisture-sensor.png}
-    \caption{Soil moisture sensor based on resistive principle}
-    \label{fig:moisture-sensor}
-\end{figure}
-
 The raindrop data is collected using a resistive raindrop sensor. The principle of operation is similar to the soil moisture sensor, but 
 in this case, the sensor consists of a plate with two conductive traces that are separated by a small gap.
 When the rain falls on the plate, it closes the gap and allows the current to flow between the traces. The 
@@ -414,14 +407,10 @@ The communication between the frontend and web API is done via 2 methods: HTTP r
 irrigaiton actions and display system status and SignalR - for sending live data from the API to fronend. In the HTTP requests,
 a JWT token is included, ensuring secure access to system's features.
 
-The user interface is divided into several key components: Dasboard, Devicem Management, Schedules, History and Analytics.
-The dasboard displays current soil moisutre, temperature, humidity and water flow rate. 
-These values are received using SignalR. 
+The user interface is divided into several key components: Dasboard, Devicem Management, Configuration, Schedules, Data Analytics and Live Charts.
+The user can navigate between these components using a side drawer menu that is visible in \ref{fig:dashboard-page}. 
 Each value is displayed in a separate gauge-style widget to improve the readability.In this section the user can also controll the irrigation system.
-In Device Management section the user
-can see it's registered devices. In Schedules page the user can see and configure schedules. In the History and Analytics, the user can
-see the historical data, can generate an CSV format file containing the sensor readings and he can also see graph based on the 
-historical data.
+Now I will describe each component in detail, starting with the landing page.
 
 \subsection{Landing Page}
 The landing page is the first page that the users sees when they access the web application.
@@ -485,22 +474,83 @@ The Dashboard components contains several widgets some widgets are used to displ
 and others are used to controll the irrigation system. 
 The live data widgets are: Live Soil Moisture, Live Temperature, Live Humidity,
 Live Water Flow Rate and Live Water Temperature. In the control widget, the user can
-start or stop the irrigation process, and also he can set the data acquisition period.
+start or stop the irrigation process.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/dashboard.png}
-    \caption{Dashboard page of the web application}
+    \caption{Dashboard page}
     \label{fig:dashboard-page}
 \end{figure}
 
 % TO DO add more details about UI
+\subsection{Device Management}
+In this section the user canm visualize all the devices that are registered in the system.
+The devices are display in tree format, where each zone is a parent node and the devices are the child nodes.
+Two buttons are available in this section: one for registering a new device and another for registering a new zone.
+Also, the user can delete a device or a zone by clicking the button from the right side of the tree. See \ref{fig:device-management} 
+for the Device Management page.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/device_management.png}
+    \caption{Device Management page}
+    \label{fig:device-management}
+\end{figure}
+
+\subsection {Configuration}
+In the configuration section the user can configure the system settings. The user can change the following settings:
+soil moisture threshold, water flow rate threshold, water temperature threshold, raindrop sensor threshold, the 
+period of the sensor readings, and to enable or disable notifications or automation. A reset button will be added in the future. See 
+\ref{fig:configuration-page} for the configuration page.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/configuration.png}
+    \caption{Configuration page}
+    \label{fig:configuration-page}
+\end{figure}
+
+\subsection{Schedules}
+In this section the user can view, create, update and delete irrigation schedules. When the "Create Schedule" button is pressed, a dialog
+will open wehre the user can fill the schedule details. THe dialog contains a form with the following fields:
+Zone, Device, Start Time, End Time, Interval and Duration. For the Start and End Time fileds, a date range picker is used,
+which allows the user to select a date range for the schedule. The interval is the time interval between two consecutive executions of the schedule in hours.
+The duration is the duration of the schedule execution in minutes. See \ref{fig:schedules-page} for the Schedules page. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/schedules.png}
+    \caption{Schedules page}
+    \label{fig:schedules-page}
+\end{figure}
+
+\subsection{Data Analytics}
+Data Analytics section allows the user to view the historical data collected from the sensors under the form of charts. One example 
+of chart is shown in \ref{fig:analytics-page}. The user can also chose what features to display in the chart and it can also choose for what zone to
+view the charts. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/analytics.png}
+    \caption{Data Analytics page}
+    \label{fig:analytics-page}
+\end{figure}
+
+\subsection{Live Charts}
+In this section, the user can view in real time the data collected from the sensors, similar to the dashboard page. But in this case, the data is 
+displayed in a chart format. The user can choose what features to display in the char and it can also choose for what zone to view the charts.
+See \ref{fig:live-charts-page} for the Live Charts page.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/live-charts.png}
+    \caption{Live Charts page}
+    \label{fig:live-charts-page}
+\end{figure}
+
 
 \section{Rule based system}
 Automation is a key feature of the PiIrrigate system,
 to achieve this, I implemented a rule-based system that allows the system
 to make decisions based on the environmental data collected from the sensors.
-
 The rule-based system is implemented in the Web API and it coonsists
 of the following rules:
 \begin{enumerate}
@@ -516,10 +566,141 @@ This set of rules is executed every time a new sensor reading is received.
 The rules are implemented in the IrrigaitonManager service which implements the IIrrigationManager interface.                                                   
 
 \section{Used Technologies}
-\subsection {Overview}
+\subsection{Overview}
 The PiIrrigate system is build using a variety of technologies, each serving a specific purpose. For programming
-the ESP32, I used Arduino framework, within the Platform IO IDE. The Raspberry Pi is programemd in Python
+the ESP32, I used Arduino framework, within the Platform IO IDE. To handle the LoRa communication protocol I used \"LoRa.h\" library from developed by
+Sandeep Mistry. The Raspberry Pi is programemd in Python
 and it uses Azure IoT SDK for Python to communicate with the Azure IoT Hub. 
 The web API it was developed in \.NET 8. The web application is developed in Anguler 19. The live communication between 
-the web API and the web application is done using SignalR. The used database is PostgreSQL.
+the web API and the web application is done using SignalR. The used database is PostgreSQL. The deployment of the web API and the web application
+is done using Azure App Services.
 
+\subsection{Programming Languges}
+\subsubsection{C++}
+C++ is a general-purpose programming languuage that is widely used in the embeded systems domain. It is well known
+for its performance and efficiency. It supports multiple programming paradigms from procedural to object-oriented programming. 
+The programing language was created in 1985 by Bjarne Stroustrup as an extension of the C programming language. On the top of C
+, C++ adds features shuch as classes, inheritancem polymorphism, templates and exception handling.
+
+\subsubsection {Arduino C++}
+The firmware was developed using Arduino Framework. In this framework, the programing language used is a simplified version of C++.
+The framework provides a set o libraries and APIs that are meant to abtract the low-level details of the hardware operations. Some of the
+mose used functions are digitalRead, digitalWrite, analogRead, delay, etc.
+
+\subsubsection{Python}
+Python is a high-level, interpreted programming language. The language was created By Guido van Rossum and it was first released in 1991.
+It is well known for it's reability, simplicity and versatillity. Python supports multiple programming paradigms, like functiona, procedural and
+object-oriented programming. It can be used for a wide range of applications, from web development to data science and machine learning.
+In the PiIrrigate system, Python was used to develop the Raspberry Pi gateway. 
+
+\subsubsection{C-Sharp}
+C\# is a modern object oriented programming language developed by Microsoft. It was first released in 2000 as part of the \.NET framework.
+It was designed to be simple robust and versatile. C\# combined the performance of compiled languages with the ease of development offers
+typical of managed languages. It supports modern programming features such as generics and it is a strongly typed language\cite{dotnet_official}\cite{microsoft_csharp}.
+In the PiIrrigate system, C\# was used to develop the web API.
+
+\subsubsection{TypeScript}
+TypeScript is a statically typed language. It is a superset of JavaScript and was designed to enchance the scalability and maintability of large codesbes.
+It introduced intefaces, decorators, enums and generics while maintaining compatibility with existing JavaScript code. Typescrip became
+the standard for developing large applications, especially when using frameworks like Angular. Typescrips was used to develop the Angular
+web application in the PiIrrigateSystem. It was chosen because it provides a better development exceperience.
+
+\subsection{Frameworks and SDKs}
+\subsubsection{Ardunio Framework}
+Arduino framework is an open-source electronics development platform that enables developers to create project on a wide rande of microcontrollers.
+It provides a wide range of libraries (ex: LoRa.h, Wifi.h, HTTPClient.h, etc). The integration is very smooth with both Arduino IDEa and Platform ID.
+I used the Arduino framwerk to develop the ESP32 firmware because it's ideal for rapid prototyping and it is widely use in this kind of projects\cite{arduino_core}.
+
+\subsubsection{Azure IoT SDK for Python}
+Azure IoT SDK for Python consist of a set of libraries that allows developers to interact with Azure IoT Hub. I chose the client
+library to connect the Raspberry Pi the Azure IoT Hub. More specifically I used the telemetry transimission feature to send the sendor readings 
+to the cloud. The SDK offers suport for multiple protocols, including MQTT, AMQP and HTTP\cite{azure_iot_hub_docs}\cite{azure_iot_sdk_python}.
+
+\subsubsection{dotNET 8}
+\.NET 8 is the latest version of the \.NET framework, a cross-platform, open-source framework for building applications. It is supported by Microsoft
+and it is widely used to build web application, web APIs, desktop applicaitons and even mobile applications. It offers support for multiple programming
+languages, including C\#, F\# and Visual Basic. \.NET 8 was used to implement a RESTful backend API for the PiIrrigate system, 
+which prvides the neccesarry endpoints for user management, data storage, and communication with the IoT Hub. Another important aspect of \.NET 8
+is that it has natice support for asynchronous programming, dependency injection\cite{dotnet8_docs}\cite{microsoft_dotnet}.
+
+\subsubsection{Entity Framework Core}
+EF Core is an open-source ORM\. It is developed by Microsoft and it is part of the \.NET framwork. It enables developers
+to work with databases using class objects. Most of the raw queries that are usualy used in SQL databases are replaced with LINQ queries, 
+wich are more readable and easier to maintain. EF core supports multiple database, including SQL Server, PostgreSQL, MySQL and SQLite.
+It was used in this project to interact with the PostgreSQL database\cite{efcore}\cite{efcore_docs}.
+
+
+\subsubsection{Angular 19}
+Angular is an open-source frontedn web application framework maintained by Google. It can be used to build SPAs. The framework is written in 
+TypeScript and it provides a set of tools and libraries for building modern web applicaitons. Angular is based on components, which are reusable. 
+With the last version, Angular shifts to a more modular architecture, more and more components are being developed as standalone components.
+Angular 19 was used to develop the web application for the PiIrrigate system\cite{angular_19_release}\cite{angular_docs}.
+
+\subsection{Component Libraries}
+\subsubsection{Angular Material}
+Angular Material is a UI compoent library thath implements the Material Design specification.
+It was created by the Angular team at Google and it provides a wide range of reusable compoenents, including 
+buttons, crdsm tables, dialogs, and form controls. By using Angular Material in the UI development, the apps obtained are consistent
+and visually appealing, while also being responsive and accessible. Another aspect of using component libraries is thah 
+it reduces the amount of custom CSS that needs to be written, as most of the components come with prebuild style and themes\cite{material_design_spec}\cite{angular_material_docs}.
+
+
+\subsection{Libraries}
+\subsection{LoRa.h}
+Lora.h is a libray developed by Sandeep Mistry that provides an easy way to use LoRa communication protocol. 
+It is intednded for Semtech Semtech SX1276/77/78/79 based boards/shields\cite{arduino_lora_lib}.
+In this project I used the following functions from the libray: 
+\begin{enumerate}
+    \item begin() - to initialize the LoRa module.
+    \item beginPacket() - to start a new LoRa packet.
+    \item endPacket() - to send the LoRa packet.
+    \item parsePacket() - to check if a new LoRa packet is available.
+    \item readbytes() - to read the data from the LoRa packet.
+    \item readStringUntil() - to read a string from the LoRa packet.
+\end{enumerate}
+
+\subsubsection{SignalR}
+SignalR is a libray built by Microsoft as part of the \.NET framework. It provides real-time web functionality to applications, allowing bidirectional
+communication between the server and the client. It is used to send real-time updates to the web application form the web API 
+without the need for the client to poll the server\cite{signalr_docs}.
+
+\subsection{Cloud and Hosting}
+\subsubsection{Azure App Services}
+Azure App Service is a fully managed PaaS that allows developers to deploy web appicaitons, RESTful APIs without having to manage the
+underlying infrastructure. It supports multiple programming languages, including \.NET, Python, Node.js, and Java. It can be
+easly integrated with CI/CD pipelines and it provides build-in support for scaling, monitoring and security\cite{azure_app_service}.
+In the PiIrrigate system the deploy was done using the Publish feature of Visual Studio. With a few clicks, the web API and the web applicaiton
+were deployed to Azure AppServices.
+
+\subsubsection{Neon Database}
+Neon is a fully managed serverless PostgreSQL database platform. It is designated for moder cloud-native applications. It is 
+designed to be easy to use, scalable and cost-effective. Neon provides a serverless architecture and it separates the storage and the compute layers,
+allowing for automatic scaling and high availability.
+
+\subsection{Development Tools}
+\subsubsection{Platform IO}
+Platform IO is an open-source IDE that comes as a VSCode extension. It supports a wide range of platforms, including the ESP32.
+They have an unique philosophy in the embeded market, which is to provide developers withs a modern integrated development environment that
+allows them to access a wide range of libraries and frameworks. Besides that, Platform IO works cross-platform and offers uni testing, automatic code
+analysis and debbuging capabilities\cite{python_org}\cite{python}\cite{peps}.
+
+\subsubsection{Visual Studio Code}
+Visual Studion Code is a free open-source code editor. It is developed by Microsoft and it is available on all major platforms.
+The editor is higly customizable and it supports a wider range of programming languages. In this project, I used VSCode 
+as the main IDE for developing the ESP32 firmware, the web appication and also the code for the Raspberry Pi was written using VSCode. One of the nice
+fetures of VSCode is that supports SSH connections, which alllowed me to edit and run the code on the Raspberry Pi directly from the integrated terminal
+\cite{visualstudio_docs}.
+
+\subsection{Visual Studio}
+Visual Studio is an IDE developed by Microsoft. It is available only on Windows and it is used to develop applications with the \.NET framework.
+The IDE provides a wide range of tools for debugging, profiling, testing and deploying applications. 
+In this project, I used Visual Studio to develop the web API\cite{github_docs}.
+
+\subsection{Github}
+Github is a web-based platform for version control and collaboration. It is built on the top of Git and it allows developers to host and manage 
+code repositories, track changes and collaborate with other developers. It supports continuous integration and continous deployment pipelines,
+which automates the build, test and deployment processes\cite{github_docs}. In this project, I used Github to host the code repositories for the entire system.
+
+\subsection{Draw.io}
+Draw.io is a free online diagramming tool that allows users to create flowcharts, UML diagrams and other types of diagrams.
+It was used to create all the presented diagrams.
