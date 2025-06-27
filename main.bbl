@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,8 +16,8 @@
   {}
 \endgroup
 
-\datalist[entry]{none/global//global/global}
-  \entry{OBAIDEEN2022100124}{article}{}
+\datalist[entry]{none/global//global/global/global}
+  \entry{OBAIDEEN2022100124}{article}{}{}
     \name{author}{7}{}{%
       {{hash=OK}{%
          family={Obaideen},
@@ -107,7 +107,7 @@
     \field{year}{2022}
   \endentry
 
-  \entry{doi:10.1073/pnas.96.11.5995}{article}{}
+  \entry{doi:10.1073/pnas.96.11.5995}{article}{}{}
     \name{author}{1}{}{%
       {{hash=TD}{%
          family={Tilman},
@@ -164,7 +164,7 @@
     \field{year}{1999}
   \endentry
 
-  \entry{s20236865}{article}{}
+  \entry{s20236865}{article}{}{}
     \name{author}{8}{}{%
       {{hash=FMI}{%
          family={Froiz-Míguez},
@@ -270,7 +270,7 @@
     \field{year}{2020}
   \endentry
 
-  \entry{smartIrrigationTechnologyControllersAndSensors}{article}{}
+  \entry{smartIrrigationTechnologyControllersAndSensors}{article}{}{}
     \name{author}{1}{}{%
       {{hash=MGJQMST}{%
          family={Malarie\bibnamedelima Gotcher},
@@ -293,7 +293,7 @@
     \endverb
   \endentry
 
-  \entry{soilBasedIrrigation}{article}{}
+  \entry{soilBasedIrrigation}{article}{}{}
     \name{author}{1}{}{%
       {{hash=AUSEP}{%
          family={Agency},
@@ -314,7 +314,7 @@
     \endverb
   \endentry
 
-  \entry{LoRaHistory}{misc}{}
+  \entry{LoRaHistory}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=SL}{%
          family={Slats},
@@ -336,7 +336,7 @@
     \field{year}{2020}
   \endentry
 
-  \entry{loraBasedIoTPlatform}{article}{}
+  \entry{loraBasedIoTPlatform}{article}{}{}
     \name{author}{7}{}{%
       {{hash=AMA}{%
          family={Ahmed},
@@ -427,7 +427,7 @@
     \field{year}{2022}
   \endentry
 
-  \entry{agriculture12101745}{article}{}
+  \entry{agriculture12101745}{article}{}{}
     \name{author}{5}{}{%
       {{hash=DM}{%
          family={Dhanaraju},
@@ -493,7 +493,7 @@
     \field{year}{2022}
   \endentry
 
-  \entry{s19081833}{article}{}
+  \entry{s19081833}{article}{}{}
     \name{author}{7}{}{%
       {{hash=SX}{%
          family={Shi},
@@ -575,7 +575,7 @@
     \field{year}{2019}
   \endentry
 
-  \entry{headlessArchitecture}{article}{}
+  \entry{headlessArchitecture}{article}{}{}
     \name{author}{1}{}{%
       {{hash=SL}{%
          family={Stelitano},
@@ -595,7 +595,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{layerArchitecture}{misc}{}
+  \entry{layerArchitecture}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=BK}{%
          family={Borimechkov},
@@ -618,7 +618,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{ngrxStoreGuide}{misc}{}
+  \entry{ngrxStoreGuide}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=TN}{%
          family={Team},
@@ -640,7 +640,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{typescriptInterfaces}{misc}{}
+  \entry{typescriptInterfaces}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=TT}{%
          family={Team},
@@ -662,7 +662,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{angularServices}{misc}{}
+  \entry{angularServices}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=TA}{%
          family={Team},
@@ -684,7 +684,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{angularGuards}{misc}{}
+  \entry{angularGuards}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=TA}{%
          family={Team},
@@ -706,7 +706,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{platformio_docs}{manual}{}
+  \entry{platformio_docs}{manual}{}{}
     \name{author}{1}{}{%
       {{hash=P}{%
          family={{PlatformIO Labs}},
@@ -725,7 +725,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{1wire}{article}{}
+  \entry{1wire}{article}{}{}
     \name{author}{1}{}{%
       {{hash=GE}{%
          family={Garage},
@@ -744,7 +744,7 @@
     \endverb
   \endentry
 
-  \entry{s20020363}{article}{}
+  \entry{s20020363}{article}{}{}
     \name{author}{6}{}{%
       {{hash=AS}{%
          family={Adla},
@@ -850,7 +850,7 @@
     \field{year}{2020}
   \endentry
 
-  \entry{uderstandingUart}{article}{}
+  \entry{uderstandingUart}{article}{}{}
     \name{author}{1}{}{%
       {{hash=RS}{%
          family={Rohde-Schwarz},
@@ -869,7 +869,7 @@
     \endverb
   \endentry
 
-  \entry{laddha2013review}{article}{}
+  \entry{laddha2013review}{article}{}{}
     \name{author}{2}{}{%
       {{hash=LNR}{%
          family={Laddha},
@@ -896,7 +896,7 @@
     \field{year}{2013}
   \endentry
 
-  \entry{IHostedService}{article}{}
+  \entry{IHostedService}{article}{}{}
     \name{author}{1}{}{%
       {{hash=M}{%
          family={Microsoft},
@@ -914,7 +914,7 @@
     \endverb
   \endentry
 
-  \entry{dotnet_official}{misc}{}
+  \entry{dotnet_official}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=M}{%
          family={{Microsoft}},
@@ -933,7 +933,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{microsoft_csharp}{misc}{}
+  \entry{microsoft_csharp}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=M}{%
          family={{Microsoft Developer Network}},
@@ -952,7 +952,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{arduino_core}{misc}{}
+  \entry{arduino_core}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=A}{%
          family={{Arduino}},
@@ -971,7 +971,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{azure_iot_hub_docs}{misc}{}
+  \entry{azure_iot_hub_docs}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=M}{%
          family={{Microsoft}},
@@ -989,7 +989,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{azure_iot_sdk_python}{manual}{}
+  \entry{azure_iot_sdk_python}{manual}{}{}
     \name{author}{1}{}{%
       {{hash=M}{%
          family={{Microsoft Azure Team}},
@@ -1007,7 +1007,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{dotnet8_docs}{manual}{}
+  \entry{dotnet8_docs}{manual}{}{}
     \name{author}{1}{}{%
       {{hash=M}{%
          family={{Microsoft Developer Network}},
@@ -1025,7 +1025,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{microsoft_dotnet}{misc}{}
+  \entry{microsoft_dotnet}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=M}{%
          family={{Microsoft}},
@@ -1044,7 +1044,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{efcore}{article}{}
+  \entry{efcore}{article}{}{}
     \name{author}{1}{}{%
       {{hash=M}{%
          family={Microsoft},
@@ -1061,7 +1061,7 @@
     \endverb
   \endentry
 
-  \entry{efcore_docs}{manual}{}
+  \entry{efcore_docs}{manual}{}{}
     \name{author}{1}{}{%
       {{hash=M}{%
          family={{Microsoft}},
@@ -1080,7 +1080,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{angular_19_release}{misc}{}
+  \entry{angular_19_release}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=A}{%
          family={{Angular Team}},
@@ -1098,7 +1098,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{angular_docs}{misc}{}
+  \entry{angular_docs}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=A}{%
          family={{Angular Team at Google}},
@@ -1116,7 +1116,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{material_design_spec}{misc}{}
+  \entry{material_design_spec}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=G}{%
          family={{Google}},
@@ -1135,7 +1135,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{angular_material_docs}{misc}{}
+  \entry{angular_material_docs}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=A}{%
          family={{Angular Team at Google}},
@@ -1154,7 +1154,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{arduino_lora_lib}{manual}{}
+  \entry{arduino_lora_lib}{manual}{}{}
     \name{author}{1}{}{%
       {{hash=A}{%
          family={{Arduino}},
@@ -1176,7 +1176,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{signalr_docs}{manual}{}
+  \entry{signalr_docs}{manual}{}{}
     \name{author}{1}{}{%
       {{hash=M}{%
          family={{Microsoft}},
@@ -1195,7 +1195,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{azure_app_service}{misc}{}
+  \entry{azure_app_service}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=M}{%
          family={{Microsoft Azure}},
@@ -1213,7 +1213,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{python_org}{misc}{}
+  \entry{python_org}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=P}{%
          family={{Python Software Foundation}},
@@ -1232,7 +1232,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{python}{article}{}
+  \entry{python}{article}{}{}
     \name{author}{1}{}{%
       {{hash=FPS}{%
          family={Foundation},
@@ -1251,7 +1251,7 @@
     \endverb
   \endentry
 
-  \entry{peps}{misc}{}
+  \entry{peps}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=FPS}{%
          family={Foundation},
@@ -1272,7 +1272,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{visualstudio_docs}{manual}{}
+  \entry{visualstudio_docs}{manual}{}{}
     \name{author}{1}{}{%
       {{hash=M}{%
          family={{Microsoft}},
@@ -1291,7 +1291,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{github_docs}{misc}{}
+  \entry{github_docs}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=G}{%
          family={{GitHub, Inc.}},
