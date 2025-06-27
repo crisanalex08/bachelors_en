@@ -19,7 +19,7 @@ and how the PiIrrigate project tries to address these issues.
   Soil moisture based controllers use sensors that are placed in the soil to measure
   the moisture level and adjust the irrigation accordingly.
   These are more precise than weather-based controllers, as they take into account
-  the actual moisture level in the soil, but they require more maintenance and calibraiton
+  the actual moisture level in the soil, but they require more maintenance and calibration
   \cite{smartIrrigationTechnologyControllersAndSensors}.
 
   \item \textbf{Hybrid Systems} \\
@@ -36,8 +36,8 @@ and how the PiIrrigate project tries to address these issues.
   Some of the most popular hybrid smart irrigation systems include:
   \begin{itemize}
     \item \textbf{Netafim's Precision Irrigation System} \\
-    This system cobines data from soil moisture and flow sensors with sattelite weather data and predictive
-    analytics to optimize the irrigation proccess.
+    This system combines data from soil moisture and flow sensors with satellite weather data and predictive
+    analytics to optimize the irrigation process.
     
     Key features include:
     \begin{itemize}
@@ -52,15 +52,15 @@ and how the PiIrrigate project tries to address these issues.
 
     Key features include:
     \begin{itemize}
-      \item Irrigation recomandations based on soil variability, crop type and weather.
-      \item Farmers can apply recommandations or integrate with automated irrigaitons contrllers.
+      \item Irrigation recommendations based on soil variability, crop type and weather.
+      \item Farmers can apply recommandations or integrate with automated irrigation controllers.
       \item Easy to scale and adapt to different farm sizes from small to large-scale farms.
     \end{itemize}
   
     \item \textbf{Toro EVOLUTION® Series Controller with Smart ET Sensor} \\
     Combines basic sprinkler system hardware with smart sensors and connectivity,
     offering both manual and intelligent irrigation options. The evaporation sensors are used to measure
-    the amount of water lost throught evaporation and adjust the irrigation accordingly.
+    the amount of water lost through evaporation and adjust the irrigation accordingly.
 
     Key features include:
     \begin{itemize}
@@ -99,7 +99,7 @@ Cloud Sync & Yes & Yes & Optional & Yes \\
 \hline
 Use Case & Precision agri & Smart farming & Lawn care & Small to large scale\\
 \hline
-Cost & High & Med–High & Low–Mid & Low \\
+Cost & High & Med–High & Low–Mid & Low (~200 €) \\
 \hline
 \end{tabular}
 \caption{Comparison of Smart Irrigation Systems}
@@ -108,15 +108,15 @@ Cost & High & Med–High & Low–Mid & Low \\
 
 \section{IoT and LoRa in Agriculture}
 Agriculture is one of the biggest industries, critical to the global economy and food security. With the increasing food 
-demant, the need for efficient and sustainable agricultural has grown in the last years. The IoT (Internet of Things) is
-is a key technology that can help to address these challenges by providing real-time data and 
+demand, the need for efficient and sustainable agricultural has grown in the last years. The IoT (Internet of Things) is
+a key technology that can help to address these challenges by providing real-time data and 
 insights into the agricultural processes. LoRa (Long Range) is a wireless communication technology 
-that is well suited for agriculture applications. It has been inmvented in 2009 \- 2010 by the company Cycleo, 
+that is well suited for agriculture applications. It has been invented in 2009 \- 2010 by the company Cycleo, 
 which was later acquired by Semtech in 2012 and until 2020 it was implemented in more than 100 million devices worldwide
 \cite{LoRaHistory}.
 
 One approach to integrate IoT and LoRa in agriculture it's to use a layered architecture.
-This architecture consists of four layers: data aquisition, gateways, network and application.
+This architecture consists of four layers: data acquisition, gateways, network and application.
 where the sensors and actuators are connected to a LoRa gateway, which is then connected to a cloud platform. 
 This architecture is proposed in this paper \cite{loraBasedIoTPlatform} and it is a similar approach to the one used in the 
 PiIrrigate project. The sensors collect data from the environment, such as soil moisture, temperature, and humidity,
@@ -132,7 +132,7 @@ to control the irrigation process based on the data collected by the sensors.
 \end{figure}
 
 \section{LoRa vs Other Wireless Technologies}
-At this moment, theere are several wireless technologies available for IoT applications. After a 
+At this moment, there are several wireless technologies available for IoT applications. After a 
 comparative analysis of the most popular wireless technologies used in IoT, LoRa came out as one of the most suitable
 technologies for smart irrigation systems because of its long range, low power consumption and scalability.
 The table below compares LoRa with other wireless technologies commonly used in IoT applications, such as Wi-Fi, Bluetooth (BLE), 
@@ -143,7 +143,7 @@ including range, data rate, power consumption, topology, license band, scalabili
 Wifi, Bluetooth and Zigbee have a decent data rate, and very good latency, but they have a very short range 
 and high power consumption. This makes them more suitable for local applications, 
 such as home automation or local sensor networks. 
-NB-IoT(Narrowband IoT) represents a poteantial solution for smart irrigation systems, but 
+NB-IoT(Narrowband IoT) represents a potential solution for smart irrigation systems, but 
 it has a higher infrastructure cost and requires a cellular network, which may not be available in all areas.
 
 \begin{table}[ht]
@@ -189,11 +189,11 @@ Despite the advancements in smart irrigation systems, several gaps and challenge
   Some systems require specialized knowledge to set up and maintain, which can be a barrier for adoption.
 
   \item \textbf{Limited Customization} \\
-  Many commercial solution are designed for speicific crops and environments and that limits their
+  Many commercial solutions are designed for specific crops and environments and that limits their
   applicability to diverse agricultural settings.
   \item \textbf{Data Integration Issues} \\
-  Integration of data from different sources (e.g. wather, soil) can be more 
-  complex and it can lead to inefficiencies in the irrigaiton management.
+  Integration of data from different sources (e.g. weather, soil) can be more 
+  complex and it can lead to inefficiencies in the irrigation management.
 \end{itemize}
 
 In addition to the gaps mentioned, there are a few other issues that must be resolved, 

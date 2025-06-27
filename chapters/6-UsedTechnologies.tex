@@ -148,7 +148,7 @@ The core components and their roles in the system are as follows:
   stores the user data and the configuration of the system. The database is hosted in Neon.
 
   \item \textbf{Web Application} \\
-  The web applicaiton is developed using Angular and is responsible for displaying live, historical data
+  The web application is developed using Angular and is responsible for displaying live, historical data
   and provide the user interface for controlling the system.
 \end{itemize}
 
@@ -174,7 +174,7 @@ The sensors used in the PiIrrigate system are:
 
   \item \textbf{Water Flow Sensor} \\
   The water flow sensor is used to measure the flow rate of water in the irrigation system.
-  It is used to monitor the water consumption.
+  It is used to monitor water consumption.
 
   \item \textbf{Water Temperature Sensor} \\
   The water temperature sensor is used to measure the temperature of the water in the irrigation system.
@@ -223,7 +223,7 @@ The ESP32 nodes are connected to the sensors and actuators as follows:
   \item The relay module that controls the electronic valve is connected to GPIO22.
 \end{itemize}
 
-In the figure below, you can see a simplified digram of the ESP32 pinout and connections.
+In the figure below, you can see a simplified diagram of the ESP32 pinout and connections.
 
 \begin{figure}[H]
     \centering
@@ -259,9 +259,9 @@ The data flow in the PiIrrigate system is as follows:
     \label{fig:system-overview}
 \end{figure}
 
-\subsection{Data aquisition}
+\subsection{Data acquisition}
 The data acquisition is done using the ESP32 nodes that collect data from the sensors.
-For each sensor type, I created a specific library thath can be used to read the data from the sensor.
+For each sensor type, I created a specific library that can be used to read the data from the sensor.
 Temperature and humidity data is collected using a DHT11 sensor. The communication with the sensor is done using
 1-wire digital interface. The communication is done in 3 steps\cite{1wire}:
 \begin{enumerate}
@@ -282,7 +282,7 @@ Temperature and humidity data is collected using a DHT11 sensor. The communicati
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/dht-steps.png}
-    \caption{Steps in data aquisition from DHT11 sensor}
+    \caption{Steps in data acquisition from DHT11 sensor}
     \label{fig:dht-steps}
 \end{figure}
 
@@ -440,7 +440,7 @@ IoT device in Azure IoT Hub and the connected nodes.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/irrigation-zone.png}
-    \caption{Irrigaiton zone}
+    \caption{irrigation zone}
     \label{fig:irrigation-zone}
 \end{figure}
 

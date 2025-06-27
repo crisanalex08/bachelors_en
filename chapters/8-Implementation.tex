@@ -6,7 +6,7 @@ The implementation is divided into several sections, each focusing on a specific
 
 \section {ESP32 Firmware}
 For the ESP32 development I had to choose between two main frameworks: ESP-IDF and Arduino. I
-chosed the Arduino framework because it is more user-friendly. As IDE I used Platform IO, which is a VSCode extention
+chose the Arduino framework because it is more user-friendly. As IDE I used Platform IO, which is a VSCode extension
 that allows to develop on many different platforms, including the ESP32\cite{platformio_docs}.
 
 \subsection{Data Acquisition}
@@ -32,14 +32,14 @@ Temperature and humidity data is collected using a DHT11 sensor. The communicati
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{images/dht-steps.png}
-    \caption{Steps in data aquisition from DHT11 sensor}
+    \caption{Steps in data acquisition from DHT11 sensor}
     \label{fig:dht-steps}
 \end{figure}
 
-For the soil moisure data acquisition, I used a resistive soil moisture sensor. The principle of operation is based
+For the soil moisture data acquisition, I used a resistive soil moisture sensor. The principle of operation is based
 on measuring the resistance of the soil. The sensor consists of two probes that are inserted into the soil.
 When the soil is dry, the resistance between the probes is high, and when the soil is wet, the resistance is low\cite{s20020363}.
-Then an ADC is used to measure the voltage across the probes, which is transofmerd into digital value. In this case, the
+Then an ADC is used to measure the voltage across the probes, which is transformed into digital value. In this case, the
 ADC is a 12-bit ADC, which means that the digital value can range from 0 to 4095.
 
 The raindrop data is collected using a resistive raindrop sensor. The principle of operation is similar to the soil moisture sensor, but 
@@ -64,7 +64,7 @@ flow rate of water.
 The sensor has a maximum flow rate of 30 liters per minute and a minimum 
 flow rate of 1 liter per minute.
 The sensor has three wires: red (VCC), black (GND), and yellow (signal).
-At each rotation of the tubine, the sesnsor generates a pulse signal on the signal wire.
+At each rotation of the turbine, the sensor generates a pulse signal on the signal wire.
 This sensor will be used to check if the irrigation system is working properly or not.
 The ESP32 counts the number of pulses in a given time interval 
 (e.g., 1 second) to calculate the flow rate.
@@ -97,11 +97,11 @@ To be able to locate each node in the field, a GPS module is used. More precisel
 which is integrated in the LILYGO Meshtastic AXP2101 T-Beam V1.2 ESP32 LoRa development board.
 
 \subsection {Data Transmission}
-Once the data is collected from the sensors, it needs to be transmited to the gateway.
+Once the data is collected from the sensors, it needs to be transmitted to the gateway.
 The ESP32 nodes use LoRa communication to send the data to the gateway. 
-The sensor reading has a period of 10 seconds, which is the default value and it can be changed from the Web Application.
+The sensor reading has a period of 10 seconds, which is the default value, and it can be changed from the Web Application.
 The data collected from the sensors is serialized into a sensor reading structure, 
-which is then is included in a LoRa packet structure that will be 
+which is then included in a LoRa packet structure that will be 
 binary serialized and sent over LoRa radio communication.
 \begin{lstlisting}[language=C, caption={LoRa packet structure}]
 struct LoRaPacket {
@@ -133,12 +133,12 @@ This allows a better flexibility in the future.
 \section{Raspberry Pi and ESP32 Gateway}
 The gateway ESP23 acts like a proxy between the nodes and the Raspberry Pi.
 It receives the LoRa packets from the nodes, and then it sends the data to 
-the Raspberry Pi using Serial communnication by UART.
+the Raspberry Pi using Serial communication by UART.
 
-UART is an integrated cicuit that plays the most important role in serial communication.
-It containts a parallel-to serial converter and a serial-to-parallel converter\cite{uderstandingUart}
+UART is an integrated circuit that plays the most important role in serial communication.
+It contains a parallel-to serial converter and a serial-to-parallel converter\cite{uderstandingUart}
 \cite{laddha2013review}. The 
-parrallel-to-serial converter ia used for data sent from Raspberry Pi to the ESP32,
+parallel-to-serial converter is used for data sent from Raspberry Pi to the ESP32,
 and the serial-to-parallel converter is used for data sent from the ESP32 to the Raspberry Pi.
 The UART frame format is as follows:
 \begin{itemize}
@@ -151,7 +151,7 @@ The UART frame format is as follows:
 
 \section {Web Api}
 \subsection{Web API}
-The web API is developed in \.NET ans it is responsible
+The web API is developed in \.NET and it is responsible
 for user management, data storage, and communication with the IoT Hub.
 It uses Entity Framework Core to interact with the 
 PostgreSQL database and SignalR to provide real-time communication.
@@ -160,10 +160,10 @@ I created a controller for each resource in the system,
 such as users, zones, data, devices, schedules and cloud to device messages.
 
 \subsubsection{Zone Controller}
-Since the first step in the activation process is to verify the code enterede by the
+Since the first step in the activation process is to verify the code entered by the
 user, I will start describing the zone controller.
 Using this controller, the user can create a zone, activate a zone, get the IoT Device connection string, retrieve
-all zonees, get a zone by id, and delete a zone. For the database interaction, I created
+all zones, get a zone by id, and delete a zone. For the database interaction, I created
 a zone repository that implements the IZoneRepository interface.
 \begin{lstlisting}[caption={Zone Repository interface}]
 public interface IZoneRepository
@@ -179,7 +179,7 @@ public interface IZoneRepository
 
 The controller is also using the IoTDeviceManager service to manage the
 IoT devices in Azure IoT Hub, which implement the IioTDeviceManager interface and 
-is repsonsible for creating, deleting, and checking the existence of IoT devices.
+is responsible for creating, deleting, and checking the existence of IoT devices.
 
 \begin{lstlisting}[caption={IoT Device manager interface}]
 public interface IiotDeviceManager
@@ -193,9 +193,9 @@ public interface IiotDeviceManager
 
 \subsection{Zone Activation}
 The Raspbery Pi represents a "zone" in the system and it connects to a single Azure IoT Hub Device. Each zone needs to
-connect to the Azure IoT Hub Device using a connection string. To obtain that connection string, a a reuest is sent 
+connect to the Azure IoT Hub Device using a connection string. To obtain that connection string, a reuest is sent 
 to the web API to create a new zone. The web api will create the zone in the database and it will create a new IoT Device
-in the Azure IoT Hub. The connection string will be returened to the "zone". Aftr that, the RaspberryPi won't send any 
+in the Azure IoT Hub. The connection string will be returned to the "zone". After that, the RaspberryPi won't send any 
 reading to the cloud, the sending of the data will be done only when the zone is activated.
 The activation process is as follows:
 \begin{enumerate}
@@ -221,11 +221,11 @@ It provides endpoints for:
 \begin{itemize}
     \item Get all data for a zone, including the data for all devices in that zone.
     \item Get data for a certain period of time.
-    \item Get all data foor a device.
+    \item Get all data for a device.
     \item Get data for a device for a certain period of time.
 \end{itemize}
 
-IData repository is used to interact with the database and it implments the IDataRepository interface.
+IData repository is used to interact with the database and it implements the IDataRepository interface.
 \begin{lstlisting}
 public interface IDataRepository
 {
@@ -250,7 +250,7 @@ It provides endpoints for:
 \subsubsection{C2D Controller}
 The C2D (Cloud to Device) controller is used to manage the cloud to device messages in the system.
 It provides only one endpoint to send a message to a device. The endpoint accepts a C2DMesageRequest object, 
-which contains the zoneId, and an object of type C2DMethodCall, which contains the the deviceId, the method name, and a list of parameters.
+which contains the zoneId, and an object of type C2DMethodCall, which contains the deviceId, the method name, and a list of parameters.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/c2d-message-request.png}
@@ -290,13 +290,13 @@ The Schedule object is defined as follows:
 The user can create a new schedule using the UI of the web application,
 which will send a request to the web API to create a new schedule. 
 The web API will validate the request and create a new schedule in the database.
-A bragraound service will be used to check and execute the schedules. The background service will run 
-every minute and check if there are any schedules that should be executed or stoped. To be more robust, the duration 
-of the schedule, as well as the start and end time, will be sent to the Raspberry Pi, wich will also check if 
+A background service will be used to check and execute the schedules. The background service will run 
+every minute and check if there are any schedules that should be executed or stopped. To be more robust, the duration 
+of the schedule, as well as the start and end time, will be sent to the Raspberry Pi, which will also check if 
 the schedule should be executed or stopped. This way if the Web API or the network connectivity is down, 
 the Raspberry Pi will still be able to execute the schedules.
 
-A background service is used to check the schedules. A baground services is a service that implements
+A background service is used to check the schedules. A background services is a service that implements
 the IHostedService interface and runs tasks in the background. It is used to perform long-running tasks and
 it implements the StartAsync and StopAsync methods \cite{IHostedService}.
 
@@ -351,7 +351,7 @@ public interface IPasswordHasher
 The registration flow is as follows:
 \begin{enumerate}
     \item The user fills the registration form in the web application.
-    \item The web application sends the request to the web API. More sdpecifically, 
+    \item The web application sends the request to the web API. More specifically, 
     it sends a POST request to the register endpoint of the user controller. The controller
     receives the request as an object of type RegisterRequest.
     \item The request is being validated by the web API.
@@ -401,20 +401,20 @@ The login flow is shown in the figure below.
 \section {Web Application}
 The frontend interface of the smart irrigation system was implemented using Angular. The web application serves as the main
 point of interaction between the user and the backend system. It allow the users to monitor the environmental conditions
-in real-time and manually controll irrigation events.
+in real-time and manually control irrigation events.
 
 The communication between the frontend and web API is done via 2 methods: HTTP requests - for fetching sensor data, trigger
-irrigaiton actions and display system status and SignalR - for sending live data from the API to fronend. In the HTTP requests,
+irrigation actions and display system status and SignalR - for sending live data from the API to frontend. In the HTTP requests,
 a JWT token is included, ensuring secure access to system's features.
 
-The user interface is divided into several key components: Dasboard, Devicem Management, Configuration, Schedules, Data Analytics and Live Charts.
+The user interface is divided into several key components: Dashboard, Device Management, Configuration, Schedules, Data Analytics and Live Charts.
 The user can navigate between these components using a side drawer menu that is visible in \ref{fig:dashboard-page}. 
-Each value is displayed in a separate gauge-style widget to improve the readability.In this section the user can also controll the irrigation system.
+Each value is displayed in a separate gauge-style widget to improve the readability. In this section the user can also control the irrigation system.
 Now I will describe each component in detail, starting with the landing page.
 
 \subsection{Landing Page}
 The landing page is the first page that the users sees when they access the web application.
-It presints the user with a brief introduction into the system and it provides the the user with the main 
+It presents the user with a brief introduction into the system and it provides the user with the main 
 features of the system. The page is responsive, meaning that it can be accessed from any device,
 including mobile phones and tablets. The page contains a scrollable
 carousel with the main features of the system and a call to action button that redirects the user to the registration page.
@@ -457,7 +457,7 @@ The login page contains a form with only 2 fields: Email and Password.
 \end{figure}
 
 Now I will describe the registration and login flows. Afther ther user presses the
-call to action button from the landing page, he is redirected to the registraiton page. 
+call to action button from the landing page, he is redirected to the registration page. 
 If the users fills the registration form and presses the register button it will be automatically
 logged in and redirected to the Dashboard. From the register page he can navigate to the login page where
 he can login. If the login fails, the user will can reset his password and try again.
@@ -471,7 +471,7 @@ Bellow is presented the user flow diagram.
 
 \subsection{Dashboard}
 The Dashboard components contains several widgets some widgets are used to display live data
-and others are used to controll the irrigation system. 
+and others are used to control the irrigation system. 
 The live data widgets are: Live Soil Moisture, Live Temperature, Live Humidity,
 Live Water Flow Rate and Live Water Temperature. In the control widget, the user can
 start or stop the irrigation process.
@@ -485,7 +485,7 @@ start or stop the irrigation process.
 
 % TO DO add more details about UI
 \subsection{Device Management}
-In this section the user canm visualize all the devices that are registered in the system.
+In this section the user can visualize all the devices that are registered in the system.
 The devices are display in tree format, where each zone is a parent node and the devices are the child nodes.
 Two buttons are available in this section: one for registering a new device and another for registering a new zone.
 Also, the user can delete a device or a zone by clicking the button from the right side of the tree. See \ref{fig:device-management} 
@@ -512,8 +512,8 @@ period of the sensor readings, and to enable or disable notifications or automat
 
 \subsection{Schedules}
 In this section the user can view, create, update and delete irrigation schedules. When the "Create Schedule" button is pressed, a dialog
-will open wehre the user can fill the schedule details. THe dialog contains a form with the following fields:
-Zone, Device, Start Time, End Time, Interval and Duration. For the Start and End Time fileds, a date range picker is used,
+will open where the user can fill the schedule details. The dialog contains a form with the following fields:
+Zone, Device, Start Time, End Time, Interval and Duration. For the Start and End Time fields, a date range picker is used,
 which allows the user to select a date range for the schedule. The interval is the time interval between two consecutive executions of the schedule in hours.
 The duration is the duration of the schedule execution in minutes. See \ref{fig:schedules-page} for the Schedules page. 
 
@@ -551,11 +551,11 @@ See \ref{fig:live-charts-page} for the Live Charts page.
 Automation is a key feature of the PiIrrigate system,
 to achieve this, I wrote some rules that allow the system
 to make decisions based on the environmental data collected from the sensors.
-The rule-based system is implemented in the Web API and it coonsists
+The rule-based system is implemented in the Web API and it consists
 of the following rules:
 \begin{enumerate}
-    \item If the soil moisture is below a certain threshold and the raindop sensor detects no rain, then start the irrigation.
-    \item If the soil moisture is above a certain threshold and the water flow rate is above a certain level, the irrigation will be stoped.
+    \item If the soil moisture is below a certain threshold and the raindrop sensor detects no rain, then start the irrigation.
+    \item If the soil moisture is above a certain threshold and the water flow rate is above a certain level, the irrigation will be stopped.
     \item If the soil moisture reading is not available, then the irrigation will be stopped.
     \item If the soil moisture is below the threshold and the water flow rate is zero, then an alert will b sent to the user.
     \item If the irrigation process is running and the raindrop sensor detects rain, then stop the irrigation and send an alert to the user.
@@ -563,33 +563,33 @@ of the following rules:
     \item If the water flow rate remains unchanged for a certain period of time, then send an alert to the user.
 \end{enumerate}
 This set of rules is executed every time a new sensor reading is received.
-The rules are implemented in the IrrigaitonManager service which implements the IIrrigationManager interface.                                                   
+The rules are implemented in the irrigationManager service which implements the IIrrigationManager interface.                                                   
 
 \section{Used Technologies}
 \subsection{Overview}
 The PiIrrigate system is build using a variety of technologies, each serving a specific purpose. For programming
 the ESP32, I used Arduino framework, within the Platform IO IDE. To handle the LoRa communication protocol I used \"LoRa.h\" library from developed by
-Sandeep Mistry. The Raspberry Pi is programemd in Python
+Sandeep Mistry. The Raspberry Pi is programmed in Python
 and it uses Azure IoT SDK for Python to communicate with the Azure IoT Hub. 
-The web API it was developed in \.NET 8. The web application is developed in Anguler 19. The live communication between 
+The web API it was developed in \.NET 8. The web application is developed in Angular 19. The live communication between 
 the web API and the web application is done using SignalR. The used database is PostgreSQL. The deployment of the web API and the web application
 is done using Azure App Services.
 
 \subsection{Programming Languges}
 \subsubsection{C++}
-C++ is a general-purpose programming languuage that is widely used in the embeded systems domain. It is well known
+C++ is a general-purpose programming language that is widely used in the embedded systems domain. It is well known
 for its performance and efficiency. It supports multiple programming paradigms from procedural to object-oriented programming. 
 The programing language was created in 1985 by Bjarne Stroustrup as an extension of the C programming language. On the top of C
-, C++ adds features shuch as classes, inheritancem polymorphism, templates and exception handling.
+, C++ adds features such as classes, inheritance, polymorphism, templates and exception handling.
 
 \subsubsection {Arduino C++}
 The firmware was developed using Arduino Framework. In this framework, the programing language used is a simplified version of C++.
-The framework provides a set o libraries and APIs that are meant to abtract the low-level details of the hardware operations. Some of the
-mose used functions are digitalRead, digitalWrite, analogRead, delay, etc.
+The framework provides a set o libraries and APIs that are meant to abstract the low-level details of the hardware operations. Some of the
+most used functions are digitalRead, digitalWrite, analogRead, delay, etc.
 
 \subsubsection{Python}
 Python is a high-level, interpreted programming language. The language was created By Guido van Rossum and it was first released in 1991.
-It is well known for it's reability, simplicity and versatillity. Python supports multiple programming paradigms, like functiona, procedural and
+It is well known for it's reliability, simplicity and versatility. Python supports multiple programming paradigms, like functional, procedural and
 object-oriented programming. It can be used for a wide range of applications, from web development to data science and machine learning.
 In the PiIrrigate system, Python was used to develop the Raspberry Pi gateway. 
 
@@ -600,56 +600,56 @@ typical of managed languages. It supports modern programming features such as ge
 In the PiIrrigate system, C\# was used to develop the web API.
 
 \subsubsection{TypeScript}
-TypeScript is a statically typed language. It is a superset of JavaScript and was designed to enchance the scalability and maintability of large codesbes.
-It introduced intefaces, decorators, enums and generics while maintaining compatibility with existing JavaScript code. Typescrip became
-the standard for developing large applications, especially when using frameworks like Angular. Typescrips was used to develop the Angular
-web application in the PiIrrigateSystem. It was chosen because it provides a better development exceperience.
+TypeScript is a statically typed language. It is a superset of JavaScript and was designed to enchance the scalability and maintainability of large codebases.
+It introduced interfaces, decorators, enums and generics while maintaining compatibility with existing JavaScript code. Typescript became
+the standard for developing large applications, especially when using frameworks like Angular. Typescript was used to develop the Angular
+web application in the PiIrrigateSystem. It was chosen because it provides a better development experience.
 
 \subsection{Frameworks and SDKs}
-\subsubsection{Ardunio Framework}
+\subsubsection{Arduino Framework}
 Arduino framework is an open-source electronics development platform that enables developers to create project on a wide rande of microcontrollers.
 It provides a wide range of libraries (ex: LoRa.h, Wifi.h, HTTPClient.h, etc). The integration is very smooth with both Arduino IDEa and Platform ID.
 I used the Arduino framwerk to develop the ESP32 firmware because it's ideal for rapid prototyping and it is widely use in this kind of projects\cite{arduino_core}.
 
 \subsubsection{Azure IoT SDK for Python}
 Azure IoT SDK for Python consist of a set of libraries that allows developers to interact with Azure IoT Hub. I chose the client
-library to connect the Raspberry Pi the Azure IoT Hub. More specifically I used the telemetry transimission feature to send the sendor readings 
-to the cloud. The SDK offers suport for multiple protocols, including MQTT, AMQP and HTTP\cite{azure_iot_hub_docs}\cite{azure_iot_sdk_python}.
+library to connect the Raspberry Pi the Azure IoT Hub. More specifically I used the telemetry transmission feature to send the sensor readings 
+to the cloud. The SDK offers support for multiple protocols, including MQTT, AMQP and HTTP\cite{azure_iot_hub_docs}\cite{azure_iot_sdk_python}.
 
 \subsubsection{dotNET 8}
 \.NET 8 is the latest version of the \.NET framework, a cross-platform, open-source framework for building applications. It is supported by Microsoft
-and it is widely used to build web application, web APIs, desktop applicaitons and even mobile applications. It offers support for multiple programming
+and it is widely used to build web application, web APIs, desktop applications and even mobile applications. It offers support for multiple programming
 languages, including C\#, F\# and Visual Basic. \.NET 8 was used to implement a RESTful backend API for the PiIrrigate system, 
-which prvides the neccesarry endpoints for user management, data storage, and communication with the IoT Hub. Another important aspect of \.NET 8
-is that it has natice support for asynchronous programming, dependency injection\cite{dotnet8_docs}\cite{microsoft_dotnet}.
+which provides the necessary endpoints for user management, data storage, and communication with the IoT Hub. Another important aspect of \.NET 8
+is that it has native support for asynchronous programming, dependency injection\cite{dotnet8_docs}\cite{microsoft_dotnet}.
 
 \subsubsection{Entity Framework Core}
-EF Core is an open-source ORM\. It is developed by Microsoft and it is part of the \.NET framwork. It enables developers
-to work with databases using class objects. Most of the raw queries that are usualy used in SQL databases are replaced with LINQ queries, 
-wich are more readable and easier to maintain. EF core supports multiple database, including SQL Server, PostgreSQL, MySQL and SQLite.
+EF Core is an open-source ORM\. It is developed by Microsoft and it is part of the \.NET framework. It enables developers
+to work with databases using class objects. Most of the raw queries that are usually used in SQL databases are replaced with LINQ queries, 
+which are more readable and easier to maintain. EF core supports multiple database, including SQL Server, PostgreSQL, MySQL and SQLite.
 It was used in this project to interact with the PostgreSQL database\cite{efcore}\cite{efcore_docs}.
 
 
 \subsubsection{Angular 19}
-Angular is an open-source frontedn web application framework maintained by Google. It can be used to build SPAs. The framework is written in 
-TypeScript and it provides a set of tools and libraries for building modern web applicaitons. Angular is based on components, which are reusable. 
+Angular is an open-source frontend web application framework maintained by Google. It can be used to build SPAs. The framework is written in 
+TypeScript and it provides a set of tools and libraries for building modern web applications. Angular is based on components, which are reusable. 
 With the last version, Angular shifts to a more modular architecture, more and more components are being developed as standalone components.
 Angular 19 was used to develop the web application for the PiIrrigate system\cite{angular_19_release}\cite{angular_docs}.
 
 \subsection{Component Libraries}
 \subsubsection{Angular Material}
-Angular Material is a UI compoent library thath implements the Material Design specification.
-It was created by the Angular team at Google and it provides a wide range of reusable compoenents, including 
-buttons, crdsm tables, dialogs, and form controls. By using Angular Material in the UI development, the apps obtained are consistent
-and visually appealing, while also being responsive and accessible. Another aspect of using component libraries is thah 
+Angular Material is a UI component library that implements the Material Design specification.
+It was created by the Angular team at Google and it provides a wide range of reusable components, including 
+buttons, cards, tables, dialogs, and form controls. By using Angular Material in the UI development, the apps obtained are consistent
+and visually appealing, while also being responsive and accessible. Another aspect of using component libraries is that 
 it reduces the amount of custom CSS that needs to be written, as most of the components come with prebuild style and themes\cite{material_design_spec}\cite{angular_material_docs}.
 
 
 \subsection{Libraries}
 \subsection{LoRa.h}
-Lora.h is a libray developed by Sandeep Mistry that provides an easy way to use LoRa communication protocol. 
-It is intednded for Semtech Semtech SX1276/77/78/79 based boards/shields\cite{arduino_lora_lib}.
-In this project I used the following functions from the libray: 
+Lora.h is a library developed by Sandeep Mistry that provides an easy way to use LoRa communication protocol. 
+It is intended for Semtech Semtech SX1276/77/78/79 based boards/shields\cite{arduino_lora_lib}.
+In this project I used the following functions from the library: 
 \begin{enumerate}
     \item begin() - to initialize the LoRa module.
     \item beginPacket() - to start a new LoRa packet.
@@ -660,16 +660,16 @@ In this project I used the following functions from the libray:
 \end{enumerate}
 
 \subsubsection{SignalR}
-SignalR is a libray built by Microsoft as part of the \.NET framework. It provides real-time web functionality to applications, allowing bidirectional
+SignalR is a library built by Microsoft as part of the \.NET framework. It provides real-time web functionality to applications, allowing bidirectional
 communication between the server and the client. It is used to send real-time updates to the web application form the web API 
 without the need for the client to poll the server\cite{signalr_docs}.
 
 \subsection{Cloud and Hosting}
 \subsubsection{Azure App Services}
-Azure App Service is a fully managed PaaS that allows developers to deploy web appicaitons, RESTful APIs without having to manage the
+Azure App Service is a fully managed PaaS that allows developers to deploy web applications, RESTful APIs without having to manage the
 underlying infrastructure. It supports multiple programming languages, including \.NET, Python, Node.js, and Java. It can be
-easly integrated with CI/CD pipelines and it provides build-in support for scaling, monitoring and security\cite{azure_app_service}.
-In the PiIrrigate system the deploy was done using the Publish feature of Visual Studio. With a few clicks, the web API and the web applicaiton
+easily integrated with CI/CD pipelines and it provides build-in support for scaling, monitoring and security\cite{azure_app_service}.
+In the PiIrrigate system the deploy was done using the Publish feature of Visual Studio. With a few clicks, the web API and the web application
 were deployed to Azure AppServices.
 
 \subsubsection{Neon Database}
@@ -680,15 +680,15 @@ allowing for automatic scaling and high availability.
 \subsection{Development Tools}
 \subsubsection{Platform IO}
 Platform IO is an open-source IDE that comes as a VSCode extension. It supports a wide range of platforms, including the ESP32.
-They have an unique philosophy in the embeded market, which is to provide developers withs a modern integrated development environment that
-allows them to access a wide range of libraries and frameworks. Besides that, Platform IO works cross-platform and offers uni testing, automatic code
-analysis and debbuging capabilities\cite{python_org}\cite{python}\cite{peps}.
+They have an unique philosophy in the embedded market, which is to provide developers withs a modern integrated development environment that
+allows them to access a wide range of libraries and frameworks. Besides that, Platform IO works cross-platform and offers unit testing, automatic code
+analysis and debbugging capabilities\cite{python_org}\cite{python}\cite{peps}.
 
 \subsubsection{Visual Studio Code}
-Visual Studion Code is a free open-source code editor. It is developed by Microsoft and it is available on all major platforms.
-The editor is higly customizable and it supports a wider range of programming languages. In this project, I used VSCode 
-as the main IDE for developing the ESP32 firmware, the web appication and also the code for the Raspberry Pi was written using VSCode. One of the nice
-fetures of VSCode is that supports SSH connections, which alllowed me to edit and run the code on the Raspberry Pi directly from the integrated terminal
+Visual Studio Code is a free open-source code editor. It is developed by Microsoft and it is available on all major platforms.
+The editor is highly customizable and it supports a wider range of programming languages. In this project, I used VSCode 
+as the main IDE for developing the ESP32 firmware, the web application and also the code for the Raspberry Pi was written using VSCode. One of the nice
+features of VSCode is that supports SSH connections, which allowed me to edit and run the code on the Raspberry Pi directly from the integrated terminal
 \cite{visualstudio_docs}.
 
 \subsection{Visual Studio}
@@ -697,8 +697,8 @@ The IDE provides a wide range of tools for debugging, profiling, testing and dep
 In this project, I used Visual Studio to develop the web API\cite{github_docs}.
 
 \subsection{Github}
-Github is a web-based platform for version control and collaboration. It is built on the top of Git and it allows developers to host and manage 
-code repositories, track changes and collaborate with other developers. It supports continuous integration and continous deployment pipelines,
+GitHub is a web-based platform for version control and collaboration. It is built on the top of Git and it allows developers to host and manage 
+code repositories, track changes and collaborate with other developers. It supports continuous integration and continuous deployment pipelines,
 which automates the build, test and deployment processes\cite{github_docs}. In this project, I used Github to host the code repositories for the entire system.
 
 \subsection{Draw.io}

@@ -134,12 +134,12 @@ In the figure below it is described the connection between the ESP32 and the Ras
 
 \section{Software Components}
 PiIrrigate system contains multiple software components that work together to provide a complete solution.
-The main sofware components of the PiIrrigate system are: ESP32 firmware, Raspberry Pi script, 
+The main software components of the PiIrrigate system are: ESP32 firmware, Raspberry Pi script, 
 Web API together with the PostgreSQL database, and Web Application.
 
 \section {Software Architecture}
-The software architecture of the PiIrrigate system is a headless architecure. Headless architecture is a software development
-approache that separates the frontend and backend of an application, allowing for faster development and better 
+The software architecture of the PiIrrigate system is a headless architecture. Headless architecture is a software development
+approach that separates the frontend and backend of an application, allowing for faster development and better 
 customization \cite{headlessArchitecture}.
 
 Excluding the necessary code for the firmware running on the ESP32 nodes and the python script
@@ -149,7 +149,7 @@ The backend is divided into 5 layers: Api, Service, Data, Models and Integration
 
 The Api layer is responsible for exposing endpoints, handling HTTP requests, performing input validation, and 
 returning responses to the client. It represents the entry point of the backend application\cite{layerArchitecture}.
-The service layer is the one that contains the bussiness logic of the application and 
+The service layer is the one that contains the business logic of the application and 
 is responsible for processing the data received from the Data layer and returning it to the Api layer.
 Data layer's only role is to interact with the database. It is responsible for data access and persistence and it 
 is the only layer that interacts with the database as any other layer should not be aware of the database
@@ -157,14 +157,14 @@ and should interact with the database only through the Data layer. Models layer
 is responsible for defining the data structures used in the application.
 The integration layer is responsible for integrating with external services, such as Azure IoT Hub and SignalR.
 
-The frontend is also divided into 5 layers: Presenation, State, Services, Models and Guards. The Presentation layer 
+The frontend is also divided into 5 layers: Presentation, State, Services, Models and Guards. The Presentation layer 
 is responsible for rendering the user interface and handling user interactions. The State layers is responsible for
-storing the application state and managin the data flow between the components \cite{ngrxStoreGuide}. 
-Service layers is responsible for interacting with the backend API and provifing ready to use data to the Presentation layer.
+storing the application state and managing the data flow between the components \cite{ngrxStoreGuide}. 
+Service layers is responsible for interacting with the backend API and providing ready to use data to the Presentation layer.
 Models layer, similar to the backend Models layer is responsible for defining the data structures used in the application\cite{typescriptInterfaces}.
 Routing layer manages the navigation between different components\cite{angularServices} and the Guards layer makes sure that the user
 has the necessary permissions to access a specific route or component\cite{angularGuards}. 
-In the following figure, you can see the sofware architecure of the PiIrrigate system.
+In the following figure, you can see the software architecture of the PiIrrigate system.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/sw-architecture.png}

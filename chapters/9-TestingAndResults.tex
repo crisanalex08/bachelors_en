@@ -1,7 +1,7 @@
 \chapter{Testing and Rsults}
 \section{Introduction}
-This chapter presents the testing and evaluation processes to validate the functionality, reliability and perforamnce of hte developed system.
-The goal is to ensure that each compoentn of the ssytem works as intended. The system's components are tested individually and in integration to 
+This chapter presents the testing and evaluation processes to validate the functionality, reliability and performance of the developed system.
+The goal is to ensure that each component of the sytem works as intended. The system's components are tested individually and in integration to 
 make sure thy meet the specified requirements.
 
 For this project I tested the software using unit tests and integration tests. 
@@ -15,7 +15,7 @@ Unit testing is a software testing techniques where individual components are te
 I will present the unit tests that were created for the JwtService, which is a key component of the system, responsible of handling the JWT tokens.
 Usually one unit test is created for each metho of the class. In this section I will present only the unit test for the GenerateJwtToken()
 method. A unit test is split into three parts called Arrange, Act and Assert or Given, When and Then. In the Arrange part, the test
-sets up the necessary conditions for the test, such as mocking ans setting-up deppendencies or creating test data. In the Act part, the test
+sets up the necessary conditions for the test, such as mocking and setting-up dependencies or creating test data. In the Act part, the test
 calls the tested method with the prepared data. In the Assert part, the test checks if the result of the call is as expected.
 \begin{lstlisting}[language=C, caption={Unit Test for GenerateJwtToken() Method in JwtService}, label={lst:jwt_unit_test}]
  [TestMethod ]
@@ -51,10 +51,10 @@ calls the tested method with the prepared data. In the Assert part, the test che
 \subsection {Integration Testing}
 Integration testing is a critical phase in the software development testing. In this phase, individual components are combined an tested 
 together to ensure they work as a cohesive syste. This type of testing can be approached in various ways, such as top-down and bottom-up.
-In this project, I used the top-down approach fot integration testing. Manual integration testing was chosen for this project, due to the 
-the presence of the hardware components, wich are not easily testable with automated tests. Additionally, the system is relatively small and It
-is at an early prototyping stage, where inttorducins automated tests would be an overhead.
-The perfomed manual tests are presented in the following table.
+In this project, I used the top-down approach for integration testing. Manual integration testing was chosen for this project, due to the 
+the presence of the hardware components, which are not easily testable with automated tests. Additionally, the system is relatively small and It
+is at an early prototyping stage, where introducing automated tests would be an overhead.
+The performed manual tests are presented in the following table.
 \begin{table}[H]
 \centering
 \begin{tabular}{|p{1cm}|p{4cm}|p{6cm}|p{3cm}|p{2cm}|}
@@ -76,7 +76,7 @@ T5 & System Recovery & Restart the ESP32 node and Raspberry Pi. & System resumes
 \label{tab:manual_integration_test_plan}
 \end{table}
 
-As you can see, the system, in general, works as expected, excepting test T5, whuch failed. The system did not recover after a restart.
+As you can see, the system, in general, works as expected, excepting test T5, which failed. The system did not recover after a restart.
 This is because the running process on the Raspberry Pi does not automatically start after a reboot. To fix this,
 I need to add the main process to the crontab of the Raspberry Pi, so it starts automatically after a reboot.
 
@@ -84,12 +84,12 @@ I need to add the main process to the crontab of the Raspberry Pi, so it starts 
 Performance testing is a type of testing that evaluates the system's performance under various conditions.
 \subsubsection{End-to-End Data Transmission Time Test}
 End-to-end data transmission time testing measures the time it takes for a sensor reading to be sent from the ESP32 to the server.
-For this test, I added a new parameter to the sensor readings, which is the reading time, collected from the ESP32. When the reading is acknoleged 
-by the server, the server calculates the time it took for the reading to be sent and stored. Then for each readigm the latency is calculated as
+For this test, I added a new parameter to the sensor readings, which is the reading time, collected from the ESP32. When the reading is acknowledged
+by the server, the server calculates the time it took for the reading to be sent and stored. Then for each reading the latency is calculated as
 the difference between the reading time and the time it was received by the server.
 The average latency is calculated over a number of readings, which is 100 in this case. 
-I repeated this test in 3 different scenarios. Firts scenario is when the Raspbery Pi is connecthed to the local network via Ethernet cable,
-the second scenarion is when the Raspberry Pi is connected to the local network via Wi-Fi. The third scenario is when the Raspbbery Pi is connected to the internet
+I repeated this test in 3 different scenarios. First scenario is when the Raspbery Pi is connected to the local network via Ethernet cable,
+the second scenario is when the Raspberry Pi is connected to the local network via Wi-Fi. The third scenario is when the Raspbbery Pi is connected to the internet
 the Ethernet cable, and the and the ESP32 node is placed in a different location than the ESP32 gateway. 
 Below are presented the test scenarios:
 \begin{table}[H]
@@ -109,9 +109,9 @@ Below are presented the test scenarios:
 \label{tab:latency_scenarios_uart}
 \end{table}
 
-The asumption is that the latency will be lower when the Raspberry Pi is connected to the local network via Ethernet cable.
+The assumption is that the latency will be lower when the Raspberry Pi is connected to the local network via Ethernet cable.
 The first 2 scenarios are expected to have similar results, and the third scenario is expected to have a higher latency due to the LoRa transmission
-time and distance between the ESP32 Node and the Gateway. This would mean that the bootleneck is the LoRa transmission time, and not the UART transmission time,
+time and distance between the ESP32 Node and the Gateway. This would mean that the bottleneck is the LoRa transmission time, and not the UART transmission time,
 Ethernet or Wi-Fi connection.
 
 The results of the end-to-end data transmission time test are presented in Table \ref{tab:latency_results}.
@@ -133,8 +133,8 @@ The results of the end-to-end data transmission time test are presented in Table
 \end{table}
 
 The first 2 scenarios show similar result, with an average latency of around 130 ms, confirming that the Ethernet and Wi-Fi connections have similar
-performance for this applicaton. The third scenario shows a significantly higher latency of around 390 ms. The results confirm the assumption
-that the bootlenecl is the LoRa transmission time. The obtained performance is acceptable for the application, as the latency is within the range of 
+performance for this application. The third scenario shows a significantly higher latency of around 390 ms. The results confirm the assumption
+that the bottleneck is the LoRa transmission time. The obtained performance is acceptable for the application, as the latency is within the range of 
 a few hundred milliseconds. 
 
 \subsection{Hardware Testing}
@@ -142,10 +142,10 @@ a few hundred milliseconds.
 The sensors used in the system were tested to ensure they provide accurate readings.
 The tests involved measuring the sensor readings in different conditions and comparing them to known values. The soil moisture sensor's VCC 
 and GND pins were connected to the pins of a stable power source of 3.3V and the voltmeter's positive and negative probes were connected
-to the sensor's output pin and GND pinm respectively. Then the sensor was placed in different soil conditions (dry, wed)
+to the sensor's output pin and GND pin respectively. Then the sensor was placed in different soil conditions (dry, wed)
 and the voltage readings were recorded. The result are presented in Table
-The rain sensor was tested in a similar manner, by plancing it in different conditions.
-The DHT111 sensor could not be tested with a voltmeter, as it provides digital readings. Fot this sensor I used 
+The rain sensor was tested in a similar manner, by placing it in different conditions.
+The DHT111 sensor could not be tested with a voltmeter, as it provides digital readings. For this sensor I used 
 the ESP32 to read the sensor data and display it on the serial monitor. I compared the reading with the values from a thermometer and hydrometer. The
 result were not quite perfect, but they were within the acceptable range.
 The results of the manual sensor testing are presented in the following table:

@@ -9,21 +9,21 @@ Agriculture automation and optimization has become a major concern in recent yea
 As the global population continues to grow, the demand for food is increasing and the developing need for food
 along with the effect of climate changes are forcing the agricultural industry to adapt and innovate\cite{OBAIDEEN2022100124}.
 
-In the last 35 years, the wold has seen a doubling of the agricultural production. This has been achieved throught the use
-of different fertilizers, pesticides and herbicides. This doubling was associated with a 6.87-fold increase in nitrogen fertilization,
+In the last 35 years, the world has seen a doubling of the agricultural production. This has been achieved using 
+different fertilizers, pesticides and herbicides. This doubling was associated with a 6.87-fold increase in nitrogen fertilization,
 a 3.48-fold increase in phosphorus fertilization and 1.68-fold increase in the amount of irrigated cropland \cite{doi:10.1073/pnas.96.11.5995}.
-In addition, the water consumoption is expected to increase by 50\% by 2050 \cite{s20236865}. 
+In addition, the water consumption is expected to increase by 50\% by 2050 \cite{s20236865}. 
 
 This project aims to address the challenges of water scarcity and the need of efficient irrigation systems
 by presenting the plan, the implementation, the results and future work of a system that can be used in different
 scenarios and is meant to help reducing the water consumption and increasing the agricultural productivity.
-The PiIrrigate project intends achuive this by developing an innovative irrigation system that leverages the power of 
+The PiIrrigate project intends achieve this by developing an innovative irrigation system that leverages the power of 
 IoT and LoRa radio communication technologies.  
-The main focus of this project is to create a system that can be easly used in different agricultural settings, 
+The main focus of this project is to create a system that can be easily used in different agricultural settings, 
 starting from small gardens to large farms and even smart greenhouses. Beside this, I wanted to create a system that 
 is easy to use and can be extended with ease. 
 
-The ESP32 boards with sensors are responsible for colecting the data. Then data is sent using  LoRa to another
+The ESP32 boards with sensors are responsible for collecting the data. Then data is sent using  LoRa to another
 ESP32 board that acts as a gateway connected to a Raspberry Pi, which is responsible for sending the data to a web API.
 The web API is developed in .NET and is responsible for storing the data in a PostgreSQL database.
 The data is then sent to a web application using SignalR, which allows real-time communication between the server and the client.
@@ -33,7 +33,7 @@ control the system manually and to add new nodes to the system.
 This system takes advantage of the LoRa radio communication technology, 
 which allows for long-range communication with low power consumption. Meaning that the system can be used in remote areas and
 it will work even if the internet connection is not available to all the nodes. The Raspberry Pi is the only component of this system
-that needs to be connected to the internet. Other components can be scatered on a area of 10km or more, depending on
+that needs to be connected to the internet. Other components can be scattered on a area of 10km or more, depending on
 the environment and the node setup (mesh or star topology).
 
 \newpage
@@ -42,18 +42,18 @@ the environment and the node setup (mesh or star topology).
 The reason why I choose to create such a system was fueled by my passion for technology and smart agriculture. Besides this,
 I like to observe the data path, from the moment it is collected by the sensors, to the moment it is displayed
 in a web application. 
-I have always been intested in pieces of technology that can be used to solve real world problems and now I had the chance
+I have always been interested in pieces of technology that can be used to solve real world problems and now I had the chance
 to create such a system.
-Initaially, I wanted to create a smaller system for my own graden, but then I reazied that this system can be used in a lerger
+Initially, I wanted to create a smaller system for my own garden, but then I realized that this system can be used in a larger
 scale and can be adapted to different scenarios.
 
 This project is also motivated by the opportunity to apply core concepts of computer science, such as API design, data management, 
-distributed systems and IoT \- to build a cost-effective ans scalable smart irrigaiton system. This project intends to provide
+distributed systems and IoT \- to build a cost-effective and scalable smart irrigation system. This project intends to provide
 not only a system for irrigation, but also a platform that can be used in different scenarios, such as smart greenhouses,
 meteorological stations, or even smart cities.
 
 \section{Objectives}
-The main objective of this project is to develop a system that leverages IoT, cloud services, and modern softwware development
+The main objective of this project is to develop a system that leverages IoT, cloud services, and modern software development
 principles to optimize irrigation processes and reduce the water usage in agriculture. The focus of this project is to provide
 a theoretical approach of the system, but also to present the implementation details and the results of the system. At the and 
 of this project the result should comprise the system architecture, including the hardware and software components, and 
@@ -70,11 +70,11 @@ To be more specific, the objectives of this project are:
 
 \section{Scope and Limitations}
 
-Scope of this project includes the design, implementation, and evaluation of a smart irrigaiton system. 
-The system will be designed to collect data from enviromental sensors, such as soil moisture, temperature, and humidity,
-process this data throught a web API, and provide a user friendly web application for real-time monitoring and control.
+The scope of this project includes the design, implementation, and evaluation of a smart irrigation system. 
+The system will be designed to collect data from environmental sensors, such as soil moisture, temperature, and humidity,
+process this data through a web API, and provide a user friendly web application for real-time monitoring and control.
 
-Key fetures of the system include:
+Key features of the system include:
 \begin{itemize}
     \item Data collection from environmental sensors using LILYGO Meshtastic AXP2101 T-Beam V1.2 ESP32 LoRa boards.
     \item Long-range communication using LoRa radio technology.
@@ -98,12 +98,12 @@ Despite the comprehensive scope of this project, there are some limitations that
 
 \section{Methodology overview}
 
-The metodology adopted for this project is structured around the typical sofware development lifecycle,
-beggining with the requirements gathering and analysis, followed by the design, implementation, testing, and evaluation phases.
+The methodology adopted for this project is structured around the typical software development lifecycle,
+beginning with the requirements gathering and analysis, followed by the design, implementation, testing, and evaluation phases.
 This approach ensures that the system is developed in a systematic and organized manner, allowing for the creation 
-of a robus and reliable smart irrigation system.
+of a robust and reliable smart irrigation system.
 
-System requirements were gathederd based on on a research of modern irrigaiton practicies, with a great focus on the water consumoption
+System requirements were gathered based on a research of modern irrigation practices, with a great focus on the water consumption
 usage and the need of real-time monitoring and control. These requirements helped identifying core functionalities of the system,
 such as data collection from environmental sensors, processing, storage, and user interface design. 
 
